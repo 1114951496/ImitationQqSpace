@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="cn.mk95.www.bean.ShareEntity" table="share" schema="easyspace">
+        <composite-id mapped="true" class="cn.mk95.www.bean.ShareEntityPK">
+            <key-property name="userid">
+                <column name="userid" sql-type="int(6)"/>
+            </key-property>
+            <key-property name="shareid">
+                <column name="shareid" sql-type="int(1)"/>
+            </key-property>
+            <key-property name="sharetime">
+                <column name="sharetime" sql-type="datetime"/>
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

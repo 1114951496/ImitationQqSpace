@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="cn.mk95.www.bean.EmailyzEntity" table="emailyz" schema="easyspace">
+        <id name="email">
+            <column name="email" sql-type="varchar(20)" length="20"/>
+        </id>
+        <property name="yzm">
+            <column name="yzm" sql-type="int(6)"/>
+        </property>
+        <property name="sendtime">
+            <column name="sendtime" sql-type="datetime"/>
+        </property>
+        <property name="flag">
+            <column name="flag" sql-type="int(1) unsigned zerofill" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

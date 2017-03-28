@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataSource name="easyspace@115.159.197.215">
-  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.0">
+<dataSource name="@115.159.197.215">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.1">
     <root id="1"/>
     <schema id="2" parent="1" name="easyspace">
       <Current>1</Current>
@@ -27,6 +27,7 @@
       <DataType>varchar(20)|0</DataType>
     </column>
     <key id="16" parent="6" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
       <ColNames>userid</ColNames>
       <Primary>1</Primary>
     </key>
@@ -68,6 +69,7 @@
       <ColNames>userid</ColNames>
     </index>
     <key id="25" parent="7" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
       <ColNames>commentid
 noteid</ColNames>
       <Primary>1</Primary>
@@ -104,6 +106,7 @@ noteid</ColNames>
       <DataType>int(1) unsigned zerofill|0</DataType>
     </column>
     <key id="32" parent="8" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
       <ColNames>email</ColNames>
       <Primary>1</Primary>
     </key>
@@ -124,6 +127,7 @@ noteid</ColNames>
       <NotNull>1</NotNull>
     </column>
     <key id="36" parent="9" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
       <ColNames>userid</ColNames>
       <Primary>1</Primary>
     </key>
@@ -157,6 +161,7 @@ noteid</ColNames>
       <ColNames>senduserid</ColNames>
     </index>
     <key id="43" parent="10" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
       <ColNames>userid</ColNames>
       <Primary>1</Primary>
     </key>
@@ -210,6 +215,7 @@ noteid</ColNames>
       <ColNames>userid</ColNames>
     </index>
     <key id="54" parent="11" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
       <ColNames> noteid
 userid
 notetime</ColNames>
@@ -245,6 +251,7 @@ notetime</ColNames>
       <ColNames>noteid</ColNames>
     </index>
     <key id="61" parent="12" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
       <ColNames>userid
 shareid
 sharetime</ColNames>
@@ -300,6 +307,7 @@ sharetime</ColNames>
       <ColNames>email</ColNames>
     </index>
     <key id="72" parent="13" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
       <ColNames>userid</ColNames>
       <Primary>1</Primary>
     </key>

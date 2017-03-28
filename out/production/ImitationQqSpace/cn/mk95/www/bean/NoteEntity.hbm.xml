@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="cn.mk95.www.bean.NoteEntity" table="note" schema="easyspace">
+        <composite-id mapped="true" class="cn.mk95.www.bean.NoteEntityPK">
+            <key-property name="noteid">
+                <column name=" noteid" sql-type="int(1)"/>
+            </key-property>
+            <key-property name="userid">
+                <column name="userid" sql-type="int(6)"/>
+            </key-property>
+            <key-property name="notetime">
+                <column name="notetime" sql-type="datetime"/>
+            </key-property>
+        </composite-id>
+        <property name="noteurl">
+            <column name="noteurl" sql-type="varchar(20)" length="20"/>
+        </property>
+        <property name="like">
+            <column name="like" sql-type="int(5)"/>
+        </property>
+        <property name="commentid">
+            <column name="commentid" sql-type="int(3)"/>
+        </property>
+    </class>
+</hibernate-mapping>
