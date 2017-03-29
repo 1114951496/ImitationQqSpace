@@ -4,11 +4,9 @@
         "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
     <session-factory>
-        <property name="connection.url">jdbc:mysql://115.159.197.215:3306/easyspace</property>
+        <property name="connection.url">jdbc:mysql://115.159.197.215:3306</property>
         <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
 
-        <property name="connection.username">sb</property>
-        <property name="connection.password">sb1234567890</property>
         <property name="hibernate.c3p0.max_size">10</property>
         <property name="hibernate.c3p0.max_statements">20</property>
         <property name="hibernate.c3p0.idle_test_period">200</property>
@@ -16,12 +14,23 @@
         <!-- DB schema will be updated if needed -->
         <property name="hbm2ddl.auto">update</property>
         <mapping resource="cn/mk95/www/bean/AlbumEntity.hbm.xml"/>
+        <mapping class="cn.mk95.www.bean.AlbumEntity"/>
+        <mapping class="cn.mk95.www.bean.CommentEntity"/>
         <mapping resource="cn/mk95/www/bean/CommentEntity.hbm.xml"/>
         <mapping resource="cn/mk95/www/bean/EmailyzEntity.hbm.xml"/>
+        <mapping class="cn.mk95.www.bean.EmailyzEntity"/>
+        <mapping class="cn.mk95.www.bean.FriendEntity"/>
         <mapping resource="cn/mk95/www/bean/FriendEntity.hbm.xml"/>
         <mapping resource="cn/mk95/www/bean/MessageEntity.hbm.xml"/>
+        <mapping class="cn.mk95.www.bean.MessageEntity"/>
+        <mapping class="cn.mk95.www.bean.NoteEntity"/>
         <mapping resource="cn/mk95/www/bean/NoteEntity.hbm.xml"/>
+        <mapping resource="cn/mk95/www/bean/RegisterYzEntity.hbm.xml"/>
+        <mapping class="cn.mk95.www.bean.RegisterYzEntity"/>
         <mapping resource="cn/mk95/www/bean/ShareEntity.hbm.xml"/>
+        <mapping class="cn.mk95.www.bean.ShareEntity"/>
         <mapping resource="cn/mk95/www/bean/UserEntity.hbm.xml"/>
+        <mapping class="cn.mk95.www.bean.UserEntity"/>
+
     </session-factory>
 </hibernate-configuration>

@@ -1,16 +1,22 @@
 package cn.mk95.www.bean;
 
+import javax.persistence.*;
 import java.sql.Timestamp;
 
 /**
- * Created by yangyonghao on 2017/3/12.
- * Time:21:39.
+ * Created by YangYongHao on 2017/3/29.
+ * Annotation:
  */
+@Entity
+@Table(name = "share", schema = "easyspace", catalog = "")
+@IdClass(ShareEntityPK.class)
 public class ShareEntity {
     private int userid;
     private int shareid;
     private Timestamp sharetime;
 
+    @Id
+    @Column(name = "userid", nullable = false)
     public int getUserid() {
         return userid;
     }
@@ -19,6 +25,8 @@ public class ShareEntity {
         this.userid = userid;
     }
 
+    @Id
+    @Column(name = "shareid", nullable = false)
     public int getShareid() {
         return shareid;
     }
@@ -27,6 +35,8 @@ public class ShareEntity {
         this.shareid = shareid;
     }
 
+    @Id
+    @Column(name = "sharetime", nullable = false)
     public Timestamp getSharetime() {
         return sharetime;
     }

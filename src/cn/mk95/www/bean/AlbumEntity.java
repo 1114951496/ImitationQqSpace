@@ -1,13 +1,19 @@
 package cn.mk95.www.bean;
 
+import javax.persistence.*;
+
 /**
- * Created by yangyonghao on 2017/3/12.
- * Time:21:39.
+ * Created by YangYongHao on 2017/3/29.
+ * Annotation:
  */
+@Entity
+@Table(name = "album", schema = "easyspace", catalog = "")
 public class AlbumEntity {
     private int userid;
     private String photourl;
 
+    @Id
+    @Column(name = "userid", nullable = false)
     public int getUserid() {
         return userid;
     }
@@ -16,6 +22,8 @@ public class AlbumEntity {
         this.userid = userid;
     }
 
+    @Basic
+    @Column(name = "photourl", nullable = true, length = 20)
     public String getPhotourl() {
         return photourl;
     }

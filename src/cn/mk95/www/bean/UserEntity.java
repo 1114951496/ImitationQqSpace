@@ -1,11 +1,14 @@
 package cn.mk95.www.bean;
 
+import javax.persistence.*;
 import java.sql.Timestamp;
 
 /**
- * Created by yangyonghao on 2017/3/12.
- * Time:21:39.
+ * Created by YangYongHao on 2017/3/29.
+ * Annotation:
  */
+@Entity
+@Table(name = "user", schema = "easyspace", catalog = "")
 public class UserEntity {
     private int userid;
     private String username;
@@ -15,6 +18,8 @@ public class UserEntity {
     private String sign;
     private String icon;
 
+    @Id
+    @Column(name = "userid", nullable = false)
     public int getUserid() {
         return userid;
     }
@@ -23,6 +28,8 @@ public class UserEntity {
         this.userid = userid;
     }
 
+    @Basic
+    @Column(name = "username", nullable = false, length = 20)
     public String getUsername() {
         return username;
     }
@@ -31,6 +38,8 @@ public class UserEntity {
         this.username = username;
     }
 
+    @Basic
+    @Column(name = "usersex", nullable = false, length = 6)
     public String getUsersex() {
         return usersex;
     }
@@ -39,6 +48,8 @@ public class UserEntity {
         this.usersex = usersex;
     }
 
+    @Basic
+    @Column(name = "registertime", nullable = false)
     public Timestamp getRegistertime() {
         return registertime;
     }
@@ -47,6 +58,8 @@ public class UserEntity {
         this.registertime = registertime;
     }
 
+    @Basic
+    @Column(name = "email", nullable = false, length = 20)
     public String getEmail() {
         return email;
     }
@@ -55,6 +68,8 @@ public class UserEntity {
         this.email = email;
     }
 
+    @Basic
+    @Column(name = "sign", nullable = true, length = 60)
     public String getSign() {
         return sign;
     }
@@ -63,6 +78,8 @@ public class UserEntity {
         this.sign = sign;
     }
 
+    @Basic
+    @Column(name = "icon", nullable = true, length = 20)
     public String getIcon() {
         return icon;
     }
