@@ -1,17 +1,22 @@
 package cn.mk95.www.bean;
 
+import javax.persistence.*;
 import java.sql.Timestamp;
 
 /**
- * Created by yangyonghao on 2017/3/12.
- * Time:21:39.
+ * Created by YangYongHao on 2017/3/29.
+ * Annotation:
  */
+@Entity
+@Table(name = "emailyz", schema = "easyspace", catalog = "")
 public class EmailyzEntity {
     private String email;
     private int yzm;
     private Timestamp sendtime;
     private Integer flag;
 
+    @Id
+    @Column(name = "email", nullable = false, length = 20)
     public String getEmail() {
         return email;
     }
@@ -20,6 +25,8 @@ public class EmailyzEntity {
         this.email = email;
     }
 
+    @Basic
+    @Column(name = "yzm", nullable = false)
     public int getYzm() {
         return yzm;
     }
@@ -28,6 +35,8 @@ public class EmailyzEntity {
         this.yzm = yzm;
     }
 
+    @Basic
+    @Column(name = "sendtime", nullable = false)
     public Timestamp getSendtime() {
         return sendtime;
     }
@@ -36,6 +45,8 @@ public class EmailyzEntity {
         this.sendtime = sendtime;
     }
 
+    @Basic
+    @Column(name = "flag", nullable = true)
     public Integer getFlag() {
         return flag;
     }

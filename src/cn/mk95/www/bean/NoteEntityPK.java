@@ -1,17 +1,21 @@
 package cn.mk95.www.bean;
 
+import javax.persistence.Column;
+import javax.persistence.Id;
 import java.io.Serializable;
 import java.sql.Timestamp;
 
 /**
- * Created by yangyonghao on 2017/3/12.
- * Time:21:39.
+ * Created by YangYongHao on 2017/3/29.
+ * Annotation:
  */
 public class NoteEntityPK implements Serializable {
     private int noteid;
     private int userid;
     private Timestamp notetime;
 
+    @Column(name = " noteid", nullable = false)
+    @Id
     public int getNoteid() {
         return noteid;
     }
@@ -20,6 +24,8 @@ public class NoteEntityPK implements Serializable {
         this.noteid = noteid;
     }
 
+    @Column(name = "userid", nullable = false)
+    @Id
     public int getUserid() {
         return userid;
     }
@@ -28,6 +34,8 @@ public class NoteEntityPK implements Serializable {
         this.userid = userid;
     }
 
+    @Column(name = "notetime", nullable = false)
+    @Id
     public Timestamp getNotetime() {
         return notetime;
     }

@@ -1,13 +1,19 @@
 package cn.mk95.www.bean;
 
+import javax.persistence.*;
+
 /**
- * Created by yangyonghao on 2017/3/12.
- * Time:21:39.
+ * Created by YangYongHao on 2017/3/29.
+ * Annotation:
  */
+@Entity
+@Table(name = "friend", schema = "easyspace", catalog = "")
 public class FriendEntity {
     private int userid;
-    private String fid;
+    private String fidurl;
 
+    @Id
+    @Column(name = "userid", nullable = false)
     public int getUserid() {
         return userid;
     }
@@ -16,12 +22,14 @@ public class FriendEntity {
         this.userid = userid;
     }
 
-    public String getFid() {
-        return fid;
+    @Basic
+    @Column(name = "fidurl", nullable = false, length = 100)
+    public String getFidurl() {
+        return fidurl;
     }
 
-    public void setFid(String fid) {
-        this.fid = fid;
+    public void setFidurl(String fidurl) {
+        this.fidurl = fidurl;
     }
 
     @Override
@@ -32,7 +40,7 @@ public class FriendEntity {
         FriendEntity that = (FriendEntity) o;
 
         if (userid != that.userid) return false;
-        if (fid != null ? !fid.equals(that.fid) : that.fid != null) return false;
+        if (fidurl != null ? !fidurl.equals(that.fidurl) : that.fidurl != null) return false;
 
         return true;
     }
@@ -40,7 +48,7 @@ public class FriendEntity {
     @Override
     public int hashCode() {
         int result = userid;
-        result = 31 * result + (fid != null ? fid.hashCode() : 0);
+        result = 31 * result + (fidurl != null ? fidurl.hashCode() : 0);
         return result;
     }
 }

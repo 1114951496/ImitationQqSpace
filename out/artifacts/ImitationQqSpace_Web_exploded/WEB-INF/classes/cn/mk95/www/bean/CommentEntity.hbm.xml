@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="cn.mk95.www.bean.CommentEntity" table="comment" schema="easyspace">
+        <composite-id mapped="true" class="cn.mk95.www.bean.CommentEntityPK">
+            <key-property name="noteid">
+                <column name="noteid" sql-type="int(1)"/>
+            </key-property>
+            <key-property name="commentid">
+                <column name="commentid" sql-type="int(3)"/>
+            </key-property>
+        </composite-id>
+        <property name="commenttime">
+            <column name="commenttime" sql-type="datetime"/>
+        </property>
+        <property name="commenturl">
+            <column name="commenturl" sql-type="varchar(20)" length="20"/>
+        </property>
+    </class>
+</hibernate-mapping>

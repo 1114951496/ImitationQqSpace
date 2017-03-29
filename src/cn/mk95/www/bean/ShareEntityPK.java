@@ -1,17 +1,21 @@
 package cn.mk95.www.bean;
 
+import javax.persistence.Column;
+import javax.persistence.Id;
 import java.io.Serializable;
 import java.sql.Timestamp;
 
 /**
- * Created by yangyonghao on 2017/3/12.
- * Time:21:39.
+ * Created by YangYongHao on 2017/3/29.
+ * Annotation:
  */
 public class ShareEntityPK implements Serializable {
     private int userid;
     private int shareid;
     private Timestamp sharetime;
 
+    @Column(name = "userid", nullable = false)
+    @Id
     public int getUserid() {
         return userid;
     }
@@ -20,6 +24,8 @@ public class ShareEntityPK implements Serializable {
         this.userid = userid;
     }
 
+    @Column(name = "shareid", nullable = false)
+    @Id
     public int getShareid() {
         return shareid;
     }
@@ -28,6 +34,8 @@ public class ShareEntityPK implements Serializable {
         this.shareid = shareid;
     }
 
+    @Column(name = "sharetime", nullable = false)
+    @Id
     public Timestamp getSharetime() {
         return sharetime;
     }

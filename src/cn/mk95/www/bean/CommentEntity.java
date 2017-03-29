@@ -1,17 +1,23 @@
 package cn.mk95.www.bean;
 
+import javax.persistence.*;
 import java.sql.Timestamp;
 
 /**
- * Created by yangyonghao on 2017/3/12.
- * Time:21:39.
+ * Created by YangYongHao on 2017/3/29.
+ * Annotation:
  */
+@Entity
+@Table(name = "comment", schema = "easyspace", catalog = "")
+@IdClass(CommentEntityPK.class)
 public class CommentEntity {
     private int noteid;
     private Timestamp commenttime;
     private int commentid;
     private String commenturl;
 
+    @Id
+    @Column(name = "noteid", nullable = false)
     public int getNoteid() {
         return noteid;
     }
@@ -20,6 +26,8 @@ public class CommentEntity {
         this.noteid = noteid;
     }
 
+    @Basic
+    @Column(name = "commenttime", nullable = false)
     public Timestamp getCommenttime() {
         return commenttime;
     }
@@ -28,6 +36,8 @@ public class CommentEntity {
         this.commenttime = commenttime;
     }
 
+    @Id
+    @Column(name = "commentid", nullable = false)
     public int getCommentid() {
         return commentid;
     }
@@ -36,6 +46,8 @@ public class CommentEntity {
         this.commentid = commentid;
     }
 
+    @Basic
+    @Column(name = "commenturl", nullable = false, length = 20)
     public String getCommenturl() {
         return commenturl;
     }

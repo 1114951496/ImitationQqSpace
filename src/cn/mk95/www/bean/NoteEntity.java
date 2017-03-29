@@ -1,11 +1,15 @@
 package cn.mk95.www.bean;
 
+import javax.persistence.*;
 import java.sql.Timestamp;
 
 /**
- * Created by yangyonghao on 2017/3/12.
- * Time:21:39.
+ * Created by YangYongHao on 2017/3/29.
+ * Annotation:
  */
+@Entity
+@Table(name = "note", schema = "easyspace", catalog = "")
+@IdClass(NoteEntityPK.class)
 public class NoteEntity {
     private int noteid;
     private int userid;
@@ -14,6 +18,8 @@ public class NoteEntity {
     private int like;
     private int commentid;
 
+    @Id
+    @Column(name = " noteid", nullable = false)
     public int getNoteid() {
         return noteid;
     }
@@ -22,6 +28,8 @@ public class NoteEntity {
         this.noteid = noteid;
     }
 
+    @Id
+    @Column(name = "userid", nullable = false)
     public int getUserid() {
         return userid;
     }
@@ -30,6 +38,8 @@ public class NoteEntity {
         this.userid = userid;
     }
 
+    @Basic
+    @Column(name = "noteurl", nullable = false, length = 20)
     public String getNoteurl() {
         return noteurl;
     }
@@ -38,6 +48,8 @@ public class NoteEntity {
         this.noteurl = noteurl;
     }
 
+    @Id
+    @Column(name = "notetime", nullable = false)
     public Timestamp getNotetime() {
         return notetime;
     }
@@ -46,6 +58,8 @@ public class NoteEntity {
         this.notetime = notetime;
     }
 
+    @Basic
+    @Column(name = "like", nullable = false)
     public int getLike() {
         return like;
     }
@@ -54,6 +68,8 @@ public class NoteEntity {
         this.like = like;
     }
 
+    @Basic
+    @Column(name = "commentid", nullable = false)
     public int getCommentid() {
         return commentid;
     }
