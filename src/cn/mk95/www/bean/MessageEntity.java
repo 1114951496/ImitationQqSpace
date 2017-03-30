@@ -4,13 +4,14 @@ import javax.persistence.*;
 import java.sql.Timestamp;
 
 /**
- * Created by YangYongHao on 2017/3/29.
+ * Created by YangYongHao on 2017/3/30.
  * Annotation:
  */
 @Entity
 @Table(name = "message", schema = "easyspace", catalog = "")
 public class MessageEntity {
     private int userid;
+    private int senduserid;
     private Timestamp sendtime;
     private String text;
 
@@ -22,6 +23,16 @@ public class MessageEntity {
 
     public void setUserid(int userid) {
         this.userid = userid;
+    }
+
+    @Basic
+    @Column(name = "senduserid", nullable = false)
+    public int getSenduserid() {
+        return senduserid;
+    }
+
+    public void setSenduserid(int senduserid) {
+        this.senduserid = senduserid;
     }
 
     @Basic
@@ -52,6 +63,7 @@ public class MessageEntity {
         MessageEntity that = (MessageEntity) o;
 
         if (userid != that.userid) return false;
+        if (senduserid != that.senduserid) return false;
         if (sendtime != null ? !sendtime.equals(that.sendtime) : that.sendtime != null) return false;
         if (text != null ? !text.equals(that.text) : that.text != null) return false;
 
@@ -61,6 +73,7 @@ public class MessageEntity {
     @Override
     public int hashCode() {
         int result = userid;
+        result = 31 * result + senduserid;
         result = 31 * result + (sendtime != null ? sendtime.hashCode() : 0);
         result = 31 * result + (text != null ? text.hashCode() : 0);
         return result;

@@ -7,7 +7,7 @@
     <class name="cn.mk95.www.bean.CommentEntity" table="comment" schema="easyspace">
         <composite-id mapped="true" class="cn.mk95.www.bean.CommentEntityPK">
             <key-property name="noteid">
-                <column name="noteid" sql-type="int(1)"/>
+                <column name="noteid" sql-type="int(11)"/>
             </key-property>
             <key-property name="commentid">
                 <column name="commentid" sql-type="int(3)"/>
@@ -15,6 +15,9 @@
         </composite-id>
         <property name="commenttime">
             <column name="commenttime" sql-type="datetime"/>
+        </property>
+        <property name="userid">
+            <column name="userid" sql-type="int(6)"/>
         </property>
         <property name="commenturl">
             <column name="commenturl" sql-type="varchar(20)" length="20"/>

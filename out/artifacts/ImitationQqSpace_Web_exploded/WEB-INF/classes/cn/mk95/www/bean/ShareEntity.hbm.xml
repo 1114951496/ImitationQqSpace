@@ -10,11 +10,14 @@
                 <column name="userid" sql-type="int(6)"/>
             </key-property>
             <key-property name="shareid">
-                <column name="shareid" sql-type="int(1)"/>
+                <column name="shareid" sql-type="int(11)"/>
             </key-property>
             <key-property name="sharetime">
                 <column name="sharetime" sql-type="datetime"/>
             </key-property>
         </composite-id>
+        <property name="noteid">
+            <column name="noteid" sql-type="int(11)"/>
+        </property>
     </class>
 </hibernate-mapping>

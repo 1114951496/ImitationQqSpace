@@ -4,7 +4,7 @@ import javax.persistence.*;
 import java.sql.Timestamp;
 
 /**
- * Created by YangYongHao on 2017/3/29.
+ * Created by YangYongHao on 2017/3/30.
  * Annotation:
  */
 @Entity
@@ -14,6 +14,7 @@ public class CommentEntity {
     private int noteid;
     private Timestamp commenttime;
     private int commentid;
+    private int userid;
     private String commenturl;
 
     @Id
@@ -47,6 +48,16 @@ public class CommentEntity {
     }
 
     @Basic
+    @Column(name = "userid", nullable = false)
+    public int getUserid() {
+        return userid;
+    }
+
+    public void setUserid(int userid) {
+        this.userid = userid;
+    }
+
+    @Basic
     @Column(name = "commenturl", nullable = false, length = 20)
     public String getCommenturl() {
         return commenturl;
@@ -65,6 +76,7 @@ public class CommentEntity {
 
         if (noteid != that.noteid) return false;
         if (commentid != that.commentid) return false;
+        if (userid != that.userid) return false;
         if (commenttime != null ? !commenttime.equals(that.commenttime) : that.commenttime != null) return false;
         if (commenturl != null ? !commenturl.equals(that.commenturl) : that.commenturl != null) return false;
 
@@ -76,6 +88,7 @@ public class CommentEntity {
         int result = noteid;
         result = 31 * result + (commenttime != null ? commenttime.hashCode() : 0);
         result = 31 * result + commentid;
+        result = 31 * result + userid;
         result = 31 * result + (commenturl != null ? commenturl.hashCode() : 0);
         return result;
     }

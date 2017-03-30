@@ -7,7 +7,13 @@
 <struts>
 
     <package name="y_struts" extends="struts-default">
-        <action name="register" class="register" method="register">
+        <action name="register" class="LoginAndRegister" method="register">
+            <result name="success">success.jsp</result>
+        </action>
+        <action name="login" class="LoginAndRegister" method="login">
+            <result name="success">success.jsp</result>
+        </action>
+        <action name="test" class="LoginAndRegister" method="test">
             <result name="success">success.jsp</result>
         </action>
     </package>

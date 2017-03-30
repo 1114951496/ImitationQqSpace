@@ -5,7 +5,7 @@ import javax.persistence.Id;
 import java.io.Serializable;
 
 /**
- * Created by YangYongHao on 2017/3/29.
+ * Created by YangYongHao on 2017/3/30.
  * Annotation:
  */
 public class CommentEntityPK implements Serializable {

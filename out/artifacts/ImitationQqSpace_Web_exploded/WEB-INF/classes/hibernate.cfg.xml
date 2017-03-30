@@ -14,14 +14,32 @@
         <!-- DB schema will be updated if needed -->
         <property name="hbm2ddl.auto">update</property>
         <mapping resource="cn/mk95/www/bean/AlbumEntity.hbm.xml"/>
+        <mapping class="cn.mk95.www.bean.AlbumEntity"/>
+        <mapping class="cn.mk95.www.bean.CommentEntity"/>
+        <mapping resource="cn/mk95/www/bean/CommentEntity.hbm.xml"/>
+        <mapping resource="cn/mk95/www/bean/EmailyzEntity.hbm.xml"/>
+        <mapping class="cn.mk95.www.bean.EmailyzEntity"/>
+        <mapping class="cn.mk95.www.bean.FriendEntity"/>
+        <mapping resource="cn/mk95/www/bean/FriendEntity.hbm.xml"/>
+        <mapping resource="cn/mk95/www/bean/MessageEntity.hbm.xml"/>
+        <mapping class="cn.mk95.www.bean.MessageEntity"/>
+        <mapping class="cn.mk95.www.bean.NoteEntity"/>
+        <mapping resource="cn/mk95/www/bean/NoteEntity.hbm.xml"/>
+        <mapping resource="cn/mk95/www/bean/RegisterYzEntity.hbm.xml"/>
+        <mapping class="cn.mk95.www.bean.RegisterYzEntity"/>
+        <mapping resource="cn/mk95/www/bean/ShareEntity.hbm.xml"/>
+        <mapping class="cn.mk95.www.bean.ShareEntity"/>
+        <mapping resource="cn/mk95/www/bean/UserEntity.hbm.xml"/>
+        <mapping class="cn.mk95.www.bean.UserEntity"/>
+        <mapping resource="cn/mk95/www/bean/AlbumEntity.hbm.xml"/>
         <mapping resource="cn/mk95/www/bean/CommentEntity.hbm.xml"/>
         <mapping resource="cn/mk95/www/bean/EmailyzEntity.hbm.xml"/>
         <mapping resource="cn/mk95/www/bean/FriendEntity.hbm.xml"/>
         <mapping resource="cn/mk95/www/bean/MessageEntity.hbm.xml"/>
         <mapping resource="cn/mk95/www/bean/NoteEntity.hbm.xml"/>
+        <mapping resource="cn/mk95/www/bean/RegisterYzEntity.hbm.xml"/>
         <mapping resource="cn/mk95/www/bean/ShareEntity.hbm.xml"/>
         <mapping resource="cn/mk95/www/bean/UserEntity.hbm.xml"/>
-        <mapping resource="cn/mk95/www/bean/RegisterYzEntity.hbm.xml"/>
-        <mapping class="cn.mk95.www.bean.RegisterYzEntity"/>
+
     </session-factory>
 </hibernate-configuration>
