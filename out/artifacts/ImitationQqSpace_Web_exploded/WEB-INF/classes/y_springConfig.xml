@@ -3,8 +3,9 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean name="register" class="cn.mk95.www.action.LoginAndRegister">
-
+    <!--<import resource="file:WEB-INF/applicationContext.xml"/>-->
+    <bean name="LoginAndRegister" class="cn.mk95.www.action.LoginAndRegister">
+        <property name="userDao" ref="userDao"/>
     </bean>
 
 </beans>

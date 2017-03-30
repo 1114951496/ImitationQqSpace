@@ -1,16 +1,32 @@
 package cn.mk95.www.action;
 
+import cn.mk95.www.bean.UserEntity;
+import cn.mk95.www.dao.UserDaoImpl;
 import com.opensymphony.xwork2.ActionSupport;
-import org.junit.Test;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
-import org.springframework.context.support.FileSystemXmlApplicationContext;
-
 /**
  * Created by YangYongHao on 2017/3/28.
  * Annotation:
  */
 public class LoginAndRegister extends ActionSupport{
+
+    private UserEntity userEntity;
+    private UserDaoImpl userDao;
+
+    public UserEntity getUserEntity() {
+        return userEntity;
+    }
+
+    public void setUserEntity(UserEntity userEntity) {
+        this.userEntity = userEntity;
+    }
+
+    public UserDaoImpl getUserDao() {
+        return userDao;
+    }
+
+    public void setUserDao(UserDaoImpl userDao) {
+        this.userDao = userDao;
+    }
 
     public String register(){
         System.out.println("-------------register-------------");
@@ -23,9 +39,9 @@ public class LoginAndRegister extends ActionSupport{
         return ActionSupport.SUCCESS;
     }
 
-    @Test
-    public void test(){
-        //ApplicationContext ac2=new ClassPathXmlApplicationContext("y_springConfig.xml");
-        ApplicationContext ac = new FileSystemXmlApplicationContext("/web/WEB-INF/applicationContext.xml");
+    public String test(){
+        System.out.println("--------------测试："+userDao.findCount(UserEntity.class));
+
+        return ActionSupport.SUCCESS;
     }
 }

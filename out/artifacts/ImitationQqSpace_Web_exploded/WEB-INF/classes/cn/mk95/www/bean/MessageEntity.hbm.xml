@@ -8,6 +8,9 @@
         <id name="userid">
             <column name="userid" sql-type="int(6)"/>
         </id>
+        <property name="senduserid">
+            <column name="senduserid" sql-type="int(6)"/>
+        </property>
         <property name="sendtime">
             <column name="sendtime" sql-type="datetime"/>
         </property>

@@ -8,8 +8,8 @@
         <id name="userid">
             <column name="userid" sql-type="int(6)"/>
         </id>
-        <property name="fid">
-            <column name="fid" sql-type="varchar(100)" length="100"/>
+        <property name="fidurl">
+            <column name="fidurl" sql-type="varchar(100)" length="100"/>
         </property>
     </class>
 </hibernate-mapping>

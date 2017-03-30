@@ -15,7 +15,9 @@ function Register() {
     if(email.value.length==0||yzm.value.length==0){
         alert("请将表单填写完整!");
     }else{
-        document.getElementById("tjform").submit();
+        tjForm=document.getElementById("tjform");
+        tjForm.action="register";
+        tjForm.submit();
     }
 }
 
@@ -70,8 +72,6 @@ function logORreg(obj) {
         formTitle=document.getElementById("title");
         formTitle.innerHTML="Register";
         obj.innerHTML=">>登录";
-        hiddenCheck=document.getElementById("hiddencheck");
-        hiddenCheck.value=2;
         email=document.getElementById("email");
         yzm=document.getElementById("yzm");
         logORregVar=1;
@@ -83,8 +83,6 @@ function logORreg(obj) {
         formTitle=document.getElementById("title");
         formTitle.innerHTML="Login";
         obj.innerHTML=">>注册";
-        hiddenCheck=document.getElementById("hiddencheck");
-        hiddenCheck.value=1;
         logORregVar=0;
     }
 

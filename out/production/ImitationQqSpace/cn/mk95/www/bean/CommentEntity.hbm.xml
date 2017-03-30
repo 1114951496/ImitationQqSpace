@@ -16,6 +16,9 @@
         <property name="commenttime">
             <column name="commenttime" sql-type="datetime"/>
         </property>
+        <property name="userid">
+            <column name="userid" sql-type="int(6)"/>
+        </property>
         <property name="commenturl">
             <column name="commenturl" sql-type="varchar(20)" length="20"/>
         </property>

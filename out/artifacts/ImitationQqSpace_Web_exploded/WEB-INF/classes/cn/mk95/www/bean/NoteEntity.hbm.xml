@@ -7,7 +7,7 @@
     <class name="cn.mk95.www.bean.NoteEntity" table="note" schema="easyspace">
         <composite-id mapped="true" class="cn.mk95.www.bean.NoteEntityPK">
             <key-property name="noteid">
-                <column name=" noteid" sql-type="int(1)"/>
+                <column name=" noteid" sql-type="int(11)"/>
             </key-property>
             <key-property name="userid">
                 <column name="userid" sql-type="int(6)"/>

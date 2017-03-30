@@ -6,7 +6,7 @@ import java.io.Serializable;
 import java.sql.Timestamp;
 
 /**
- * Created by YangYongHao on 2017/3/29.
+ * Created by YangYongHao on 2017/3/30.
  * Annotation:
  */
 public class ShareEntityPK implements Serializable {

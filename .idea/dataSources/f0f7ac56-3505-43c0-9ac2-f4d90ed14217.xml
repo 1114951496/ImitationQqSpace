@@ -7,332 +7,330 @@
       <Visible>1</Visible>
     </schema>
     <schema id="3" parent="1" name="information_schema"/>
-    <schema id="4" parent="1" name="mysql"/>
-    <schema id="5" parent="1" name="performance_schema"/>
-    <table id="6" parent="2" name="album"/>
-    <table id="7" parent="2" name="comment"/>
-    <table id="8" parent="2" name="emailyz"/>
-    <table id="9" parent="2" name="friend"/>
-    <table id="10" parent="2" name="message"/>
-    <table id="11" parent="2" name="note"/>
-    <table id="12" parent="2" name="register_yz"/>
-    <table id="13" parent="2" name="share"/>
-    <table id="14" parent="2" name="user"/>
-    <column id="15" parent="6" name="userid">
+    <table id="4" parent="2" name="album"/>
+    <table id="5" parent="2" name="comment"/>
+    <table id="6" parent="2" name="emailyz"/>
+    <table id="7" parent="2" name="friend"/>
+    <table id="8" parent="2" name="message"/>
+    <table id="9" parent="2" name="note"/>
+    <table id="10" parent="2" name="register_yz"/>
+    <table id="11" parent="2" name="share"/>
+    <table id="12" parent="2" name="user"/>
+    <column id="13" parent="4" name="userid">
       <Position>1</Position>
       <DataType>int(6)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="16" parent="6" name="photourl">
+    <column id="14" parent="4" name="photourl">
       <Position>2</Position>
       <DataType>varchar(20)|0</DataType>
     </column>
-    <key id="17" parent="6" name="PRIMARY">
+    <key id="15" parent="4" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>userid</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="18" parent="6" name="photo_userid">
+    <foreign-key id="16" parent="4" name="photo_userid">
       <ColNames>userid</ColNames>
       <RefSchemaName>easyspace</RefSchemaName>
       <RefTableName>user</RefTableName>
       <RefColNames>userid</RefColNames>
     </foreign-key>
-    <column id="19" parent="7" name="noteid">
+    <column id="17" parent="5" name="noteid">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="20" parent="7" name="commenttime">
+    <column id="18" parent="5" name="commenttime">
       <Position>2</Position>
       <DataType>datetime|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="21" parent="7" name="commentid">
+    <column id="19" parent="5" name="commentid">
       <Position>3</Position>
       <DataType>int(3)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="22" parent="7" name="userid">
+    <column id="20" parent="5" name="userid">
       <Position>4</Position>
       <DataType>int(6)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="23" parent="7" name="commenturl">
+    <column id="21" parent="5" name="commenturl">
       <Position>5</Position>
       <DataType>varchar(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="24" parent="7" name="comment_note">
+    <index id="22" parent="5" name="comment_note">
       <ColNames>noteid</ColNames>
     </index>
-    <index id="25" parent="7" name="comment_user">
+    <index id="23" parent="5" name="comment_user">
       <ColNames>userid</ColNames>
     </index>
-    <key id="26" parent="7" name="PRIMARY">
+    <key id="24" parent="5" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>commentid
 noteid</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="27" parent="7" name="comment_noteid">
+    <foreign-key id="25" parent="5" name="comment_noteid">
       <ColNames>noteid</ColNames>
       <RefSchemaName>easyspace</RefSchemaName>
       <RefTableName>note</RefTableName>
       <RefColNames> noteid</RefColNames>
     </foreign-key>
-    <foreign-key id="28" parent="7" name="comment_user">
+    <foreign-key id="26" parent="5" name="comment_user">
       <ColNames>userid</ColNames>
       <RefSchemaName>easyspace</RefSchemaName>
       <RefTableName>user</RefTableName>
       <RefColNames>userid</RefColNames>
     </foreign-key>
-    <column id="29" parent="8" name="email">
+    <column id="27" parent="6" name="email">
       <Position>1</Position>
       <DataType>varchar(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="30" parent="8" name="yzm">
+    <column id="28" parent="6" name="yzm">
       <Position>2</Position>
       <DataType>int(6)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="31" parent="8" name="sendtime">
+    <column id="29" parent="6" name="sendtime">
       <Position>3</Position>
       <DataType>datetime|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="32" parent="8" name="flag">
+    <column id="30" parent="6" name="flag">
       <Position>4</Position>
       <DataType>int(1) unsigned zerofill|0</DataType>
     </column>
-    <key id="33" parent="8" name="PRIMARY">
+    <key id="31" parent="6" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>email</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="34" parent="8" name="email">
+    <foreign-key id="32" parent="6" name="email">
       <ColNames>email</ColNames>
       <RefSchemaName>easyspace</RefSchemaName>
       <RefTableName>user</RefTableName>
       <RefColNames>email</RefColNames>
     </foreign-key>
-    <column id="35" parent="9" name="userid">
+    <column id="33" parent="7" name="userid">
       <Position>1</Position>
       <DataType>int(6)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="36" parent="9" name="fidurl">
+    <column id="34" parent="7" name="fidurl">
       <Position>2</Position>
       <DataType>varchar(100)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="37" parent="9" name="PRIMARY">
+    <key id="35" parent="7" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>userid</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="38" parent="9" name="f_id">
+    <foreign-key id="36" parent="7" name="f_id">
       <ColNames>userid</ColNames>
       <RefSchemaName>easyspace</RefSchemaName>
       <RefTableName>user</RefTableName>
       <RefColNames>userid</RefColNames>
     </foreign-key>
-    <column id="39" parent="10" name="userid">
+    <column id="37" parent="8" name="userid">
       <Position>1</Position>
       <DataType>int(6)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="40" parent="10" name="senduserid">
+    <column id="38" parent="8" name="senduserid">
       <Position>2</Position>
       <DataType>int(6)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="41" parent="10" name="sendtime">
+    <column id="39" parent="8" name="sendtime">
       <Position>3</Position>
       <DataType>datetime|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="42" parent="10" name="text">
+    <column id="40" parent="8" name="text">
       <Position>4</Position>
       <DataType>varchar(60)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="43" parent="10" name="send_user">
+    <index id="41" parent="8" name="send_user">
       <ColNames>senduserid</ColNames>
     </index>
-    <key id="44" parent="10" name="PRIMARY">
+    <key id="42" parent="8" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>userid</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="45" parent="10" name="send_id">
+    <foreign-key id="43" parent="8" name="send_id">
       <ColNames>userid</ColNames>
       <RefSchemaName>easyspace</RefSchemaName>
       <RefTableName>user</RefTableName>
       <RefColNames>userid</RefColNames>
     </foreign-key>
-    <foreign-key id="46" parent="10" name="send_user">
+    <foreign-key id="44" parent="8" name="send_user">
       <ColNames>senduserid</ColNames>
       <RefSchemaName>easyspace</RefSchemaName>
       <RefTableName>user</RefTableName>
       <RefColNames>userid</RefColNames>
     </foreign-key>
-    <column id="47" parent="11" name=" noteid">
+    <column id="45" parent="9" name=" noteid">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="48" parent="11" name="userid">
+    <column id="46" parent="9" name="userid">
       <Position>2</Position>
       <DataType>int(6)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="49" parent="11" name="noteurl">
+    <column id="47" parent="9" name="noteurl">
       <Position>3</Position>
       <DataType>varchar(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="50" parent="11" name="notetime">
+    <column id="48" parent="9" name="notetime">
       <Position>4</Position>
       <DataType>datetime|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="51" parent="11" name="like">
+    <column id="49" parent="9" name="like">
       <Position>5</Position>
       <DataType>int(5)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="52" parent="11" name="commentid">
+    <column id="50" parent="9" name="commentid">
       <Position>6</Position>
       <DataType>int(3)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="53" parent="11" name=" noteid">
+    <index id="51" parent="9" name=" noteid">
       <ColNames> noteid</ColNames>
     </index>
-    <index id="54" parent="11" name="userid">
+    <index id="52" parent="9" name="userid">
       <ColNames>userid</ColNames>
     </index>
-    <key id="55" parent="11" name="PRIMARY">
+    <key id="53" parent="9" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames> noteid
 userid
 notetime</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="56" parent="11" name="userid">
+    <foreign-key id="54" parent="9" name="userid">
       <ColNames>userid</ColNames>
       <RefSchemaName>easyspace</RefSchemaName>
       <RefTableName>user</RefTableName>
       <RefColNames>userid</RefColNames>
     </foreign-key>
-    <column id="57" parent="12" name="register_email">
+    <column id="55" parent="10" name="register_email">
       <Position>1</Position>
       <DataType>varchar(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="58" parent="12" name="yzm">
+    <column id="56" parent="10" name="yzm">
       <Position>2</Position>
       <DataType>int(6)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="59" parent="12" name="flag">
+    <column id="57" parent="10" name="flag">
       <Position>3</Position>
       <DataType>int(1) unsigned zerofill|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="60" parent="12" name="sendTime">
+    <column id="58" parent="10" name="sendTime">
       <Position>4</Position>
       <DataType>datetime|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="61" parent="12" name="PRIMARY">
+    <key id="59" parent="10" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>register_email</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="62" parent="13" name="userid">
+    <column id="60" parent="11" name="userid">
       <Position>1</Position>
       <DataType>int(6)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="63" parent="13" name="noteid">
+    <column id="61" parent="11" name="noteid">
       <Position>2</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="64" parent="13" name="shareid">
+    <column id="62" parent="11" name="shareid">
       <Position>3</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="65" parent="13" name="sharetime">
+    <column id="63" parent="11" name="sharetime">
       <Position>4</Position>
       <DataType>datetime|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="66" parent="13" name="share_noteid">
+    <index id="64" parent="11" name="share_noteid">
       <ColNames>noteid</ColNames>
     </index>
-    <key id="67" parent="13" name="PRIMARY">
+    <key id="65" parent="11" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>userid
 shareid
 sharetime</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="68" parent="13" name="share_userid">
+    <foreign-key id="66" parent="11" name="share_userid">
       <ColNames>userid</ColNames>
       <RefSchemaName>easyspace</RefSchemaName>
       <RefTableName>user</RefTableName>
       <RefColNames>userid</RefColNames>
     </foreign-key>
-    <foreign-key id="69" parent="13" name="share_noteid">
+    <foreign-key id="67" parent="11" name="share_noteid">
       <ColNames>noteid</ColNames>
       <RefSchemaName>easyspace</RefSchemaName>
       <RefTableName>note</RefTableName>
       <RefColNames> noteid</RefColNames>
     </foreign-key>
-    <column id="70" parent="14" name="userid">
+    <column id="68" parent="12" name="userid">
       <Position>1</Position>
       <DataType>int(6)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="71" parent="14" name="username">
+    <column id="69" parent="12" name="username">
       <Position>2</Position>
       <DataType>varchar(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="72" parent="14" name="usersex">
+    <column id="70" parent="12" name="usersex">
       <Position>3</Position>
       <DataType>char(6)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="73" parent="14" name="registertime">
+    <column id="71" parent="12" name="registertime">
       <Position>4</Position>
       <DataType>datetime|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="74" parent="14" name="email">
+    <column id="72" parent="12" name="email">
       <Position>5</Position>
       <DataType>varchar(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="75" parent="14" name="sign">
+    <column id="73" parent="12" name="sign">
       <Position>6</Position>
       <DataType>varchar(60)|0</DataType>
     </column>
-    <column id="76" parent="14" name="icon">
+    <column id="74" parent="12" name="icon">
       <Position>7</Position>
       <DataType>varchar(20)|0</DataType>
     </column>
-    <index id="77" parent="14" name="email">
+    <index id="75" parent="12" name="email">
       <ColNames>email</ColNames>
     </index>
-    <key id="78" parent="14" name="PRIMARY">
+    <key id="76" parent="12" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>userid</ColNames>
       <Primary>1</Primary>

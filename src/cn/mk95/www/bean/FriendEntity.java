@@ -3,7 +3,7 @@ package cn.mk95.www.bean;
 import javax.persistence.*;
 
 /**
- * Created by YangYongHao on 2017/3/29.
+ * Created by YangYongHao on 2017/3/30.
  * Annotation:
  */
 @Entity

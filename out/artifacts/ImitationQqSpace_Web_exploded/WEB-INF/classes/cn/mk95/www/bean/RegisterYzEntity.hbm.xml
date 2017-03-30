@@ -14,5 +14,8 @@
         <property name="flag">
             <column name="flag" sql-type="int(1) unsigned zerofill"/>
         </property>
+        <property name="sendTime">
+            <column name="sendTime" sql-type="datetime"/>
+        </property>
     </class>
 </hibernate-mapping>

@@ -17,10 +17,9 @@
 <div id="user">
     <h1 id="title">Login</h1>
 
-    <form id="tjform" action="LoginAndRegister" method="post">
+    <form id="tjform" action="login" method="post">
         <input type="text" required="required" placeholder="用户名" name="user.name" id="username"></input>
         <input type="password" required="required" placeholder="密码" name="user.password"></input>
-        <input type="hidden" value="1" name="function" id="hiddencheck"/>
         <div id="registerCon">
             <input type="text" placeholder="邮箱" name="user.email" id="email"></input>
             <input type="text" placeholder="6位验证码" name="yzm" style="display: inline;width: 153px" id="yzm"></input>
