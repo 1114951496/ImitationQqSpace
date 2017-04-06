@@ -1,42 +1,87 @@
 package cn.mk95.www.action;
 
+import cn.mk95.www.bean.RegisterYzEntity;
 import cn.mk95.www.bean.UserEntity;
-import cn.mk95.www.dao.UserDaoImpl;
+import cn.mk95.www.interfaces.RegisterYzDao;
+import cn.mk95.www.interfaces.UserDao;
 import com.opensymphony.xwork2.ActionSupport;
+import org.apache.struts2.ServletActionContext;
+
+import java.sql.Timestamp;
+import java.util.Calendar;
+
 /**
  * Created by YangYongHao on 2017/3/28.
  * Annotation:
  */
 public class LoginAndRegister extends ActionSupport{
 
-    private UserEntity userEntity;
-    private UserDaoImpl userDao;
+    private UserEntity user;
+    private UserDao userDao;
+    private RegisterYzDao registerYzDao;
+    private String yzm;
 
-    public UserEntity getUserEntity() {
-        return userEntity;
+    public RegisterYzDao getRegisterYzDao() {
+        return registerYzDao;
     }
 
-    public void setUserEntity(UserEntity userEntity) {
-        this.userEntity = userEntity;
+    public void setRegisterYzDao(RegisterYzDao registerYzDao) {
+        this.registerYzDao = registerYzDao;
     }
 
-    public UserDaoImpl getUserDao() {
+    public String getYzm() {
+        return yzm;
+    }
+
+    public void setYzm(String yzm) {
+        this.yzm = yzm;
+    }
+
+    public UserEntity getUser() {
+        return user;
+    }
+
+    public void setUser(UserEntity user) {
+        this.user = user;
+    }
+
+    public UserDao getUserDao() {
         return userDao;
     }
 
-    public void setUserDao(UserDaoImpl userDao) {
+    public void setUserDao(UserDao userDao) {
         this.userDao = userDao;
     }
 
     public String register(){
         System.out.println("-------------register-------------");
+        UserEntity userEntity=userDao.findUserByName(user.getUsername());
+        if(userEntity!=null)
+            return ActionSupport.ERROR;
+        else {
+            System.out.println(user.getEmail()+" "+user.getUsername()+" "+user.getPassword());
+            RegisterYzEntity registerYzEntity=registerYzDao.findByEmail(user.getEmail());
+            if(registerYzEntity!=null&&registerYzEntity.getYzm()==Integer.parseInt(yzm)){
+                user.setUsersex("bm");
+                user.setRegistertime(new Timestamp(Calendar.getInstance().getTime().getTime()));
+                userDao.save(user);
+                ServletActionContext.getRequest().getSession().setAttribute("user",user);
+            }
+
+            else
+                return ActionSupport.ERROR;
+        }
         return ActionSupport.SUCCESS;
     }
 
     public String login(){
-        System.out.println("-------------login-------------");
-
-        return ActionSupport.SUCCESS;
+        System.out.println("-------------login-------------  "+user.getUsername()+"  "+user.getPassword());
+        UserEntity userEntity=userDao.findUserByName(user.getUsername());
+        if(userEntity!=null&&userEntity.getPassword().equals(user.getPassword())){
+            ServletActionContext.getRequest().getSession().setAttribute("user",userEntity);
+            return ActionSupport.SUCCESS;
+        }
+        return ActionSupport.ERROR;
     }
 
     public String test(){

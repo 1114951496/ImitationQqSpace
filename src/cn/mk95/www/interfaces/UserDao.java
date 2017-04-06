@@ -7,5 +7,6 @@ import cn.mk95.www.bean.UserEntity;
  * Annotation:
  */
 public interface UserDao extends BaseDao<UserEntity> {
+    public UserEntity findUserByName(String name);
 
 }

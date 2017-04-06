@@ -28,11 +28,11 @@
         <div class="col-md-12">
             <nav class="navbar-default navbar-inverse" role="navigation">
                 <div class="navbar-header" style="height: 50px">
-                    <%--<button type="button" class="navbar-toggle" data-toggle="collapse"--%>
-                            <%--data-target="#bs-example-navbar-collapse-1">--%>
-                        <%--<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span--%>
-                            <%--class="icon-bar"></span><span class="icon-bar"></span>--%>
-                    <%--</button>--%>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span
+                            class="icon-bar"></span><span class="icon-bar"></span>
+                    </button>
                     <div style="margin-left: 50px;margin-right: 50px;text-align:center;vertical-align:middle;height: 50px;width: 50px">
                         <img href="index.jsp" src="res/img/logo.png" style="height: 50px;width: 50px;"/>
                     </div>
@@ -41,34 +41,30 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
                         <li class="active">
-                            <a href="#">Link</a>
+                            <a href="#">主页</a>
                         </li>
                         <li>
-                            <a href="#">Link</a>
+                            <a href="#">声明</a>
                         </li>
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown<strong
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">其他<strong
                                     class="caret"></strong></a>
                             <ul class="dropdown-menu">
+
                                 <li>
-                                    <a href="#">Action</a>
-                                </li>
-                                <li>
-                                    <a href="#">Another action</a>
+                                    <a href="#">开发团队</a>
                                 </li>
                                 <li>
-                                    <a href="#">Something else here</a>
-                                </li>
-                                <li class="divider">
+                                    <a href="#">联系我们</a>
                                 </li>
                                 <li>
-                                    <a href="#">Separated link</a>
+                                    <a href="https://github.com/1114951496/ImitationQqSpace">GitHub</a>
                                 </li>
-                                <li class="divider">
-                                </li>
-                                <li>
-                                    <a href="#">One more separated link</a>
-                                </li>
+                                <%--<li class="divider">--%>
+                                <%--</li>--%>
+                                <%--<li>--%>
+                                <%--<a href="#"></a>--%>
+                                <%--</li>--%>
                             </ul>
                         </li>
                     </ul>

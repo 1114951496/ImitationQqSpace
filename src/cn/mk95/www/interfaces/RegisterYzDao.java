@@ -7,4 +7,5 @@ import cn.mk95.www.bean.RegisterYzEntity;
  * Annotation:
  */
 public interface RegisterYzDao extends BaseDao<RegisterYzEntity> {
+    public RegisterYzEntity findByEmail(String email);
 }

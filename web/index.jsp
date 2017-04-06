@@ -12,11 +12,12 @@
 
     <title>简单空间</title>
 
-    <meta name="description" content="Source code generated using layoutit.com">
-    <meta name="author" content="LayoutIt!">
-
     <link href="res/css/bootstrap.min.css" rel="stylesheet">
     <style>
+        html {
+            overflow-x: hidden;
+        }
+
         body {
             background: #c4e3f3;
         }
@@ -49,7 +50,7 @@
 </head>
 <body>
 
-<%@include file="WEB-INF/default_nav.jsp"%>
+<%@include file="WEB-INF/default_nav.jsp" %>
 
 <!--轮播图，中心8区域-->
 <div class="container-fluid">
@@ -72,6 +73,7 @@
                             <img alt="Carousel Bootstrap First" class="index-top-img"
                                  src="res/img/index1.jpg"/>
                             <div class="carousel-caption" style="position: absolute;top: 200px">
+                                <!--style="position: absolute;top: 400px"-->
                                 <h4>
                                     First Thumbnail label
                                 </h4>
@@ -198,7 +200,7 @@
     </div>
 </div>
 
-
+<%@include file="WEB-INF/default_ft.jsp" %>
 <script src="res/js/jquery.min.js"></script>
 <script src="res/js/bootstrap.min.js"></script>
 </body>

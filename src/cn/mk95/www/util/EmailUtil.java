@@ -12,7 +12,11 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.security.GeneralSecurityException;
+import java.sql.Timestamp;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.Properties;
+import java.util.Random;
 
 /**
  * Created by YangYongHao on 2017/3/28.
@@ -79,4 +83,39 @@ public class EmailUtil {
             e.printStackTrace();
         }
     }
+
+    /**
+     * 与当前时间做对比，小于m分钟则返回true
+     *
+     * @param timestamp 与当前时间比较的时间
+     * @param m         时间段（分钟）
+     * @return 小于m分钟则返回true
+     */
+    public boolean timeComparator(Timestamp timestamp, int m) {
+        Calendar calendar = Calendar.getInstance();
+        Date date = calendar.getTime();
+        date.setMinutes(date.getMinutes() - m);
+        if (timestamp.before(date)) {
+            return true;
+        }
+        return false;
+    }
+
+    public int getYZM() {
+        Random random = new Random();
+        String result = "";
+        for (int i = 0; i < 6; i++) {
+            result += random.nextInt(10);
+        }
+        int yzm=Integer.parseInt(result);
+        if(yzm<100000)
+            yzm=yzm+100000;
+        return yzm;
+    }
+
+    @Test
+    public void test(){
+        System.out.println(getYZM());
+    }
+
 }

@@ -12,6 +12,7 @@
           <element id="library" level="project" name="lib" />
           <element id="library" level="module" name="JUnit4" module-name="ImitationQqSpace" />
           <element id="library" level="project" name="struts2-spring-plugin-2.3.4.1" />
+          <element id="library" level="project" name="aspectjweaver" />
         </element>
       </element>
     </root>

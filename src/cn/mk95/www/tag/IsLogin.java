@@ -30,18 +30,18 @@ public class IsLogin extends SimpleTagSupport {
                     "                                    class=\"caret\"></strong></a>\n" +
                     "                            <ul class=\"dropdown-menu\">\n" +
                     "                                <li>\n" +
-                    "                                    <a href=\"#\">Action</a>\n" +
+                    "                                    <a href=\"#\">我的空间</a>\n" +
                     "                                </li>\n" +
                     "                                <li>\n" +
-                    "                                    <a href=\"#\">Another action</a>\n" +
+                    "                                    <a href=\"#\">我的好友</a>\n" +
                     "                                </li>\n" +
                     "                                <li>\n" +
-                    "                                    <a href=\"#\">Something else here</a>\n" +
+                    "                                    <a href=\"#\">个人资料</a>\n" +
                     "                                </li>\n" +
                     "                                <li class=\"divider\">\n" +
                     "                                </li>\n" +
                     "                                <li>\n" +
-                    "                                    <a href=\"#\">Separated link</a>\n" +
+                    "                                    <a href=\"signOut.action\">退出</a>\n" +
                     "                                </li>\n" +
                     "                            </ul>\n" +
                     "                        </li>");
