@@ -26,5 +26,8 @@
         <property name="icon">
             <column name="icon" sql-type="varchar(20)" length="20" not-null="true"/>
         </property>
+        <property name="password">
+            <column name="password" sql-type="varchar(20)" length="20"/>
+        </property>
     </class>
 </hibernate-mapping>

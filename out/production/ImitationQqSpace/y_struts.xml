@@ -8,13 +8,18 @@
 
     <package name="y_struts" extends="struts-default">
         <action name="register" class="LoginAndRegister" method="register">
-            <result name="success">success.jsp</result>
+            <result name="success">index.jsp</result>
+            <result name="error">registerError.jsp</result>
         </action>
         <action name="login" class="LoginAndRegister" method="login">
-            <result name="success">success.jsp</result>
+            <result name="success">index.jsp</result>
+            <result name="error">login.jsp</result>
         </action>
-        <action name="test" class="LoginAndRegister" method="test">
-            <result name="success">success.jsp</result>
+        <action name="sendYzm" class="sendYzm" method="sendYzm">
+            <result name="error">success.jsp</result>
+        </action>
+        <action name="signOut" class="cn.mk95.www.action.SignOut">
+            <result name="success">index.jsp</result>
         </action>
     </package>
 </struts>

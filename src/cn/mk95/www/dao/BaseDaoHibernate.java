@@ -25,27 +25,27 @@ public class BaseDaoHibernate<T> implements BaseDao<T>{
 
     @Override
     public T get(Class<T> entity, Serializable id) {
-        return (T)sessionFactory.openSession().get(entity, id);
+        return (T)sessionFactory.getCurrentSession().get(entity, id);
     }
 
     @Override
     public Serializable save(T entity) {
-        return sessionFactory.openSession().save(entity);
+        return sessionFactory.getCurrentSession().save(entity);
     }
 
     @Override
     public void update(T entity) {
-        sessionFactory.openSession().update(entity);
+        sessionFactory.getCurrentSession().update(entity);
     }
 
     @Override
     public void delete(T entity) {
-        sessionFactory.openSession().delete(entity);
+        sessionFactory.getCurrentSession().delete(entity);
     }
 
     @Override
     public void delete(Class<T> entity, Serializable id) {
-        sessionFactory.openSession().createQuery("delete "+entity.getSimpleName()+" en where en.id = ?0")
+        sessionFactory.getCurrentSession().createQuery("delete "+entity.getSimpleName()+" en where en.id = ?0")
                 .setParameter("0",id)
                 .executeUpdate();
     }
@@ -66,13 +66,13 @@ public class BaseDaoHibernate<T> implements BaseDao<T>{
 
 
     //根据hql查询实体
-    protected List<T> find(String hql){
-        return (List<T>)sessionFactory.openSession().createQuery(hql).list();
+    public List<T> find(String hql){
+        return (List<T>)sessionFactory.getCurrentSession().createQuery(hql).list();
     }
 
     //根据带占位符参数的hql语句查询实体
-    protected List<T> find(String hql,Object... params){
-        Query query=sessionFactory.openSession().createQuery(hql);
+    public List<T> find(String hql,Object... params){
+        Query query=sessionFactory.getCurrentSession().createQuery(hql);
         for(int i=0,len=params.length;i<len;i++){
             query.setParameter(i+"",params[i]);
         }
@@ -86,8 +86,8 @@ public class BaseDaoHibernate<T> implements BaseDao<T>{
      * @param pageSize 每页需要显示的记录数
      * @return 当前页的所有记录
      */
-    protected List<T> findByPage(String hql,int pageNo,int pageSize){
-        return sessionFactory.openSession()
+    public List<T> findByPage(String hql,int pageNo,int pageSize){
+        return sessionFactory.getCurrentSession()
                 .createQuery(hql)
                 .setFirstResult((pageNo-1)*pageSize)
                 .setMaxResults(pageSize)
@@ -102,8 +102,8 @@ public class BaseDaoHibernate<T> implements BaseDao<T>{
      * @param params 占位符参数
      * @return 当前页的所有记录
      */
-    protected List<T> findByPage(String hql,int pageNo,int pageSize,Object... params){
-        Query query=sessionFactory.openSession().createQuery(hql);
+    public List<T> findByPage(String hql,int pageNo,int pageSize,Object... params){
+        Query query=sessionFactory.getCurrentSession().createQuery(hql);
         for(int i=0,len=params.length;i<len;i++){
             query.setParameter(i,params[i]);
         }

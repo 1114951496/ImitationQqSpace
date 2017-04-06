@@ -24,7 +24,7 @@
     <facet type="hibernate" name="Hibernate">
       <configuration>
         <datasource-map>
-          <unit-entry name="hibernate.cfg.xml" value="f0f7ac56-3505-43c0-9ac2-f4d90ed14217" />
+          <unit-entry name="hibernate.cfg.xml" />
           <unit-entry name="sessionFactory" value="dataSource" />
         </datasource-map>
         <naming-strategy-map />
@@ -64,5 +64,7 @@
     <orderEntry type="library" name="struts2-spring-plugin-2.3.4.1" level="project" />
     <orderEntry type="library" name="Spring MVC-4.3.7.RELEASE" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Tomcat 8.5.12" level="application_server_libraries" />
+    <orderEntry type="library" name="aspectj-1.9.0.BETA-3" level="project" />
+    <orderEntry type="library" name="aspectjweaver" level="project" />
   </component>
 </module>
