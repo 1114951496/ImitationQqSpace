@@ -5,6 +5,4 @@
         "http://struts.apache.org/dtds/struts-2.3.dtd">
 
 <struts>
-    <include file="y_struts.xml"/>
-    <include file="h_struts.xml"/>
 </struts>
