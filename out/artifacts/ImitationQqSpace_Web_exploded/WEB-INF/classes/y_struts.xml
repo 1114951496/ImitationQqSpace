@@ -21,5 +21,12 @@
         <action name="signOut" class="cn.mk95.www.action.SignOut">
             <result name="success">index.jsp</result>
         </action>
+
+        <action name="writeNote" class="writeNote">
+            <result name="success">/WEB-INF/protect/writeNote.jsp</result>
+        </action>
+        <action name="upNote" class="writeNote" method="upNote">
+            <result name="success">success.jsp</result>
+        </action>
     </package>
 </struts>

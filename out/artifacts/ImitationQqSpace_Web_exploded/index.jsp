@@ -4,6 +4,7 @@
   Time: 10:00
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="y" uri="/WEB-INF/y_tag.tld" %>
 <html>
 <head>
     <meta charset="utf-8">
@@ -139,45 +140,7 @@
                     </div>
                     <div id="collapse1" class="panel-collapse collapse in">
                         <div class="panel-body">
-
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <!--单个动态模板,定义每行4条数据-->
-                                    <div class="col-md-3">
-                                        <div class="myDongtaiModule" onmouseover="myDongtaiModuleMouseover(this)"
-                                             onmouseleave="myDongtaiModuleMouseleave(this)">
-                                            <!--动态头-->
-                                            <div class="container-fluid">
-                                                <div class="row">
-                                                    <div class="col-md-5">
-                                                        <a href="#"><img src="res/img/defPhoto.jpg" class="img-circle"
-                                                                         style="width:100%;padding-top: 3px"/></a>
-                                                    </div>
-                                                    <div class="col-md-7">
-                                                        <h4>ID:001</h4>
-                                                        <h4>Name:test</h4>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!--动态内容-->
-                                            <div style="display: block;margin-top: 10px" class="myDongtaiContent">
-                                                <span style="font-weight: 900;font-size: 30px">“</span>
-                                                <a href="#" style="font-size: 20px">这是动态的内容，我有一个说话的背景这是动态的内容，我有一个说话的背景这是动态的内容，我有一个说话的背景
-                                                </a>
-                                                <span style="font-weight: 900;font-size: 30px">...”</span>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-3">
-                                    </div>
-                                    <div class="col-md-3">
-                                    </div>
-                                    <div class="col-md-3">
-                                    </div>
-                                </div>
-                            </div>
-
+                            <y:dynamic row="4" page="1" type="1"/>
                         </div>
                     </div>
                 </div>
@@ -200,7 +163,7 @@
     </div>
 </div>
 
-<%@include file="WEB-INF/default_ft.jsp" %>
+<%@include file="/WEB-INF/default_ft.jsp" %>
 <script src="res/js/jquery.min.js"></script>
 <script src="res/js/bootstrap.min.js"></script>
 </body>
