@@ -13,4 +13,6 @@
           p:registerYzDao-ref="registerYzDao"
           p:emailUtil-ref="emailUtil"/>
     <bean name="emailUtil" class="cn.mk95.www.util.EmailUtil"></bean>
+
+    <bean name="writeNote" class="cn.mk95.www.action.WriteNote"></bean>
 </beans>

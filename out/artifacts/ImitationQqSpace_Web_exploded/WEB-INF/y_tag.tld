@@ -8,4 +8,24 @@
         <tag-class>cn.mk95.www.tag.IsLogin</tag-class>
         <body-content>empty</body-content>
     </tag>
+    <tag>
+        <name>dynamic</name>
+        <tag-class>cn.mk95.www.tag.Dynamic</tag-class>
+        <attribute>
+            <name>row</name>
+            <required>true</required>
+            <type>int</type>
+        </attribute>
+        <attribute>
+            <name>page</name>
+            <type>int</type>
+            <required>true</required>
+        </attribute>
+        <attribute>
+            <name>type</name>
+            <type>int</type>
+            <required>true</required>
+        </attribute>
+        <body-content>empty</body-content>
+    </tag>
 </taglib>
