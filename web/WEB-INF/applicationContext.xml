@@ -71,4 +71,5 @@
 
 
     <import resource="classpath:y_springConfig.xml"/>
+    <import resource="classpath:h_springConfig.xml"/>
 </beans>

@@ -9,6 +9,10 @@
                 3)<script src="res/js/bootstrap.min.js"></script>
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<<<<<<< HEAD
+<%@ taglib prefix="y" uri="/WEB-INF/y_tag.tld" %>
+=======
+>>>>>>> 483d29f06f9d8517fa8bb16696f071f38b805695
 <html>
 <head>
     <title>default_nav</title>

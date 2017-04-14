@@ -6,25 +6,14 @@ import java.io.Serializable;
 import java.sql.Timestamp;
 
 /**
- * Created by YangYongHao on 2017/3/30.
- * Annotation:
+ * Created by 睡意朦胧 on 2017/4/14.
  */
 public class NoteEntityPK implements Serializable {
-    private int noteid;
     private int userid;
     private Timestamp notetime;
+    private int id;
 
-    @Column(name = " noteid", nullable = false)
-    @Id
-    public int getNoteid() {
-        return noteid;
-    }
-
-    public void setNoteid(int noteid) {
-        this.noteid = noteid;
-    }
-
-    @Column(name = "userid", nullable = false)
+    @Column(name = "userid")
     @Id
     public int getUserid() {
         return userid;
@@ -34,7 +23,7 @@ public class NoteEntityPK implements Serializable {
         this.userid = userid;
     }
 
-    @Column(name = "notetime", nullable = false)
+    @Column(name = "notetime")
     @Id
     public Timestamp getNotetime() {
         return notetime;
@@ -44,6 +33,16 @@ public class NoteEntityPK implements Serializable {
         this.notetime = notetime;
     }
 
+    @Column(name = " id")
+    @Id
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -51,8 +50,8 @@ public class NoteEntityPK implements Serializable {
 
         NoteEntityPK that = (NoteEntityPK) o;
 
-        if (noteid != that.noteid) return false;
         if (userid != that.userid) return false;
+        if (id != that.id) return false;
         if (notetime != null ? !notetime.equals(that.notetime) : that.notetime != null) return false;
 
         return true;
@@ -60,9 +59,9 @@ public class NoteEntityPK implements Serializable {
 
     @Override
     public int hashCode() {
-        int result = noteid;
-        result = 31 * result + userid;
+        int result = userid;
         result = 31 * result + (notetime != null ? notetime.hashCode() : 0);
+        result = 31 * result + id;
         return result;
     }
 }

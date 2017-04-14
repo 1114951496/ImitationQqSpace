@@ -1,0 +1,9 @@
+#nav a{
+    padding: 0;
+    text-align: center;
+    text-decoration:none;
+}
+#nav a:hover{
+    color: #000;
+    background-color: #e3e3e3;
+}

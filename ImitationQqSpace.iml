@@ -16,6 +16,7 @@
             <file>jar://$MODULE_DIR$/lib/struts2-core.jar!/struts-default.xml</file>
             <file>file://$MODULE_DIR$/src/struts.xml</file>
             <file>file://$MODULE_DIR$/src/y_struts.xml</file>
+            <file>file://$MODULE_DIR$/src/h_struts.xml</file>
           </fileset>
           <propertiesKeys disabled="false" />
         </configuration>
@@ -24,6 +25,7 @@
     <facet type="hibernate" name="Hibernate">
       <configuration>
         <datasource-map>
+          <unit-entry name="a.xml" value="f0f7ac56-3505-43c0-9ac2-f4d90ed14217" />
           <unit-entry name="hibernate.cfg.xml" />
           <unit-entry name="sessionFactory" value="dataSource" />
         </datasource-map>
