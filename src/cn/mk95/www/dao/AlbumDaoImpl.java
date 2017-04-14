@@ -8,4 +8,8 @@ import cn.mk95.www.interfaces.AlbumDao;
  * Annotation:
  */
 public class AlbumDaoImpl extends BaseDaoHibernate<AlbumEntity> implements AlbumDao {
+    @Override
+    public AlbumEntity findAlbumByUserId(int userid) {
+        return null;
+    }
 }

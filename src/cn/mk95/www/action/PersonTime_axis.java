@@ -1,6 +1,8 @@
 package cn.mk95.www.action;
 
+import cn.mk95.www.bean.NoteEntity;
 import cn.mk95.www.bean.UserEntity;
+import cn.mk95.www.interfaces.NoteDao;
 import cn.mk95.www.interfaces.UserDao;
 import com.opensymphony.xwork2.ActionSupport;
 import org.apache.struts2.ServletActionContext;
@@ -14,6 +16,24 @@ import javax.servlet.http.HttpSession;
 public class PersonTime_axis extends ActionSupport{
     private UserDao userDao;
     private UserEntity user;
+    private NoteEntity note;
+    private NoteDao noteDao;
+
+    public NoteEntity getNote() {
+        return note;
+    }
+
+    public void setNote(NoteEntity note) {
+        this.note = note;
+    }
+
+    public NoteDao getNoteDao() {
+        return noteDao;
+    }
+
+    public void setNoteDao(NoteDao noteDao) {
+        this.noteDao = noteDao;
+    }
 
     public UserDao getUserDao() {
         return userDao;

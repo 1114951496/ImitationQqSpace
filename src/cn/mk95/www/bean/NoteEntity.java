@@ -4,32 +4,22 @@ import javax.persistence.*;
 import java.sql.Timestamp;
 
 /**
- * Created by YangYongHao on 2017/3/30.
- * Annotation:
+ * Created by 睡意朦胧 on 2017/4/14.
  */
 @Entity
 @Table(name = "note", schema = "easyspace", catalog = "")
 @IdClass(NoteEntityPK.class)
 public class NoteEntity {
-    private int noteid;
     private int userid;
     private String noteurl;
     private Timestamp notetime;
     private int like;
     private int commentid;
+    private int noteid;
+    private int id;
 
     @Id
-    @Column(name = " noteid", nullable = false)
-    public int getNoteid() {
-        return noteid;
-    }
-
-    public void setNoteid(int noteid) {
-        this.noteid = noteid;
-    }
-
-    @Id
-    @Column(name = "userid", nullable = false)
+    @Column(name = "userid")
     public int getUserid() {
         return userid;
     }
@@ -39,7 +29,7 @@ public class NoteEntity {
     }
 
     @Basic
-    @Column(name = "noteurl", nullable = false, length = 20)
+    @Column(name = "noteurl")
     public String getNoteurl() {
         return noteurl;
     }
@@ -49,7 +39,7 @@ public class NoteEntity {
     }
 
     @Id
-    @Column(name = "notetime", nullable = false)
+    @Column(name = "notetime")
     public Timestamp getNotetime() {
         return notetime;
     }
@@ -59,7 +49,7 @@ public class NoteEntity {
     }
 
     @Basic
-    @Column(name = "like", nullable = false)
+    @Column(name = "like")
     public int getLike() {
         return like;
     }
@@ -69,13 +59,33 @@ public class NoteEntity {
     }
 
     @Basic
-    @Column(name = "commentid", nullable = false)
+    @Column(name = "commentid")
     public int getCommentid() {
         return commentid;
     }
 
     public void setCommentid(int commentid) {
         this.commentid = commentid;
+    }
+
+    @Basic
+    @Column(name = "noteid")
+    public int getNoteid() {
+        return noteid;
+    }
+
+    public void setNoteid(int noteid) {
+        this.noteid = noteid;
+    }
+
+    @Id
+    @Column(name = " id")
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     @Override
@@ -85,10 +95,11 @@ public class NoteEntity {
 
         NoteEntity that = (NoteEntity) o;
 
-        if (noteid != that.noteid) return false;
         if (userid != that.userid) return false;
         if (like != that.like) return false;
         if (commentid != that.commentid) return false;
+        if (noteid != that.noteid) return false;
+        if (id != that.id) return false;
         if (noteurl != null ? !noteurl.equals(that.noteurl) : that.noteurl != null) return false;
         if (notetime != null ? !notetime.equals(that.notetime) : that.notetime != null) return false;
 
@@ -97,12 +108,13 @@ public class NoteEntity {
 
     @Override
     public int hashCode() {
-        int result = noteid;
-        result = 31 * result + userid;
+        int result = userid;
         result = 31 * result + (noteurl != null ? noteurl.hashCode() : 0);
         result = 31 * result + (notetime != null ? notetime.hashCode() : 0);
         result = 31 * result + like;
         result = 31 * result + commentid;
+        result = 31 * result + noteid;
+        result = 31 * result + id;
         return result;
     }
 }
