@@ -11,7 +11,7 @@
 
         <img src="../favicon.ico" style="width: 60px;height: 60px">
     </div>
-    <div style="color: #2aabd2">
+    <div style="color: #2aabd2;">
         ©2017 mk95.cn&nbsp;
         <a href="http://www.miitbeian.gov.cn" style="color:#2aabd2;" target="view_window">
             蜀ICP备16019003号-2</a>
