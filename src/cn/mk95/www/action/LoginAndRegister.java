@@ -54,6 +54,8 @@ public class LoginAndRegister extends ActionSupport{
     }
 
     public String register(){
+        userDao.init();
+        registerYzDao.init();
         System.out.println("-------------register-------------");
         UserEntity userEntity=userDao.findUserByName(user.getUsername());
         if(userEntity!=null)
@@ -75,6 +77,7 @@ public class LoginAndRegister extends ActionSupport{
     }
 
     public String login(){
+        userDao.init();
         System.out.println("-------------login-------------  "+user.getUsername()+"  "+user.getPassword());
         UserEntity userEntity=userDao.findUserByName(user.getUsername());
         if(userEntity!=null&&userEntity.getPassword().equals(user.getPassword())){
@@ -85,6 +88,7 @@ public class LoginAndRegister extends ActionSupport{
     }
 
     public String test(){
+        userDao.init();
         System.out.println("--------------测试："+userDao.findCount(UserEntity.class));
 
         return ActionSupport.SUCCESS;

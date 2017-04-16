@@ -15,4 +15,13 @@
     <bean name="emailUtil" class="cn.mk95.www.util.EmailUtil"></bean>
 
     <bean name="writeNote" class="cn.mk95.www.action.WriteNote"></bean>
+
+    <bean name="upNote" class="cn.mk95.www.action.WriteNote">
+        <property name="noteDao" ref="noteDao"/>
+        <property name="noteService" ref="noteService"/>
+        <property name="noteEntity" ref="noteEntity"/>
+    </bean>
+
+    <bean name="noteService" class="cn.mk95.www.service.NoteService">
+    </bean>
 </beans>
