@@ -14,5 +14,9 @@
             <result name="success">/WEB-INF/h_person/MyPage.jsp</result>
             <result name="error">error.jsp</result>
         </action>
+        <action name="MyFriend" class="Friend" method="MyFriend">
+            <result name="success">PersonFriend.jsp</result>
+            <result name="NoFriend">friendError.jsp</result>
+        </action>
     </package>
 </struts>

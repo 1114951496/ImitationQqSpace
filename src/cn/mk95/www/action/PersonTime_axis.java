@@ -9,6 +9,8 @@ import org.apache.struts2.ServletActionContext;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
+import java.util.Calendar;
+import java.util.Date;
 
 /**
  * Created by 睡意朦胧 on 2017/4/13.
@@ -56,6 +58,11 @@ public class PersonTime_axis extends ActionSupport{
         HttpSession session=request.getSession();
         String MyId=request.getParameter("id");
         user=(UserEntity)userDao.findUserById(Integer.parseInt(MyId));
+        Date date=user.getRegistertime();
+        int year=date.getYear();
+        int month=date.getMonth();
+        int day=date.getDay();
+        Calendar now=Calendar.getInstance();
 
         return ERROR;
     }

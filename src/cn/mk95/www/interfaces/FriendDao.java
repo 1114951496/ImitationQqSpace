@@ -9,5 +9,5 @@ import java.util.List;
  * Annotation:
  */
 public interface FriendDao extends BaseDao<FriendEntity> {
-    public List findFriendByUserId(int userid);
+    public FriendEntity findFriendByUserId(int userid);
 }

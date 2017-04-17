@@ -11,7 +11,10 @@ import java.util.List;
  */
 public class FriendDaoImpl extends BaseDaoHibernate<FriendEntity> implements FriendDao {
     @Override
-    public List findFriendByUserId(int userid) {
-        return null;
+    public FriendEntity findFriendByUserId(int userid) {
+        List<FriendEntity> friendEntities=find("select en from FriendEntity en where en.userid=?0",userid);
+        if(friendEntities.size()==0)
+            return null;
+        return friendEntities.get(0);
     }
 }
