@@ -18,16 +18,18 @@
     <h1 id="title">Login</h1>
 
     <form id="tjform" action="login" method="post">
-        <input type="text" required="required" placeholder="用户名" name="user.username" id="username"></input>
-        <input type="password" required="required" placeholder="密码" name="user.password"></input>
         <div id="registerCon">
+            <input type="text" placeholder="用户名" name="user.username" id="username"></input>
+            <input type="password" placeholder="密码" name="user.password" id="userpassword"></input>
             <input type="text" placeholder="邮箱" name="user.email" id="email"></input>
             <input type="text" placeholder="6位验证码" name="yzm" style="display: inline;width: 153px" id="yzm"></input>
             &nbsp;<button class="but" type="button" style="width: auto;display: inline;" onclick="yz(this)" onmousedown="btDown(this)" onmouseup="btUp(this)">获取验证码</button>
             <button class="but" type="button" onclick="Register()" onmousedown="btDown(this)" onmouseup="btUp(this)" style="width: 100%">注册</button>
         </div>
         <div id="loginCon">
-            <button class="but" type="submit" onmousedown="btDown(this)" onmouseup="btUp(this)">登录</button>
+            <input type="text" placeholder="用户id" name="loginid" id="loginid"></input>
+            <input type="password" placeholder="密码" name="loginpwd" id="loginpwd"></input>
+            <button class="but" type="button" onclick="Login()" onmousedown="btDown(this)" onmouseup="btUp(this)">登录</button>
             <button class="but" type="button" onmousedown="btDown(this)" onmouseup="btUp(this)">忘记密码</button>
         </div>
     </form>

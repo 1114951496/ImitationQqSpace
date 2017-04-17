@@ -12,4 +12,5 @@ public class AlbumDaoImpl extends BaseDaoHibernate<AlbumEntity> implements Album
     public AlbumEntity findAlbumByUserId(int userid) {
         return null;
     }
+
 }

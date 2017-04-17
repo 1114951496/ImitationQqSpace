@@ -12,7 +12,7 @@ import java.util.List;
 public class RegisterYzDaoImpl extends BaseDaoHibernate<RegisterYzEntity> implements RegisterYzDao {
     @Override
     public RegisterYzEntity findByEmail(String email) {
-        List list = find("select en from RegisterYzEntity en where en.registerEmail=?0", email);
+        List list = find("select en from RegisterYzEntity en where en.registerEmail=?", email);
         if (list.size() == 0) {
             System.out.println("findByEmail return null");
             return null;

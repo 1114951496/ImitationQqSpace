@@ -23,7 +23,11 @@
     <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.3/summernote.css" rel="stylesheet">
     <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.3/summernote.js"></script>
     <style>
-        .text{
+        html {
+            overflow-x: hidden;
+        }
+
+        .title {
             width: 220px;
             -webkit-border-radius: 3px;
             -moz-border-radius: 3px;
@@ -34,9 +38,9 @@
             outline: none;
             color: #808080;
             padding-left: 5px;
-            margin-left:200px;
-            margin-top:20px;
+            margin-left: 5px;
         }
+
         .green:focus {
             transition: border linear .2s, box-shadow linear .5s;
             -moz-transition: border linear .2s, -moz-box-shadow linear .5s;
@@ -58,7 +62,20 @@
         </div>
         <div class="col-md-8">
             <form action="upNote.action" method="post" id="form">
-                标题:<input type="text" name="title" size="30" class="text green">
+                <div style="margin-top: 5px;margin-bottom: 5px;margin-left: 20px">
+                    <b>标题:</b>
+                    <input type="text" name="title" size="20" class="title green" onblur="checkLen(this,20)">
+                    <div style="
+                    font-family: lucida sans unicode,lucida grande,sans-serif;
+                    color: #F22929;
+                    font-size: 12px;
+                    letter-spacing: 0pt;
+                    word-spacing: 9.6pt;
+                    display: inline;
+                    ">
+                        注意：标题长度应不超过20且不能为空
+                    </div>
+                </div>
                 <div id="summernote"></div>
                 <input type="hidden" name="note" id="noteContent">
                 <input type="button" onclick="sub()" value="发表" style="margin-bottom: 20px"/>
@@ -70,19 +87,20 @@
 </div>
 
 <script>
+    var title_len = 0;
     function sub() {
-        var form=document.getElementById("form");
-        var noteContent=document.getElementById("noteContent");
-        var content=$('#summernote').summernote('code');
-        if (content==null) {
-            alert("内容不能为空");
-        }else{
-            noteContent.value= content;
+        var form = document.getElementById("form");
+        var noteContent = document.getElementById("noteContent");
+        var content = $('#summernote').summernote('code');
+        if (content == null || title_len == 0) {
+            alert("所有内容不能为空");
+        } else {
+            noteContent.value = content;
             form.submit();
         }
     }
 
-    $(document).ready(function() {
+    $(document).ready(function () {
         $('#summernote').summernote({
             lang: 'zh-CN',
             height: 500,                 // set editor height
@@ -91,6 +109,15 @@
             focus: true                  // set focus to editable area after initializing summernote
         });
     });
+
+    function checkLen(obj, len) {
+        if (obj.value.length > len) {
+            alert("error : title's len > " + len + "!");
+        } else if (obj.value.length == 0) {
+            alert("error : title's len = 0!");
+        } else
+            title_len = 1;
+    }
 </script>
 
 
