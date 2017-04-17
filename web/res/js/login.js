@@ -10,10 +10,13 @@ function btUp(bt) {
 }
 
 
+
 function Register() {
     email = document.getElementById("email");
     yzm = document.getElementById("yzm");
-    if (email.value.length == 0 || yzm.value.length == 0) {
+    username=document.getElementById("username");
+    userpassword=document.getElementById("userpassword");
+    if (email.value.length == 0 || yzm.value.length == 0||username.value.length==0||userpassword.value.length==0) {
         alert("请将表单填写完整!");
     } else {
         tjForm = document.getElementById("tjform");
@@ -22,9 +25,20 @@ function Register() {
     }
 }
 
+function Login() {
+    loginid=document.getElementById("loginid");
+    loginpwd=document.getElementById("loginid");
+    if (loginid.value.length==0||loginpwd.value.length==0) {
+        alert("请将表单填写完整!");
+    } else {
+        tjForm = document.getElementById("tjform");
+        tjForm.action = "login";
+        tjForm.submit();
+    }
+}
+
 function yz(obj) {
     email = document.getElementById("email");
-    username = document.getElementById("username");
     if (email.value.length == 0) {
         alert("请填写邮箱!");
     } else {
@@ -64,7 +78,6 @@ function yz(obj) {
 
 var logORregVar = 0;
 function logORreg(obj) {
-
     if (logORregVar == 0) {
         register = document.getElementById("registerCon");
         register.style.display = "block";
@@ -73,8 +86,6 @@ function logORreg(obj) {
         formTitle = document.getElementById("title");
         formTitle.innerHTML = "Register";
         obj.innerHTML = ">>登录";
-        email = document.getElementById("email");
-        yzm = document.getElementById("yzm");
         logORregVar = 1;
     } else {
         register = document.getElementById("registerCon");

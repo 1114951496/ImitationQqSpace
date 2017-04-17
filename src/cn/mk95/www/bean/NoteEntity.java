@@ -4,7 +4,8 @@ import javax.persistence.*;
 import java.sql.Timestamp;
 
 /**
- * Created by 睡意朦胧 on 2017/4/14.
+ * Created by YangYongHao on 2017/4/16.
+ * Annotation:
  */
 @Entity
 @Table(name = "note", schema = "easyspace", catalog = "")
@@ -13,13 +14,13 @@ public class NoteEntity {
     private int userid;
     private String noteurl;
     private Timestamp notetime;
-    private int like;
-    private int commentid;
+    private Integer commentid;
     private int noteid;
-    private int id;
+    private Integer id;
+    private Integer love;
 
     @Id
-    @Column(name = "userid")
+    @Column(name = "userid", nullable = false)
     public int getUserid() {
         return userid;
     }
@@ -29,7 +30,7 @@ public class NoteEntity {
     }
 
     @Basic
-    @Column(name = "noteurl")
+    @Column(name = "noteurl", nullable = false, length = 255)
     public String getNoteurl() {
         return noteurl;
     }
@@ -38,8 +39,8 @@ public class NoteEntity {
         this.noteurl = noteurl;
     }
 
-    @Id
-    @Column(name = "notetime")
+    @Basic
+    @Column(name = "notetime", nullable = true)
     public Timestamp getNotetime() {
         return notetime;
     }
@@ -49,27 +50,17 @@ public class NoteEntity {
     }
 
     @Basic
-    @Column(name = "like")
-    public int getLike() {
-        return like;
-    }
-
-    public void setLike(int like) {
-        this.like = like;
-    }
-
-    @Basic
-    @Column(name = "commentid")
-    public int getCommentid() {
+    @Column(name = "commentid", nullable = true)
+    public Integer getCommentid() {
         return commentid;
     }
 
-    public void setCommentid(int commentid) {
+    public void setCommentid(Integer commentid) {
         this.commentid = commentid;
     }
 
-    @Basic
-    @Column(name = "noteid")
+    @Id
+    @Column(name = "noteid", nullable = false)
     public int getNoteid() {
         return noteid;
     }
@@ -78,14 +69,24 @@ public class NoteEntity {
         this.noteid = noteid;
     }
 
-    @Id
-    @Column(name = " id")
-    public int getId() {
+    @Basic
+    @Column(name = "id", nullable = true)
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
+    }
+
+    @Basic
+    @Column(name = "love", nullable = true)
+    public Integer getLove() {
+        return love;
+    }
+
+    public void setLove(Integer love) {
+        this.love = love;
     }
 
     @Override
@@ -96,12 +97,12 @@ public class NoteEntity {
         NoteEntity that = (NoteEntity) o;
 
         if (userid != that.userid) return false;
-        if (like != that.like) return false;
-        if (commentid != that.commentid) return false;
         if (noteid != that.noteid) return false;
-        if (id != that.id) return false;
         if (noteurl != null ? !noteurl.equals(that.noteurl) : that.noteurl != null) return false;
         if (notetime != null ? !notetime.equals(that.notetime) : that.notetime != null) return false;
+        if (commentid != null ? !commentid.equals(that.commentid) : that.commentid != null) return false;
+        if (id != null ? !id.equals(that.id) : that.id != null) return false;
+        if (love != null ? !love.equals(that.love) : that.love != null) return false;
 
         return true;
     }
@@ -111,10 +112,10 @@ public class NoteEntity {
         int result = userid;
         result = 31 * result + (noteurl != null ? noteurl.hashCode() : 0);
         result = 31 * result + (notetime != null ? notetime.hashCode() : 0);
-        result = 31 * result + like;
-        result = 31 * result + commentid;
+        result = 31 * result + (commentid != null ? commentid.hashCode() : 0);
         result = 31 * result + noteid;
-        result = 31 * result + id;
+        result = 31 * result + (id != null ? id.hashCode() : 0);
+        result = 31 * result + (love != null ? love.hashCode() : 0);
         return result;
     }
 }

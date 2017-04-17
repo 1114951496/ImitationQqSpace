@@ -11,16 +11,16 @@ import java.util.List;
  */
 public class UserDaoImpl extends BaseDaoHibernate<UserEntity> implements UserDao {
     @Override
-    public UserEntity findUserByName(String name) {
-        List<UserEntity> userEntities=find("select en from UserEntity en where en.username=?0",name);
+    public List<UserEntity> findUserByName(String name) {
+        List<UserEntity> userEntities=find("select en from UserEntity en where en.username=?",name);
         if(userEntities.size()==0)
             return null;
-        return userEntities.get(0);
+        return userEntities;
     }
 
     @Override
     public UserEntity findUserById(int id) {
-        List<UserEntity> userEntities=find("select en from UserEntity en where en.userid=?0",id);
+        List<UserEntity> userEntities=find("select en from UserEntity en where en.userid=?",id);
         if(userEntities.size()==0)
             return null;
         return userEntities.get(0);

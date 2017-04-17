@@ -4,7 +4,7 @@ import javax.persistence.*;
 import java.sql.Timestamp;
 
 /**
- * Created by YangYongHao on 2017/3/30.
+ * Created by YangYongHao on 2017/4/16.
  * Annotation:
  */
 @Entity
@@ -12,7 +12,6 @@ import java.sql.Timestamp;
 @IdClass(ShareEntityPK.class)
 public class ShareEntity {
     private int userid;
-    private int noteid;
     private int shareid;
     private Timestamp sharetime;
 
@@ -24,16 +23,6 @@ public class ShareEntity {
 
     public void setUserid(int userid) {
         this.userid = userid;
-    }
-
-    @Basic
-    @Column(name = "noteid", nullable = false)
-    public int getNoteid() {
-        return noteid;
-    }
-
-    public void setNoteid(int noteid) {
-        this.noteid = noteid;
     }
 
     @Id
@@ -64,7 +53,6 @@ public class ShareEntity {
         ShareEntity that = (ShareEntity) o;
 
         if (userid != that.userid) return false;
-        if (noteid != that.noteid) return false;
         if (shareid != that.shareid) return false;
         if (sharetime != null ? !sharetime.equals(that.sharetime) : that.sharetime != null) return false;
 
@@ -74,7 +62,6 @@ public class ShareEntity {
     @Override
     public int hashCode() {
         int result = userid;
-        result = 31 * result + noteid;
         result = 31 * result + shareid;
         result = 31 * result + (sharetime != null ? sharetime.hashCode() : 0);
         return result;

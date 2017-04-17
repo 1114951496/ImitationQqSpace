@@ -3,17 +3,16 @@ package cn.mk95.www.bean;
 import javax.persistence.Column;
 import javax.persistence.Id;
 import java.io.Serializable;
-import java.sql.Timestamp;
 
 /**
- * Created by 睡意朦胧 on 2017/4/14.
+ * Created by YangYongHao on 2017/4/16.
+ * Annotation:
  */
 public class NoteEntityPK implements Serializable {
     private int userid;
-    private Timestamp notetime;
-    private int id;
+    private int noteid;
 
-    @Column(name = "userid")
+    @Column(name = "userid", nullable = false)
     @Id
     public int getUserid() {
         return userid;
@@ -23,24 +22,14 @@ public class NoteEntityPK implements Serializable {
         this.userid = userid;
     }
 
-    @Column(name = "notetime")
+    @Column(name = "noteid", nullable = false)
     @Id
-    public Timestamp getNotetime() {
-        return notetime;
+    public int getNoteid() {
+        return noteid;
     }
 
-    public void setNotetime(Timestamp notetime) {
-        this.notetime = notetime;
-    }
-
-    @Column(name = " id")
-    @Id
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
+    public void setNoteid(int noteid) {
+        this.noteid = noteid;
     }
 
     @Override
@@ -51,8 +40,7 @@ public class NoteEntityPK implements Serializable {
         NoteEntityPK that = (NoteEntityPK) o;
 
         if (userid != that.userid) return false;
-        if (id != that.id) return false;
-        if (notetime != null ? !notetime.equals(that.notetime) : that.notetime != null) return false;
+        if (noteid != that.noteid) return false;
 
         return true;
     }
@@ -60,8 +48,7 @@ public class NoteEntityPK implements Serializable {
     @Override
     public int hashCode() {
         int result = userid;
-        result = 31 * result + (notetime != null ? notetime.hashCode() : 0);
-        result = 31 * result + id;
+        result = 31 * result + noteid;
         return result;
     }
 }

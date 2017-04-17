@@ -6,6 +6,7 @@
 
     <class name="cn.mk95.www.bean.NoteEntity" table="note" schema="easyspace">
         <composite-id mapped="true" class="cn.mk95.www.bean.NoteEntityPK">
+<<<<<<< HEAD
             <key-property name="userid" column="userid"/>
             <key-property name="notetime" column="notetime"/>
             <key-property name="id" column=" id"/>
@@ -14,5 +15,29 @@
         <property name="like" column="like"/>
         <property name="commentid" column="commentid"/>
         <property name="noteid" column="noteid"/>
+=======
+            <key-property name="userid">
+                <column name="userid" sql-type="int(6)"/>
+            </key-property>
+            <key-property name="noteid">
+                <column name="noteid" sql-type="int(11)"/>
+            </key-property>
+        </composite-id>
+        <property name="noteurl">
+            <column name="noteurl" sql-type="varchar(255)"/>
+        </property>
+        <property name="notetime">
+            <column name="notetime" sql-type="datetime" not-null="true"/>
+        </property>
+        <property name="commentid">
+            <column name="commentid" sql-type="int(3)" not-null="true"/>
+        </property>
+        <property name="id">
+            <column name="id" sql-type="int(11)" not-null="true"/>
+        </property>
+        <property name="love">
+            <column name="love" sql-type="int(5)" not-null="true"/>
+        </property>
+>>>>>>> 2a02de4263ac50a162a2eb5c81df7d204826e7ec
     </class>
 </hibernate-mapping>

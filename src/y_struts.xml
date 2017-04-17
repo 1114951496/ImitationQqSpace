@@ -24,9 +24,11 @@
 
         <action name="writeNote" class="writeNote">
             <result name="success">/WEB-INF/protect/writeNote.jsp</result>
+            <result name="error">index.jsp</result>
         </action>
-        <action name="upNote" class="writeNote" method="upNote">
+        <action name="upNote" class="upNote" method="upNote">
             <result name="success">success.jsp</result>
+            <result name="error">error.jsp</result>
         </action>
     </package>
 </struts>

@@ -33,10 +33,10 @@ public class IsLogin extends SimpleTagSupport {
                     "                                    <a href=\"#\">我的空间</a>\n" +
                     "                                </li>\n" +
                     "                                <li>\n" +
-                    "                                    <a href=\"#\">我的好友</a>\n" +
+                    "                                    <a href=\"#\">我的资料</a>\n" +
                     "                                </li>\n" +
                     "                                <li>\n" +
-                    "                                    <a href=\"#\">个人资料</a>\n" +
+                    "                                    <a href=\"writeNote\">写note</a>\n" +
                     "                                </li>\n" +
                     "                                <li class=\"divider\">\n" +
                     "                                </li>\n" +

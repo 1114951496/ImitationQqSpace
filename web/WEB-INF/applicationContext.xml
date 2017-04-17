@@ -18,10 +18,12 @@
                 <prop key="hibernate.dialect">
                     org.hibernate.dialect.MySQL5InnoDBDialect
                 </prop>
-                <prop key="hibernate.hbm2ddl.auto">update</prop>
+                <!--<prop key="hibernate.hbm2ddl.auto">update</prop>-->
                 <prop key="connection.autocommit">true</prop>
                 <prop key="hibernate.show_sql">true</prop>
                 <prop key="hibernate.format_sql">true</prop>
+                <prop key="hibernate.query.factory_class">org.hibernate.hql.internal.classic.ClassicQueryTranslatorFactory</prop>
+                <prop key="hibernate.current_session_context_class">thread</prop>
                 <!--添加此句报异常：createQuery is not valid without active transaction
                  在spring的类LocalSessionFactoryBean源码，
                  方法buildSessionFactory中将hibernate.current_session_context_class设
@@ -41,6 +43,14 @@
         </property>
     </bean>
 
+    <bean name="albumEntity" class="cn.mk95.www.bean.AlbumEntity"/>
+    <bean name="commentEntity" class="cn.mk95.www.bean.CommentEntity"/>
+    <bean name="emailyzEntity" class="cn.mk95.www.bean.EmailyzEntity"/>
+    <bean name="friendEntity" class="cn.mk95.www.bean.FriendEntity"/>
+    <bean name="messageEntity" class="cn.mk95.www.bean.MessageEntity"/>
+    <bean name="noteEntity" class="cn.mk95.www.bean.NoteEntity"/>
+    <bean name="shareEntity" class="cn.mk95.www.bean.ShareEntity"/>
+    <bean name="userEntity" class="cn.mk95.www.bean.UserEntity"/>
 
     <bean id="userDao" class="cn.mk95.www.dao.UserDaoImpl" p:sessionFactory-ref="sessionFactory"/>
     <bean id="albumDao" class="cn.mk95.www.dao.AlbumDaoImpl" p:sessionFactory-ref="sessionFactory"/>
@@ -58,8 +68,9 @@
     <!-- 配置事务属性 -->
     <tx:advice id="txAdvice" transaction-manager="transactionManager">
         <tx:attributes>
-            <tx:method name="get*" read-only="true"/>
-            <tx:method name="*" />
+            <!--<tx:method name="get*" read-only="true"/>-->
+            <tx:method name="find*" propagation="SUPPORTS"/>
+            <tx:method name="*"/>
         </tx:attributes>
     </tx:advice>
     <!-- 配置事务切点，并把切点和事务属性关联起来 -->

@@ -42,13 +42,18 @@ public class SendYzm extends ActionSupport {
     public String sendYzm() {
         HttpServletRequest request = ServletActionContext.getRequest();
         HttpServletResponse response=ServletActionContext.getResponse();
+        registerYzDao.init();
         String email = request.getParameter("email");
         RegisterYzEntity registerYzEntity = registerYzDao.findByEmail(email);
         try {
             PrintWriter writer=response.getWriter();
             if (registerYzEntity == null || (registerYzEntity != null && emailUtil.timeComparator(registerYzEntity.getSendTime(), 2))) {
-                if(registerYzEntity==null)
+                //标记registerYzEntity非空
+                int flag=1;
+                if(registerYzEntity==null){
+                    flag=0;
                     registerYzEntity=new RegisterYzEntity();
+                }
                 int yzm=emailUtil.getYZM();
                 emailUtil.sendSystemEmail(email, "注册", ""+yzm);
                 registerYzEntity.setRegisterEmail(email);
@@ -56,14 +61,16 @@ public class SendYzm extends ActionSupport {
                 Date date=Calendar.getInstance().getTime();
                 Timestamp timestamp=new Timestamp(date.getTime());
                 registerYzEntity.setSendTime(timestamp);
-                if(registerYzEntity==null)
+                if(flag==0)
                     registerYzDao.save(registerYzEntity);
-                else
+                else{
+                    registerYzEntity.setFlag(0);
                     registerYzDao.update(registerYzEntity);
+                }
                 writer.print("send success!");
             }
             else {
-                writer.print("send error!send time>2m?");
+                writer.print("send error!send time<2m!");
             }
             writer.flush();
             writer.close();
