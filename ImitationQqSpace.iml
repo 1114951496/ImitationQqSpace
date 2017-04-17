@@ -27,6 +27,7 @@
         <datasource-map>
           <unit-entry name="a.xml" value="f0f7ac56-3505-43c0-9ac2-f4d90ed14217" />
           <unit-entry name="hibernate.cfg.xml" />
+          <unit-entry name="sessionFactory" value="dataSource" />
         </datasource-map>
         <naming-strategy-map />
         <deploymentDescriptor name="hibernate.cfg.xml" url="file://$MODULE_DIR$/out/production/ImitationQqSpace/hibernate.cfg.xml" />

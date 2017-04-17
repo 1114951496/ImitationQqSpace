@@ -1,6 +1,7 @@
 package cn.mk95.www.interfaces;
 
 
+import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 
 import java.io.Serializable;
@@ -13,7 +14,7 @@ import java.util.List;
 public interface BaseDao<T> {
 
     //初始化session和Transaction
-    public void init();
+    public Session init();
     public SessionFactory getSessionFactory();
     //根据id加载实体
     public T get(Class<T> entity, Serializable id);

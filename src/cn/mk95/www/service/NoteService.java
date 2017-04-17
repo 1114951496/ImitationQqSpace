@@ -17,23 +17,32 @@ import java.util.Calendar;
 public class NoteService {
     private NoteDao noteDao;
 
-    private String noteRoot="/WEB-INF/userData/";
+    private String noteRoot="/userData/";
 
+
+    public static String getWebInfPath(){
+        String path1=NoteService.class.getClassLoader().getResource("").getPath();
+        String path2=path1.substring(0,path1.length()-9);
+        System.out.println("WebInfPath:" +path2);
+        return path2;
+    }
 
     /**
      * 初始化note
      * @param noteEntity
      * @param user_id
      * @param note_title
-     * @return 返回生成的note存储路径
+     * @return 返回note的绝对路径
      */
     public String initNote(NoteEntity noteEntity,int user_id,String note_title,NoteDao noteDao){
         this.noteDao=noteDao;
         Calendar calendar=Calendar.getInstance();
-        noteEntity.setNotetime(new Timestamp(calendar.getTime().getTime()));
-        //note路径
-        String url=noteRoot+user_id+"/"+note_title+"/"+calendar.getTime().getTime();
-
+        long l=calendar.getTime().getTime();
+        noteEntity.setNotetime(new Timestamp(l));
+        //note路径,存在数据库的是WEB-INF之后的路径
+        String path=getWebInfPath()+noteRoot+user_id+"/"+note_title;
+        String url=noteRoot+user_id+"/"+l+".txt";
+        System.out.println(url);
         noteEntity.setCommentid(0);
         noteEntity.setLove(0);
         int note_id=noteDao.countUserNote(user_id);
@@ -41,7 +50,7 @@ public class NoteService {
         noteEntity.setUserid(user_id);
         noteEntity.setId(noteDao.countNote()+1);
         noteEntity.setNoteurl(url);
-        return noteRoot+user_id+"/"+note_title+"/";
+        return path;
     }
 
 
@@ -50,9 +59,10 @@ public class NoteService {
         try {
             File file=new File(dir);
             if(!file.exists())
-                file.mkdir();
+                file.mkdirs();
             fileOutputStream=new FileOutputStream(url);
             fileOutputStream.write(noteContent.getBytes());
+            fileOutputStream.flush();
             fileOutputStream.close();
             return true;
         } catch (FileNotFoundException e) {

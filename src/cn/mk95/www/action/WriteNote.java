@@ -7,6 +7,7 @@ import cn.mk95.www.service.NoteService;
 import com.opensymphony.xwork2.ActionSupport;
 import org.apache.struts2.ServletActionContext;
 
+import javax.servlet.ServletContext;
 import javax.servlet.http.HttpSession;
 
 /**

@@ -19,9 +19,14 @@ public class BaseDaoHibernate<T> implements BaseDao<T> {
 
     private Transaction transaction;
 
-    public void init(){
-        setSession(getSessionFactory().getCurrentSession());
-        setTransaction(getSession().beginTransaction());
+    public Session init() {
+        try {
+            setSession(getSessionFactory().getCurrentSession());
+            setTransaction(getSession().beginTransaction());
+        }catch (Exception e){
+
+        }
+        return session;
     }
 
     public void setTransaction(Transaction transaction) {
@@ -58,8 +63,8 @@ public class BaseDaoHibernate<T> implements BaseDao<T> {
 //            Transaction transaction = session.beginTransaction();
 //            return session.get(entity, id);
 //        } catch (Exception e) {
-            return session.get(entity, id);
-       // }
+        return session.get(entity, id);
+        // }
     }
 
     @Override
@@ -73,7 +78,7 @@ public class BaseDaoHibernate<T> implements BaseDao<T> {
 
     @Override
     public void update(T entity) {
-       // Session session = getSessionFactory().getCurrentSession();
+        // Session session = getSessionFactory().getCurrentSession();
         //Transaction transaction = session.beginTransaction();
         session.update(entity);
         transaction.commit();
