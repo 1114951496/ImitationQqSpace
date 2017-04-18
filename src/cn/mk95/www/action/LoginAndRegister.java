@@ -76,10 +76,6 @@ public class LoginAndRegister extends ActionSupport {
         Session session=userDao.init();
         registerYzDao.init();
         System.out.println("-------------register-------------");
-//        UserEntity userEntity=userDao.findUserByName(user.getUsername());
-//        if(userEntity!=null)
-//            return ActionSupport.ERROR;
-//        else {
         System.out.println(user.getEmail() + " " + user.getUsername() + " " + user.getPassword());
         RegisterYzEntity registerYzEntity = registerYzDao.findByEmail(user.getEmail());
         if (registerYzEntity != null && registerYzEntity.getYzm() == Integer.parseInt(yzm)&&registerYzEntity.getFlag()!=1) {
