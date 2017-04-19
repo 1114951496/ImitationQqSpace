@@ -67,9 +67,6 @@ public class NoteService {
             fileOutputStream=new FileOutputStream(NoteService.getWebInfPath()+url);
             OutputStreamWriter writer=new OutputStreamWriter(fileOutputStream,"utf-8");
             writer.write(noteContent);
-//            fileOutputStream.write(noteContent.getBytes());
-//            fileOutputStream.flush();
-//            writer.flush();
             writer.close();
             fileOutputStream.close();
             return true;
