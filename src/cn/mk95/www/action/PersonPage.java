@@ -31,14 +31,17 @@ public class PersonPage extends ActionSupport{
     public String MyPage(){
         HttpServletRequest request= ServletActionContext.getRequest();
         HttpSession session=request.getSession();
-        String MyId=request.getParameter("id");
-        System.out.println(MyId);
+
+       // System.out.println(user.getUserid());
 //        if(baseDao.get(UserEntity.class,MyId)==null){
 //            return ERROR;
 //        }
-        user=(UserEntity) userDao.findUserById(Integer.parseInt(MyId));
+        /**
+         * 所有到的实现类在第一次使用时必须调用init（）；
+         */
+        userDao.init();
+        user=(UserEntity) userDao.findUserById(((UserEntity)session.getAttribute("user")).getUserid());
         System.out.println(user);
-        session.setAttribute("user",user);
         session.setAttribute("username",user.getUsername());
         session.setAttribute("usersex",user.getUsersex());
         session.setAttribute("email",user.getEmail());
