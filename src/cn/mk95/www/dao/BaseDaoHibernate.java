@@ -24,7 +24,7 @@ public class BaseDaoHibernate<T> implements BaseDao<T> {
             setSession(getSessionFactory().getCurrentSession());
             setTransaction(getSession().beginTransaction());
         }catch (Exception e){
-
+            setTransaction(getSession().getTransaction());
         }
         return session;
     }

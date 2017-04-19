@@ -4,7 +4,7 @@ import javax.persistence.*;
 import java.sql.Timestamp;
 
 /**
- * Created by YangYongHao on 2017/4/16.
+ * Created by YangYongHao on 2017/4/19.
  * Annotation:
  */
 @Entity

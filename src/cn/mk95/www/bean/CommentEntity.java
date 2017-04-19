@@ -4,12 +4,11 @@ import javax.persistence.*;
 import java.sql.Timestamp;
 
 /**
- * Created by YangYongHao on 2017/3/30.
+ * Created by YangYongHao on 2017/4/19.
  * Annotation:
  */
 @Entity
 @Table(name = "comment", schema = "easyspace", catalog = "")
-@IdClass(CommentEntityPK.class)
 public class CommentEntity {
     private int noteid;
     private Timestamp commenttime;
@@ -17,7 +16,7 @@ public class CommentEntity {
     private int userid;
     private String commenturl;
 
-    @Id
+    @Basic
     @Column(name = "noteid", nullable = false)
     public int getNoteid() {
         return noteid;
@@ -58,7 +57,7 @@ public class CommentEntity {
     }
 
     @Basic
-    @Column(name = "commenturl", nullable = false, length = 20)
+    @Column(name = "commenturl", nullable = false, length = 255)
     public String getCommenturl() {
         return commenturl;
     }
