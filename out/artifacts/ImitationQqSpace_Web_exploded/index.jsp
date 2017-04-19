@@ -69,12 +69,13 @@
                         <li data-slide-to="2" data-target="#carousel-948985">
                         </li>
                     </ol>
-                    <div class="carousel-inner" style="height: 350px">
+                    <div class="carousel-inner">
+                        <%--style="height: 350px"--%>
                         <div class="item active">
                             <img alt="Carousel Bootstrap First" class="index-top-img"
                                  src="res/img/index1.jpg"/>
-                            <div class="carousel-caption" style="position: absolute;top: 200px">
-                                <!--style="position: absolute;top: 400px"-->
+                            <div class="carousel-caption">
+                                <!--style="position: absolute;top: 200px"-->
                                 <h4>
                                     First Thumbnail label
                                 </h4>
@@ -88,7 +89,7 @@
                         <div class="item">
                             <img alt="Carousel Bootstrap Second" class="index-top-img"
                                  src="res/img/index2.jpg"/>
-                            <div class="carousel-caption" style="position: absolute;top: 200px">
+                            <div class="carousel-caption">
                                 <h4>
                                     Second Thumbnail label
                                 </h4>
@@ -102,7 +103,7 @@
                         <div class="item">
                             <img alt="Carousel Bootstrap Third" class="index-top-img"
                                  src="res/img/index3.jpg"/>
-                            <div class="carousel-caption" style="position: absolute;top: 200px">
+                            <div class="carousel-caption">
                                 <h4>
                                     Third Thumbnail label
                                 </h4>

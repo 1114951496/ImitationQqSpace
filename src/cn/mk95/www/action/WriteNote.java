@@ -7,7 +7,6 @@ import cn.mk95.www.service.NoteService;
 import com.opensymphony.xwork2.ActionSupport;
 import org.apache.struts2.ServletActionContext;
 
-import javax.servlet.ServletContext;
 import javax.servlet.http.HttpSession;
 
 /**
@@ -46,10 +45,16 @@ public class WriteNote extends ActionSupport {
         //用户登录认证
         HttpSession session = ServletActionContext.getRequest().getSession();
         UserEntity user = (UserEntity) session.getAttribute("user");
-        if (user != null)
+        System.out.println("-----------user:"+user.getUserid()+"  "+user.getUsername());
+        if (user != null){
+            System.out.println("-------user writeNote");
             return ActionSupport.SUCCESS;
-        else
+        }
+        else{
+            System.out.println("-------user can't writeNote");
             return ActionSupport.ERROR;
+        }
+
     }
 
     public String upNote() {
