@@ -4,10 +4,13 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
     <bean name="PersonPage" class="cn.mk95.www.action.PersonPage">
         <property name="userDao" ref="userDao"/>
-
     </bean>
     <bean name="PersonTime_axis" class="cn.mk95.www.action.PersonTime_axis">
         <property name="userDao" ref="userDao"/>
         <property name="noteDao" ref="noteDao"/>
+    </bean>
+    <bean name="Friend" class="cn.mk95.www.action.PersonFriend">
+        <property name="friendDao" ref="friendDao"/>
+        <property name="userDao" ref="userDao"/>
     </bean>
 </beans>
