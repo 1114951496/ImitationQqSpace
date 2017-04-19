@@ -1,5 +1,6 @@
 package cn.mk95.www.service;
 
+import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 
 import java.io.*;
@@ -10,24 +11,50 @@ import static java.lang.System.*;
  * Created by 睡意朦胧 on 2017/4/16.
  */
 public  class H_FileRW {
-
+    /**
+     * 读好友的文件
+     * @param Url
+     * @return
+     * @throws IOException
+     */
     @NotNull
     public static String CheckId(String Url) throws IOException {
         File file = new File(Url);
         out.println("检查friend的url"+Url);
-        String encoding = "utf-8";
-        if (file.exists() && !file.isDirectory()) {
+        if (!file.exists() && file.isDirectory()) {
+            file.createNewFile();
+            return "2-3";
+        } else {
             BufferedReader br = new BufferedReader(new FileReader(file));
             String temp = null;
             StringBuffer sb = new StringBuffer();
             temp = br.readLine();
             while (temp != null) {
-                sb.append(temp + "-");
+                sb.append(temp);
                 temp = br.readLine();
             }
+            br.close();
             return sb.toString();
-        } else {
-            return "2-3";
+//            FileInputStream fis=new FileInputStream(file);
+//            byte[] a=new byte[1024];
+//            fis.read(a);
+//            fis.close();
+//            return new String(a,"UTF-8");
         }
+    }
+    /**
+     * 删除好友
+     */
+
+    @NotNull
+    public static String DelectFriendId(String Url, String friends) throws IOException {
+        File file=new File(Url);
+        FileOutputStream fos=new FileOutputStream(file);
+        System.out.println("sadwr433");
+        byte[] a=null;
+        a=friends.getBytes();
+        fos.write(a);
+        fos.close();
+        return "ok";
     }
 }

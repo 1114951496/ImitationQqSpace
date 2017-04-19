@@ -60,8 +60,8 @@
         </div>
         <div id="nav" class="col-md-8" style="padding:0;margin-top: 13px;background-color:#cccccc;font-size: 20px">
 
-                <a href="home.action?id=<s:property value="#session.userid"/>" class="col-lg-2" >主页</a>
-                <a href="MyFriend.action?id=<s:property value="#session.userid"/>" class="col-lg-2" >好友</a>
+                <a href="home.action" class="col-lg-2" >主页</a>
+                <a href="MyFriend.action" class="col-lg-2" >好友</a>
                 <a href="#" class="col-lg-3" >朋友圈</a>
                 <a href="#" class="col-lg-2" >相册</a>
                 <a href="#" class="col-lg-3" >留言板</a>

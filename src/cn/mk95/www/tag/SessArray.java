@@ -1,5 +1,6 @@
 package cn.mk95.www.tag;
 
+import cn.mk95.www.bean.UserEntity;
 import org.apache.struts2.ServletActionContext;
 
 import javax.servlet.http.HttpServletRequest;
@@ -15,6 +16,15 @@ import java.util.ArrayList;
  */
 public class SessArray extends SimpleTagSupport{
     private ArrayList Arr;
+    private UserEntity user;
+
+    public UserEntity getUser() {
+        return user;
+    }
+
+    public void setUser(UserEntity user) {
+        this.user = user;
+    }
 
     public void setArr(ArrayList arr) {
         Arr = arr;
@@ -24,11 +34,16 @@ public class SessArray extends SimpleTagSupport{
     public void doTag() throws JspException, IOException {
         JspWriter jspWriter = getJspContext().getOut();
         HttpSession session= ServletActionContext.getRequest().getSession();
-        Arr=(ArrayList) session.getAttribute("usernames");
-        jspWriter.println("<ul>");
+        Arr=(ArrayList) session.getAttribute("users");
+        jspWriter.println("<table style=''>");
         for (int i=0;i<Arr.size();i++){
-            jspWriter.println("<li>"+Arr.get(i)+"</li>");
+            user= (UserEntity) Arr.get(i);
+            jspWriter.println("<tr>");
+            jspWriter.println("<td>"+user.getUserid()+"</td>");
+            jspWriter.println("<td>"+user.getUsername()+"</td>");
+            jspWriter.println("<td><a href=delectfriend.action?id="+user.getUserid()+">删除</a></td>");
+            jspWriter.println("</tr>");
         }
-        jspWriter.println("</ul>");
+        jspWriter.println("</table>");
     }
 }
