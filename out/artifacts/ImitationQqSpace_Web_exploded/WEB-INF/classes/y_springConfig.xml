@@ -23,6 +23,10 @@
         <property name="noteEntity" ref="noteEntity"/>
     </bean>
 
+    <bean name="readNote" class="cn.mk95.www.action.ReadNote">
+        <property name="noteDao" ref="noteDao"/>
+        <property name="noteService" ref="noteService"/>
+    </bean>
     <bean name="noteService" class="cn.mk95.www.service.NoteService">
     </bean>
 </beans>

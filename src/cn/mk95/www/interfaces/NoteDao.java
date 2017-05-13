@@ -10,8 +10,20 @@ import java.util.List;
  */
 public interface NoteDao extends BaseDao<NoteEntity> {
     public List findNoteByTime(int uerid, Date notetime);
-    public List findNoteByid(int userid);
 
+    /**
+     * 通过id找到作者
+     * @param id
+     * @return
+     */
+    public int findAuthorById(int id);
+
+    /**
+     * 通过id得到NoteEntity
+     * @param id
+     * @return
+     */
+    public NoteEntity findNoteById(int id);
     /**
      * 通过用户id查询所有note
      * @param user_id

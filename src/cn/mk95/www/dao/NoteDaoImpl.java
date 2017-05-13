@@ -22,11 +22,17 @@ public class NoteDaoImpl extends BaseDaoHibernate<NoteEntity> implements NoteDao
     }
 
     @Override
-    public List findNoteByid(int userid) {
-        List<NoteEntity> noteEntities=find("select en from NoteEntity en where en.username=?0",userid);
+    public int findAuthorById(int id) {
+        List<NoteEntity> list=find("select en from NoteEntity en where en.id=?",id);
+        return list.get(0).getUserid();
+    }
+
+    @Override
+    public NoteEntity findNoteById(int id) {
+        List<NoteEntity> noteEntities=find("select en from NoteEntity en where en.id=?",id);
         if(noteEntities.size()==0)
             return null;
-        return noteEntities;
+        return noteEntities.get(0);
     }
 
     @Override

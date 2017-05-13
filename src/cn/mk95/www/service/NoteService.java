@@ -13,7 +13,6 @@ import java.util.Calendar;
  * Annotation:
  */
 public class NoteService {
-    private NoteDao noteDao;
 
     private String noteRoot="/userData/";
 
@@ -33,11 +32,9 @@ public class NoteService {
      * @return 返回note的绝对路径
      */
     public String initNote(NoteEntity noteEntity,int user_id,String note_title,NoteDao noteDao){
-        this.noteDao=noteDao;
         Calendar calendar=Calendar.getInstance();
         long l=calendar.getTime().getTime();
         noteEntity.setNotetime(new Timestamp(l));
-
         //note路径,存在数据库的是WEB-INF之后的路径
         String path=getWebInfPath()+noteRoot+user_id+"/"+ StringUtil.encode(note_title);
         String url=noteRoot+user_id+"/"+ StringUtil.encode(note_title)+"/" + l +".txt";
@@ -55,6 +52,7 @@ public class NoteService {
 
     public boolean saveNoteFile(String url,String dir,String noteContent){
         FileOutputStream fileOutputStream;
+        noteContent=StringUtil.encode(noteContent);
         try {
             File file=new File(dir);
             if(!file.exists())
@@ -76,5 +74,45 @@ public class NoteService {
             e.printStackTrace();
         }
         return false;
+    }
+
+    /**
+     * 通过对noteurl处理得到真实title
+     * @param noteurl
+     * @return
+     */
+    public String getNoteTitle(String noteurl){
+        String strings[]=noteurl.split("/");
+        //得到的是title的16进制表示
+        String noteTitle=strings[strings.length-2];
+        //调用StringUtil的decode方法转换
+        return StringUtil.decode(noteTitle);
+    }
+
+    /**
+     * 传入路径，对文件内容进行16进制转String操作
+     * @param path
+     * @return
+     */
+    public static String getNoteFileContent(String path){
+        try {
+            FileInputStream is=new FileInputStream(path);
+            BufferedReader reader=new BufferedReader(new InputStreamReader(is));
+            String content=new String();
+            String buff;
+            while ((buff=reader.readLine())!=null)
+                content+=buff;
+            System.out.println(content);
+            content=StringUtil.decode(content);
+            reader.close();
+            is.close();
+            return content;
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return null;
     }
 }

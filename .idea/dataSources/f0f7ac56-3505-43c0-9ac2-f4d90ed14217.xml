@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="@115.159.197.215">
-  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.0">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.1">
     <root id="1"/>
     <schema id="2" parent="1" name="easyspace">
       <Current>1</Current>
@@ -27,6 +27,7 @@
       <DataType>varchar(20)|0</DataType>
     </column>
     <key id="16" parent="4" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
       <ColNames>userid</ColNames>
       <Primary>1</Primary>
     </key>
@@ -36,38 +37,39 @@
       <RefTableName>user</RefTableName>
       <RefColNames>userid</RefColNames>
     </foreign-key>
-    <column id="18" parent="5" name="noteid">
-      <Position>1</Position>
-      <DataType>int(11)|0</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="19" parent="5" name="commenttime">
+    <column id="18" parent="5" name="commenttime">
       <Position>2</Position>
       <DataType>datetime|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="20" parent="5" name="commentid">
+    <column id="19" parent="5" name="commentid">
       <Position>3</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="21" parent="5" name="userid">
+    <column id="20" parent="5" name="userid">
       <Position>4</Position>
       <DataType>int(6)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="22" parent="5" name="commenturl">
+    <column id="21" parent="5" name="commenturl">
       <Position>5</Position>
       <DataType>varchar(255)|0</DataType>
       <NotNull>1</NotNull>
     </column>
+    <column id="22" parent="5" name="nid">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
     <index id="23" parent="5" name="comment_note">
-      <ColNames>noteid</ColNames>
+      <ColNames>nid</ColNames>
     </index>
     <index id="24" parent="5" name="comment_user">
       <ColNames>userid</ColNames>
     </index>
     <key id="25" parent="5" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
       <ColNames>commentid</ColNames>
       <Primary>1</Primary>
     </key>
@@ -97,6 +99,7 @@
       <DataType>int(1) unsigned zerofill|0</DataType>
     </column>
     <key id="31" parent="6" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
       <ColNames>email</ColNames>
       <Primary>1</Primary>
     </key>
@@ -117,6 +120,7 @@
       <NotNull>1</NotNull>
     </column>
     <key id="35" parent="7" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
       <ColNames>userid</ColNames>
       <Primary>1</Primary>
     </key>
@@ -154,6 +158,7 @@
       <ColNames>senduserid</ColNames>
     </index>
     <key id="43" parent="9" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
       <ColNames>userid</ColNames>
       <Primary>1</Primary>
     </key>
@@ -207,6 +212,7 @@
       <ColNames>userid</ColNames>
     </index>
     <key id="55" parent="10" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
       <ColNames>userid
 noteid</ColNames>
       <Primary>1</Primary>
@@ -238,6 +244,7 @@ noteid</ColNames>
       <NotNull>1</NotNull>
     </column>
     <key id="61" parent="11" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
       <ColNames>register_email</ColNames>
       <Primary>1</Primary>
     </key>
@@ -265,6 +272,7 @@ noteid</ColNames>
       <ColNames>noteid</ColNames>
     </index>
     <key id="67" parent="12" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
       <ColNames>userid
 shareid
 sharetime</ColNames>
@@ -325,6 +333,7 @@ sharetime</ColNames>
       <ColNames>email</ColNames>
     </index>
     <key id="79" parent="13" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
       <ColNames>userid</ColNames>
       <Primary>1</Primary>
     </key>
