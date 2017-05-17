@@ -30,7 +30,7 @@ public class IsLogin extends SimpleTagSupport {
                     "                                    class=\"caret\"></strong></a>\n" +
                     "                            <ul class=\"dropdown-menu\">\n" +
                     "                                <li>\n" +
-                    "                                    <a href=\"#\">我的空间</a>\n" +
+                    "                                    <a href=\"mypage\">我的空间</a>\n" +
                     "                                </li>\n" +
                     "                                <li>\n" +
                     "                                    <a href=\"#\">我的资料</a>\n" +

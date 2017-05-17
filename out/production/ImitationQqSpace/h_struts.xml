@@ -15,14 +15,38 @@
             <result name="error">error.jsp</result>
         </action>
         <action name="MyFriend" class="Friend" method="MyFriend">
-            <result name="success">PersonFriend.jsp</result>
+            <result name="success">WEB-INF/h_person/PersonFriend.jsp</result>
             <result name="NoFriend">friendError.jsp</result>
         </action>
         <action name="delectfriend" class="Friend" method="DelectFriend">
-            <result name="success">PersonFriend.jsp</result>
+            <result name="success">WEB-INF/h_person/PersonFriend.jsp</result>
         </action>
-        <action name="infriend" class="Friend" method="DelectFriend">
-            <result name="success">PersonFriend.jsp</result>
+        <action name="infriend" class="Friend" method="InFriend">
+            <result name="success">WEB-INF/h_person/FriendPage.jsp</result>
+            <result name="error">error.jsp</result>
+        </action>
+        <action name="selectfriend" class="Friend" method="SelectFriend">
+            <result name="success">WEB-INF/h_person/PersonFriend.jsp</result>
+            <result name="error">error.jsp</result>
+        </action>
+        <action name="addfriend" class="Friend" method="AddFriend">
+            <result name="success">WEB-INF/h_person/PersonFriend.jsp</result>
+            <result name="error">error.jsp</result>
+        </action>
+        <action name="CheckMessage" class="message" method="CheckMessage">
+            <result name="success">WEB-INF/h_person/MessagePage.jsp</result>
+            <result name="error">error.jsp</result>
+        </action>
+        <action name="MessageInput" class="message" method="WriteMessage">
+            <result name="success">WEB-INF/h_person/MessagePage.jsp</result>
+            <result name="error">error.jsp</result>
+        </action>
+        <action name="CheckFMessage" class="message" method="CheckMessage">
+            <result name="success">WEB-INF/h_person/FriendMessagePage.jsp</result>
+            <result name="error">error.jsp</result>
+        </action>
+        <action name="FMessageInput" class="message" method="WriteMessage">
+            <result name="success">WEB-INF/h_person/FriendMessagePage.jsp</result>
             <result name="error">error.jsp</result>
         </action>
     </package>

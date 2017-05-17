@@ -1,57 +1,88 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>commentTest</title>
-    <style type="text/css">
-        *{
-            margin:0;padding:0;
-            -webkit-touch-callout: none; /* prevent callout to copy image, etc when tap to hold */
-            -webkit-text-size-adjust: none; /* prevent webkit from resizing text to fit */
-            -webkit-tap-highlight-color: rgba(210,210,210,0.35); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
-            -webkit-user-select: none; /* prevent copy paste, to allow, change 'none' to 'text' */
+    <meta charset="utf-8">
+    <link href="../res/css/bootstrap.min.css" rel="stylesheet">
+    <script src="../res/js/jquery.min.js"></script>
+    <script src="../res/js/bootstrap.min.js"></script>
+    <style>
+        .bt {
+            width: 40px;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            /*height: 25px;*/
+            font-size: 12px;
+            border: 1px solid #cccccc;
+            outline: none;
+            color: #808080;
+            padding-left: 5px;
+            margin-left: 5px;
+            display: block;
         }
-        body{font-family:"微软雅黑";font-size:12px;}
-        ul,li{list-style:none;}
-        .ylcon{width:100%;min-width:320px;}
-        .tit{height:26px;line-height:26px;padding:0px 15px;position:relative;font-size:15px;color:#aaa;border-bottom:1px solid rgba(0, 0, 0, 0.15);}
 
-        .story{border-bottom:1px dashed #cecece;padding:0 15px 3px;position:relative;}
-        .story_t{font-size:1.2em;color:rgba(0,0,0,1);padding-top:5px;padding-bottom:2px;}
-        .story_m{color:rgba(110,110,110,1);line-height:21px;word-break:break-all;word-wrap:break-word;overflow:hidden;font-size:1.2em;padding:2px 0;}
-        .story_time{color:rgba(154,154,154,1);padding:2px 0;}
-        .story_hf{background:rgb(245,245,245);font-size:1.2em;border:1px solid rgba(204,204,204,0.2);border-radius:2px;color:rgba(110,110,110,1);padding:4px;margin-bottom:5px;}
-        .opbtn{position:absolute;top: 0;right: 0;}
+        .blue:hover {
+            transition: border linear .2s, box-shadow linear .5s;
+            -moz-transition: border linear .2s, -moz-box-shadow linear .5s;
+            -webkit-transition: border linear .2s, -webkit-box-shadow linear .5s;
+            outline: none;
+            border-color: rgba(19, 105, 172, .75);
+            box-shadow: 0 0 3px rgba(19, 105, 192, .5);
+            -moz-box-shadow: 0 0 3px rgba(241, 39, 232, .5);
+            -webkit-box-shadow: 0 0 3px rgba(19, 105, 252, 3);
+        }
+
+        .content {
+            display: inline;
+        }
+
+        .item {
+            margin-left: 40px;
+        }
+
+        .content {
+            position: relative;
+            left: 50px;
+        }
+
+        #comments * {
+            margin-top: 3px;
+        }
     </style>
 </head>
 <body>
-<div class="ylcon">
-    <p class="tit">
-        所有留言
-    </p>
-    <div id="messDivId">
-        <div class="story">
-            <div class="opbtn"></div>
-            <p class="story_t">怜星</p>
-            <p class="story_time">2015/07/12 20:48</p>
-            <p class="story_m">我想问最近最火的tfboys呢他们的八卦呢我想问最近最火的tfboys呢,他们的八卦呢我想问最近最火的tfboys呢？！他们的八卦呢？！</p>
-            <p class="story_hf">@剑花烟雨:的是相对无言眼波如流的默契的是相对无言眼波如流的默契的是相对无言眼波如流的默契的是相对无言眼波如流的默契的是相对无言眼波如流的默契的是相对无言眼波如流的默契</p>
-        </div>
-        <div class="story">
-            <div class="opbtn"></div>
-            <p class="story_t">怜星</p>
-            <p class="story_time">2015/07/12 20:48</p>
-            <p class="story_m">我想问最近最火的tfboys呢他们的八卦呢我想问最近最火的tfboys呢,他们的八卦呢我想问最近最火的tfboys呢？！他们的八卦呢？！</p>
-            <p class="story_hf">@剑花烟雨:的是相对无言眼波如流的默契的是相对无言眼波如流的默契的是相对无言眼波如流的默契的是相对无言眼波如流的默契的是相对无言眼波如流的默契的是相对无言眼波如流的默契</p>
-        </div>
-        <div class="story">
-            <div class="opbtn"></div>
-            <p class="story_t">怜星</p>
-            <p class="story_time">2015/07/12 20:48</p>
-            <p class="story_m">我想问最近最火的tfboys呢他们的八卦呢我想问最近最火的tfboys呢,他们的八卦呢我想问最近最火的tfboys呢？！他们的八卦呢？！</p>
-            <p class="story_hf">@剑花烟雨:的是相对无言眼波如流的默契的是相对无言眼波如流的默契的是相对无言眼波如流的默契的是相对无言眼波如流的默契的是相对无言眼波如流的默契的是相对无言眼波如流的默契</p>
+<div class="row">
+    <div class="col-md-2">
+    </div>
+    <div class="col-md-8">
+
+        <div id="comments">
+            <div class="comment">
+                <div class="userInfo">
+                    <img src="../res/img/defPhoto.jpg" class="img-circle photo" style="width: 30px">
+                    <a href="#">comment_username</a>:
+                </div>
+                comment_content
+                <div class="content">
+
+                </div>
+                <input type="button" class="bt blue" value="展开" data-toggle="collapse" data-target=".item"/>
+
+
+                <div class="collapse item">
+                    <div class="userInfo">
+                        <img src="../res/img/defPhoto.jpg" class="img-circle photo" style="width: 30px">
+                        <a href="#">commentItem_username</a>:
+                    </div>
+                    <div class="content">
+                        commentItem_content
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+    <div class="col-md-2">
+    </div>
 </div>
+
 </body>
 </html>

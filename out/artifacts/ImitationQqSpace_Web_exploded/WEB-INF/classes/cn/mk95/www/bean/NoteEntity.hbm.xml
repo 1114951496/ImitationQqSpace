@@ -20,7 +20,7 @@
             <column name="notetime" sql-type="datetime" not-null="true"/>
         </property>
         <property name="commentid">
-            <column name="commentid" sql-type="int(3)" not-null="true"/>
+            <column name="commentid" sql-type="int(11)" not-null="true"/>
         </property>
         <property name="id">
             <column name="id" sql-type="int(11)" not-null="true"/>

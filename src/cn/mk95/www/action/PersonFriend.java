@@ -4,6 +4,8 @@ import cn.mk95.www.bean.FriendEntity;
 import cn.mk95.www.bean.UserEntity;
 import cn.mk95.www.interfaces.FriendDao;
 import cn.mk95.www.interfaces.UserDao;
+import cn.mk95.www.service.Check_Friends;
+import cn.mk95.www.service.Delect_run;
 import cn.mk95.www.service.H_FileRW;
 import cn.mk95.www.service.NoteService;
 import com.opensymphony.xwork2.ActionSupport;
@@ -22,7 +24,19 @@ public class PersonFriend extends ActionSupport{
     private UserDao userDao;
     private FriendDao friendDao;
     private FriendEntity friend;
+    private Check_Friends check_friends;
     ArrayList<UserEntity> friends=new ArrayList<>();
+    private Delect_run delect_run;
+    private String fname;
+
+    public String getFname() {
+        return fname;
+    }
+
+    public void setFname(String fname) {
+        this.fname = fname;
+    }
+
     public UserEntity getUser() {
         return user;
     }
@@ -78,41 +92,80 @@ public class PersonFriend extends ActionSupport{
      * @return
      */
     public String MyFriend() throws IOException {
-        friends.clear();
-        HttpServletRequest request= ServletActionContext.getRequest();
-        HttpSession session=request.getSession();
+        HttpServletRequest request = ServletActionContext.getRequest();
+        HttpSession session = request.getSession();
         userDao.init();
         friendDao.init();
-        /**
-         * 查询朋友id文件的url
-         */
-        String friendIds=this.H_fileread(((UserEntity)session.getAttribute("user")).getUserid());
-        System.out.println(friendIds);
-        String[] id=friendIds.split("-");
-        for (int i=0;i<id.length;i++){
-            if(id[i].equals("")||id[i]==null){
-                continue;
-            }
-            user = userDao.findUserById(Integer.parseInt(id[i]));
-            friends.add(user);
-
+        friends= (ArrayList<UserEntity>) session.getAttribute("users");
+        session.removeAttribute("selectfriend");
+        if(friends==null) {
+            friends=check_friends.CheckFriendsById(((UserEntity)session.getAttribute("user")).getUserid());
+            session.setAttribute("users", friends);
         }
-        session.setAttribute("users",friends);
         return SUCCESS;
-
     }
     /**
-     * 删除好友
+     * 删除好友，有待完善。没有实际删除
      */
-    public String DelectFriend() throws IOException {
+    public String DelectFriend()  throws IOException {
         userDao.init();
         friendDao.init();
         HttpServletRequest request=ServletActionContext.getRequest();
-        String friendid=request.getParameter("id");
+        String friendid=request.getParameter("friendid");
         HttpSession session=request.getSession();
-        String friendIds=this.H_fileread(((UserEntity)session.getAttribute("user")).getUserid());
-        String _friend="-"+friendid.toString();
-        H_FileRW.DelectFriendId(NoteService.getWebInfPath() + "/userData/Friend/test1.txt",friendIds.replace(_friend,""));
+        friends= (ArrayList<UserEntity>) session.getAttribute("users");
+        //friend = (FriendEntity) friendDao.findFriendByUserId(((UserEntity) session.getAttribute("user")).getUserid());
+        //String friendUrl = friend.getFidurl();
+        String url=NoteService.getWebInfPath() + "/userData/Friend/test1.txt";
+        //delect_run.Delect(url,friendid);
+        for (int i = friends.size() - 1; i >= 0; i--){
+            if (Integer.parseInt(friendid) == friends.get(i).getUserid()){
+                friends.remove(friends.get(i));
+            }
+        }
+//        String friendIds=this.H_fileread(((UserEntity)session.getAttribute("user")).getUserid());
+//        String _friend="-"+friendid.toString();
+//        H_FileRW.DelectFriendId(NoteService.getWebInfPath() + "/userData/Friend/test1.txt",friendIds.replace(_friend,""));
+        session.setAttribute("users",friends);
+        return SUCCESS;
+    }
+
+    /**
+     * 进入好友页面
+     * @return
+     */
+    public String InFriend(){
+        HttpServletRequest request=ServletActionContext.getRequest();
+        HttpSession session=request.getSession();
+        String FId=request.getParameter("friendid");
+        user=(UserEntity)userDao.findUserById(Integer.parseInt(FId));
+        session.setAttribute("friend",user);
+        return SUCCESS;
+    }
+
+    /**
+     * 查询好友
+     * @return
+     */
+    public String SelectFriend(){
+        HttpServletRequest request = ServletActionContext.getRequest();
+        HttpSession session = request.getSession();
+        user=userDao.findUserById(Integer.parseInt(fname));
+        session.setAttribute("selectfriend",user);
+        return SUCCESS;
+    }
+    /**
+     * 添加好友,没有实际添加
+     */
+    public String AddFriend(){
+        HttpServletRequest request=ServletActionContext.getRequest();
+        HttpSession session=request.getSession();
+        String friendid=request.getParameter("friendid");
+        friends= (ArrayList<UserEntity>) session.getAttribute("users");
+        user=(UserEntity)session.getAttribute("selectfriend");
+        friends.add(user);
+        session.setAttribute("users",friends);
+        session.removeAttribute("selectfriend");
         return SUCCESS;
     }
 }

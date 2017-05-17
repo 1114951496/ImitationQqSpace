@@ -3,6 +3,7 @@ package cn.mk95.www.dao;
 import cn.mk95.www.bean.MessageEntity;
 import cn.mk95.www.interfaces.MessageDao;
 
+import java.io.Serializable;
 import java.util.List;
 
 /**
@@ -11,7 +12,11 @@ import java.util.List;
  */
 public class MessageDaoImpl extends BaseDaoHibernate<MessageEntity> implements MessageDao {
     @Override
-    public List findMessageByUserId(int userid) {
-        return null;
+    public List<MessageEntity> findMessageByUserId(int userid) {
+        List<MessageEntity> MessageEntities=find("select en from MessageEntity en where en.userid=?",userid);
+        if(MessageEntities.size()==0)
+            return null;
+        return MessageEntities;
     }
+
 }
