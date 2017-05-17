@@ -5,17 +5,11 @@
 <hibernate-mapping>
 
     <class name="cn.mk95.www.bean.MessageEntity" table="message" schema="easyspace">
-        <id name="userid">
-            <column name="userid" sql-type="int(6)"/>
-        </id>
-        <property name="senduserid">
-            <column name="senduserid" sql-type="int(6)"/>
-        </property>
-        <property name="sendtime">
-            <column name="sendtime" sql-type="datetime"/>
-        </property>
-        <property name="text">
-            <column name="text" sql-type="varchar(60)" length="60"/>
-        </property>
+        <composite-id mapped="true" class="cn.mk95.www.bean.MessageEntityPK">
+            <key-property name="userid" column="userid"/>
+            <key-property name="senduserid" column="senduserid"/>
+            <key-property name="sendtime" column="sendtime"/>
+        </composite-id>
+        <property name="text" column="text"/>
     </class>
 </hibernate-mapping>

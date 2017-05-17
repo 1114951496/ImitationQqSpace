@@ -15,11 +15,11 @@
     <meta name="description" content="Source code generated using layoutit.com">
     <meta name="author" content="LayoutIt!">
 
-    <link href="res/css/bootstrap.min.css" rel="stylesheet">
-    <link href="res/css/navigation.css" rel="stylesheet">
+    <link href="../../res/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../res/css/navigation.css" rel="stylesheet">
 </head>
 <body>
-    <%@include file="WEB-INF/h_person/MyPage.jsp"%>
+    <%@include file="MyPage.jsp"%>
     <div class="container-fluid">
         <div class="col-md-2"></div>
         <div class="col-md-8">
@@ -27,7 +27,7 @@
         </div>
         <div class="col-md-2"></div>
     </div>
-    <%@include file="WEB-INF/default_ft.jsp"%>
+    <%@include file="../default_ft.jsp"%>
     <script src="../../res/js/jquery.min.js"></script>
     <script src="../../res/js/bootstrap.min.js"></script>
 </body>
