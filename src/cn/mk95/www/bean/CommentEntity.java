@@ -4,27 +4,17 @@ import javax.persistence.*;
 import java.sql.Timestamp;
 
 /**
- * Created by YangYongHao on 2017/4/19.
+ * Created by YangYongHao on 2017/4/20.
  * Annotation:
  */
 @Entity
 @Table(name = "comment", schema = "easyspace", catalog = "")
 public class CommentEntity {
-    private int noteid;
     private Timestamp commenttime;
     private int commentid;
     private int userid;
     private String commenturl;
-
-    @Basic
-    @Column(name = "noteid", nullable = false)
-    public int getNoteid() {
-        return noteid;
-    }
-
-    public void setNoteid(int noteid) {
-        this.noteid = noteid;
-    }
+    private int nid;
 
     @Basic
     @Column(name = "commenttime", nullable = false)
@@ -66,6 +56,16 @@ public class CommentEntity {
         this.commenturl = commenturl;
     }
 
+    @Basic
+    @Column(name = "nid", nullable = false)
+    public int getNid() {
+        return nid;
+    }
+
+    public void setNid(int nid) {
+        this.nid = nid;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -73,9 +73,9 @@ public class CommentEntity {
 
         CommentEntity that = (CommentEntity) o;
 
-        if (noteid != that.noteid) return false;
         if (commentid != that.commentid) return false;
         if (userid != that.userid) return false;
+        if (nid != that.nid) return false;
         if (commenttime != null ? !commenttime.equals(that.commenttime) : that.commenttime != null) return false;
         if (commenturl != null ? !commenturl.equals(that.commenturl) : that.commenturl != null) return false;
 
@@ -84,11 +84,11 @@ public class CommentEntity {
 
     @Override
     public int hashCode() {
-        int result = noteid;
-        result = 31 * result + (commenttime != null ? commenttime.hashCode() : 0);
+        int result = commenttime != null ? commenttime.hashCode() : 0;
         result = 31 * result + commentid;
         result = 31 * result + userid;
         result = 31 * result + (commenturl != null ? commenturl.hashCode() : 0);
+        result = 31 * result + nid;
         return result;
     }
 }
