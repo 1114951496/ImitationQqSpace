@@ -20,11 +20,20 @@ public  class H_FileRW {
     @NotNull
     public static String CheckId(String Url) throws IOException {
         File file = new File(Url);
+        StringBuilder result = new StringBuilder();
         out.println("检查friend的url"+Url);
         if (!file.exists() && file.isDirectory()) {
             file.createNewFile();
             return "2-3";
         } else {
+//            BufferedReader br = new BufferedReader(new FileReader(file));//构造一个BufferedReader类来读取文件
+//            String s = null;
+//            while((s = br.readLine())!=null){//使用readLine方法，一次读一行
+//                result.append(System.lineSeparator()+s);
+//            }
+//            br.close();
+//            System.out.println(String.valueOf(result));
+//            return String.valueOf(result);
             BufferedReader br = new BufferedReader(new FileReader(file));
             String temp = null;
             StringBuffer sb = new StringBuffer();
@@ -34,7 +43,10 @@ public  class H_FileRW {
                 temp = br.readLine();
             }
             br.close();
+            System.out.println(sb);
             return sb.toString();
+
+
 //            FileInputStream fis=new FileInputStream(file);
 //            byte[] a=new byte[1024];
 //            fis.read(a);
@@ -47,7 +59,7 @@ public  class H_FileRW {
      */
 
     @NotNull
-    public static String DelectFriendId(String Url, String friends) throws IOException {
+    public static synchronized String DelectFriendId(String Url, String friends) throws IOException {
         File file=new File(Url);
         FileOutputStream fos=new FileOutputStream(file);
         System.out.println("sadwr433");

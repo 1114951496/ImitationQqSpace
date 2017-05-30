@@ -41,10 +41,10 @@
             </div>
             <div style="position: relative;left: -20px;top: 28px">
                 <ul style="list-style: none;padding-top: 50px;font-size: 13px">
-                    <li>姓名:<s:property value="#session.username"/></li>
-                    <li>性别:<s:property value="#session.usersex"/></li>
-                    <li>email:<s:property value="#session.email"/></li>
-                    <li>个性签名:<s:property value="#session.sign"/></li>
+                    <li>姓名:<s:property value="#session.user.username"/></li>
+                    <li>性别:<s:property value="#session.user.usersex"/></li>
+                    <li>email:<s:property value="#session.user.email"/></li>
+                    <li>个性签名:<s:property value="#session.user.sign"/></li>
                 </ul>
             </div>
         </div>
@@ -60,11 +60,11 @@
         </div>
         <div id="nav" class="col-md-8" style="padding:0;margin-top: 13px;background-color:#cccccc;font-size: 20px">
 
-                <a href="home.action" class="col-lg-2" >主页</a>
-                <a href="MyFriend.action" class="col-lg-2" >好友</a>
+                <a href="home" class="col-lg-2" >主页</a>
+                <a href="MyFriend" class="col-lg-2" >好友</a>
                 <a href="#" class="col-lg-3" >朋友圈</a>
                 <a href="#" class="col-lg-2" >相册</a>
-                <a href="#" class="col-lg-3" >留言板</a>
+                <a href="CheckMessage" class="col-lg-3" >留言板</a>
         </div>
         <div class="col-md-2">
         </div>

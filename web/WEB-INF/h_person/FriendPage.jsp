@@ -1,8 +1,8 @@
 <%--
   Created by IntelliJ IDEA.
   User: 睡意朦胧
-  Date: 2017/4/12
-  Time: 19:27
+  Date: 2017/4/20
+  Time: 11:39
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -33,7 +33,7 @@
             <!--头像-->
             <div class="col-md-3">
                 <div style="text-align: center">
-                <a href="#"><img src="../../res/img/defPhoto.jpg" class="img-circle" style="width: 120px;margin-top: 30px"></a>
+                    <a href="#"><img src="../../res/img/defPhoto.jpg" class="img-circle" style="width: 120px;margin-top: 30px"></a>
                 </div>
             </div>
             <!--人物信息-->
@@ -41,10 +41,10 @@
             </div>
             <div style="position: relative;left: -20px;top: 28px">
                 <ul style="list-style: none;padding-top: 50px;font-size: 13px">
-                    <li>姓名:<s:property value="#session.user.username"/></li>
-                    <li>性别:<s:property value="#session.user.usersex"/></li>
-                    <li>email:<s:property value="#session.user.email"/></li>
-                    <li>个性签名:<s:property value="#session.user.sign"/></li>
+                    <li>姓名:<s:property value="#session.friend.friendusername"/></li>
+                    <li>性别:<s:property value="#session.friend.friendusersex"/></li>
+                    <li>email:<s:property value="#session.friend.friendemail"/></li>
+                    <li>个性签名:<s:property value="#session.friend.friendsign"/></li>
                 </ul>
             </div>
         </div>
@@ -59,12 +59,9 @@
         <div class="col-md-2">
         </div>
         <div id="nav" class="col-md-8" style="padding:0;margin-top: 13px;background-color:#cccccc;font-size: 20px">
-
-                <a href="home" class="col-lg-2" >主页</a>
-                <a href="MyFriend" class="col-lg-2" >好友</a>
-                <a href="#" class="col-lg-3" >朋友圈</a>
-                <a href="#" class="col-lg-2" >相册</a>
-                <a href="CheckMessage" class="col-lg-3" >留言板</a>
+            <a href="home" class="col-lg-4" >主页</a>
+            <a href="#" class="col-lg-4" >相册</a>
+            <a href="CheckFMessage" class="col-lg-4" >留言板</a>
         </div>
         <div class="col-md-2">
         </div>

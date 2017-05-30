@@ -2,29 +2,65 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a40b628-c651-49c2-99a0-43e0d673c7f6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/action/LoginAndRegister.class" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/action/LoginAndRegister.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/action/ReadNote.class" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/action/ReadNote.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/action/WriteNote.class" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/action/WriteNote.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/dao/NoteDaoImpl.class" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/dao/NoteDaoImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/interfaces/NoteDao.class" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/interfaces/NoteDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/service/NoteService.class" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/service/NoteService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/tag/Dynamic.class" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/tag/Dynamic.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/test/Y_test.class" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/test/Y_test.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/action/LoginAndRegister.class" afterPath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/action/LoginAndRegister.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/action/ReadNote.class" afterPath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/action/ReadNote.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/action/WriteNote.class" afterPath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/action/WriteNote.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/dao/NoteDaoImpl.class" afterPath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/dao/NoteDaoImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/interfaces/NoteDao.class" afterPath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/interfaces/NoteDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/service/NoteService.class" afterPath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/service/NoteService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/tag/Dynamic.class" afterPath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/tag/Dynamic.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/test/Y_test.class" afterPath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/test/Y_test.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/action/MessageManagger.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/bean/MessageEntityPK.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/service/Check_Friends.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/service/Delect_run.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/action/MessageManagger.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/bean/MessageEntityPK.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/service/Check_Friends.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/service/Delect_run.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/h_person/FriendMessagePage.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/h_person/FriendPage.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/h_person/MessagePage.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/h_person/test1.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/mk95/www/action/MessageManagger.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/mk95/www/bean/MessageEntityPK.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/mk95/www/service/Check_Friends.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/mk95/www/service/Delect_run.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/h_person/FriendMessagePage.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/h_person/FriendPage.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/h_person/MessagePage.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/h_person/test1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/action/PersonFriend.class" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/action/PersonFriend.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/action/PersonPage.class" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/action/PersonPage.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/action/ttt.class" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/action/ttt.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/bean/MessageEntity.class" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/bean/MessageEntity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/dao/MessageDaoImpl.class" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/dao/MessageDaoImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/service/H_FileRW.class" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/service/H_FileRW.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/tag/IsLogin.class" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/tag/IsLogin.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/tag/SessArray.class" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/tag/SessArray.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/action/PersonFriend.class" afterPath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/action/PersonFriend.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/action/PersonPage.class" afterPath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/action/PersonPage.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/action/ttt.class" afterPath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/action/ttt.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/bean/MessageEntity.class" afterPath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/bean/MessageEntity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/dao/MessageDaoImpl.class" afterPath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/dao/MessageDaoImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/service/H_FileRW.class" afterPath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/service/H_FileRW.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/tag/IsLogin.class" afterPath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/tag/IsLogin.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/tag/SessArray.class" afterPath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/tag/SessArray.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/applicationContext.xml" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/applicationContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/y_struts.xml" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/y_struts.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/protect/readNote.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/protect/readNote.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/protect/writeNote.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/protect/writeNote.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/index.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ImitationQqSpace/y_struts.xml" afterPath="$PROJECT_DIR$/out/production/ImitationQqSpace/y_struts.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/bean/MessageEntity.hbm.xml" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/bean/MessageEntity.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/h_springConfig.xml" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/h_springConfig.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/h_struts.xml" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/h_struts.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/h_person/MyPage.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/h_person/MyPage.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/bean/MessageEntity.hbm.xml" afterPath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/bean/MessageEntity.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ImitationQqSpace/h_springConfig.xml" afterPath="$PROJECT_DIR$/out/production/ImitationQqSpace/h_springConfig.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ImitationQqSpace/h_struts.xml" afterPath="$PROJECT_DIR$/out/production/ImitationQqSpace/h_struts.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/mk95/www/action/PersonFriend.java" afterPath="$PROJECT_DIR$/src/cn/mk95/www/action/PersonFriend.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/mk95/www/action/PersonPage.java" afterPath="$PROJECT_DIR$/src/cn/mk95/www/action/PersonPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/mk95/www/action/ttt.java" afterPath="$PROJECT_DIR$/src/cn/mk95/www/action/ttt.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/mk95/www/bean/MessageEntity.hbm.xml" afterPath="$PROJECT_DIR$/src/cn/mk95/www/bean/MessageEntity.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/mk95/www/bean/MessageEntity.java" afterPath="$PROJECT_DIR$/src/cn/mk95/www/bean/MessageEntity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/mk95/www/dao/MessageDaoImpl.java" afterPath="$PROJECT_DIR$/src/cn/mk95/www/dao/MessageDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/mk95/www/service/H_FileRW.java" afterPath="$PROJECT_DIR$/src/cn/mk95/www/service/H_FileRW.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/mk95/www/tag/IsLogin.java" afterPath="$PROJECT_DIR$/src/cn/mk95/www/tag/IsLogin.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/mk95/www/tag/SessArray.java" afterPath="$PROJECT_DIR$/src/cn/mk95/www/tag/SessArray.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/h_springConfig.xml" afterPath="$PROJECT_DIR$/src/h_springConfig.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/h_struts.xml" afterPath="$PROJECT_DIR$/src/h_struts.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/h_person/MyPage.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/h_person/MyPage.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/PersonFriend.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/h_person/PersonFriend.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/PersonFriend.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/h_person/PersonFriend.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -91,16 +127,10 @@
       <file leaf-file-name="Dynamic.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/cn/mk95/www/tag/Dynamic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="78" column="65" lean-forward="true" selection-start-line="78" selection-start-column="65" selection-end-line="78" selection-end-column="65" />
+            <state relative-caret-position="650">
+              <caret line="94" column="15" lean-forward="true" selection-start-line="94" selection-start-column="15" selection-end-line="94" selection-end-column="15" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#938#939#0" expanded="true" />
-                <element signature="e#970#971#0" expanded="true" />
-                <element signature="e#1083#1084#0" expanded="true" />
-                <element signature="e#1113#1114#0" expanded="true" />
-                <element signature="e#1150#1151#0" expanded="true" />
-                <element signature="e#1182#1183#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -109,9 +139,16 @@
       <file leaf-file-name="ReadNote.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cn/mk95/www/action/ReadNote.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="726">
+            <state relative-caret-position="418">
               <caret line="33" column="13" lean-forward="false" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
               <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#620#621#0" expanded="false" />
+                <element signature="e#666#667#0" expanded="false" />
+                <element signature="e#713#714#0" expanded="false" />
+                <element signature="e#751#752#0" expanded="false" />
+                <element signature="e#784#785#0" expanded="false" />
+                <element signature="e#812#813#0" expanded="false" />
                 <marker date="1496151191398" expanded="true" signature="1604:1610" ph="{...}" />
               </folding>
             </state>
@@ -121,7 +158,7 @@
       <file leaf-file-name="y_struts.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/y_struts.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
+            <state relative-caret-position="484">
               <caret line="22" column="17" lean-forward="false" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
               <folding />
             </state>
@@ -144,12 +181,9 @@
       <file leaf-file-name="y_springConfig.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/y_springConfig.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="638">
+            <state relative-caret-position="726">
               <caret line="33" column="48" lean-forward="false" selection-start-line="33" selection-start-column="48" selection-end-line="33" selection-end-column="48" />
-              <folding>
-                <marker date="1496151128649" expanded="true" signature="1442:1454" ph="..." />
-                <marker date="1496151128649" expanded="true" signature="1527:1645" ph="..." />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -159,7 +193,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="462">
               <caret line="30" column="10" lean-forward="false" selection-start-line="30" selection-start-column="10" selection-end-line="30" selection-end-column="10" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -167,20 +203,17 @@
       <file leaf-file-name="NoteDaoImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cn/mk95/www/dao/NoteDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="642">
+            <state relative-caret-position="1386">
               <caret line="74" column="69" lean-forward="false" selection-start-line="74" selection-start-column="69" selection-end-line="74" selection-end-column="69" />
               <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#1677#1678#0" expanded="false" />
+                <element signature="e#1723#1724#0" expanded="false" />
+                <element signature="e#1849#1850#0" expanded="false" />
+                <element signature="e#1904#1905#0" expanded="false" />
+                <element signature="e#1934#1935#0" expanded="false" />
+                <element signature="e#1977#1978#0" expanded="false" />
                 <marker date="1496151167256" expanded="true" signature="1116:1123" ph="{...}" />
-                <marker date="1496151167256" expanded="true" signature="1185:1326" ph="{...}" />
-                <marker date="1496151167256" expanded="true" signature="1394:1619" ph="{...}" />
-                <marker date="1496151167256" expanded="false" signature="1676:1687" ph=" { " />
-                <marker date="1496151167256" expanded="false" signature="1718:1724" ph=" }" />
-                <marker date="1496151167256" expanded="true" signature="1730:1806" ph="/**...*/" />
-                <marker date="1496151167256" expanded="false" signature="1848:1859" ph=" { " />
-                <marker date="1496151167256" expanded="false" signature="1899:1905" ph=" }" />
-                <marker date="1496151167256" expanded="false" signature="1933:1944" ph=" { " />
-                <marker date="1496151167256" expanded="false" signature="1972:1978" ph=" }" />
-                <marker date="1496151167256" expanded="true" signature="2058:2226" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -189,9 +222,11 @@
       <file leaf-file-name="NoteService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cn/mk95/www/service/NoteService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
+            <state relative-caret-position="2574">
               <caret line="128" column="72" lean-forward="false" selection-start-line="128" selection-start-column="72" selection-end-line="128" selection-end-column="72" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -322,9 +357,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -483,6 +515,9 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1241,6 +1276,7 @@
       <workItem from="1496128691646" duration="530000" />
       <workItem from="1496133930915" duration="3830000" />
       <workItem from="1496144364259" duration="7352000" />
+      <workItem from="1496151972440" duration="92000" />
     </task>
     <task id="LOCAL-00001" summary="更新">
       <created>1496151414356</created>
@@ -1285,10 +1321,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="273779000" />
+    <option name="totallyTimeSpent" value="273871000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1306,17 +1342,16 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3991323" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32910052" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33188722" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="22" y="523" width="1876" height="367" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32910052" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19989339" sideWeight="0.2815934" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21055438" sideWeight="0.7184066" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21268657" sideWeight="0.7184066" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17643923" sideWeight="0.3814935" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1324,6 +1359,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1392,7 +1428,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
           <caret line="11" column="28" lean-forward="false" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1407,7 +1442,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
           <caret line="17" column="10" lean-forward="false" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1503,7 +1537,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="10" column="36" lean-forward="true" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1511,7 +1544,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="261">
           <caret line="15" column="31" lean-forward="true" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1519,7 +1551,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="717">
           <caret line="63" column="33" lean-forward="false" selection-start-line="63" selection-start-column="33" selection-end-line="63" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1535,7 +1566,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="319">
           <caret line="146" column="68" lean-forward="true" selection-start-line="146" selection-start-column="68" selection-end-line="146" selection-end-column="68" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1543,26 +1573,25 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
           <caret line="30" column="10" lean-forward="false" selection-start-line="30" selection-start-column="10" selection-end-line="30" selection-end-column="10" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/mk95/www/dao/NoteDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="642">
+        <state relative-caret-position="1386">
           <caret line="74" column="69" lean-forward="false" selection-start-line="74" selection-start-column="69" selection-end-line="74" selection-end-column="69" />
           <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1677#1678#0" expanded="false" />
+            <element signature="e#1723#1724#0" expanded="false" />
+            <element signature="e#1849#1850#0" expanded="false" />
+            <element signature="e#1904#1905#0" expanded="false" />
+            <element signature="e#1934#1935#0" expanded="false" />
+            <element signature="e#1977#1978#0" expanded="false" />
             <marker date="1496151167256" expanded="true" signature="1116:1123" ph="{...}" />
-            <marker date="1496151167256" expanded="true" signature="1185:1326" ph="{...}" />
-            <marker date="1496151167256" expanded="true" signature="1394:1619" ph="{...}" />
-            <marker date="1496151167256" expanded="false" signature="1676:1687" ph=" { " />
-            <marker date="1496151167256" expanded="false" signature="1718:1724" ph=" }" />
-            <marker date="1496151167256" expanded="true" signature="1730:1806" ph="/**...*/" />
-            <marker date="1496151167256" expanded="false" signature="1848:1859" ph=" { " />
-            <marker date="1496151167256" expanded="false" signature="1899:1905" ph=" }" />
-            <marker date="1496151167256" expanded="false" signature="1933:1944" ph=" { " />
-            <marker date="1496151167256" expanded="false" signature="1972:1978" ph=" }" />
-            <marker date="1496151167256" expanded="true" signature="2058:2226" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1579,7 +1608,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="155">
           <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1617,7 +1645,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="177">
           <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1625,9 +1652,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
           <caret line="333" column="0" lean-forward="false" selection-start-line="333" selection-start-column="0" selection-end-line="333" selection-end-column="0" />
-          <folding>
-            <element signature="e#11597#11598#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1635,7 +1659,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="329">
           <caret line="1442" column="0" lean-forward="false" selection-start-line="1442" selection-start-column="0" selection-end-line="1442" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1643,7 +1666,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="155">
           <caret line="327" column="0" lean-forward="false" selection-start-line="327" selection-start-column="0" selection-end-line="327" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1651,7 +1673,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
           <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1659,9 +1680,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
           <caret line="303" column="0" lean-forward="false" selection-start-line="303" selection-start-column="0" selection-end-line="303" selection-end-column="0" />
-          <folding>
-            <element signature="e#10903#10904#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1669,9 +1687,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
           <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
-          <folding>
-            <element signature="e#1456#1457#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1687,15 +1702,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="726">
           <caret line="50" column="41" lean-forward="true" selection-start-line="50" selection-start-column="41" selection-end-line="50" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/mk95/www/action/ReadNote.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="726">
+        <state relative-caret-position="418">
           <caret line="33" column="13" lean-forward="false" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
           <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#620#621#0" expanded="false" />
+            <element signature="e#666#667#0" expanded="false" />
+            <element signature="e#713#714#0" expanded="false" />
+            <element signature="e#751#752#0" expanded="false" />
+            <element signature="e#784#785#0" expanded="false" />
+            <element signature="e#812#813#0" expanded="false" />
             <marker date="1496151191398" expanded="true" signature="1604:1610" ph="{...}" />
           </folding>
         </state>
@@ -1703,26 +1724,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/y_springConfig.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
+        <state relative-caret-position="726">
           <caret line="33" column="48" lean-forward="false" selection-start-line="33" selection-start-column="48" selection-end-line="33" selection-end-column="48" />
-          <folding>
-            <marker date="1496151128649" expanded="true" signature="1442:1454" ph="..." />
-            <marker date="1496151128649" expanded="true" signature="1527:1645" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/mk95/www/service/NoteService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
+        <state relative-caret-position="2574">
           <caret line="128" column="72" lean-forward="false" selection-start-line="128" selection-start-column="72" selection-end-line="128" selection-end-column="72" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/y_struts.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
+        <state relative-caret-position="484">
           <caret line="22" column="17" lean-forward="false" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
           <folding />
         </state>
@@ -1743,32 +1763,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
           <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#530#531#0" expanded="false" />
-            <element signature="e#560#561#0" expanded="false" />
-            <element signature="e#607#608#0" expanded="false" />
-            <element signature="e#645#646#0" expanded="false" />
-            <element signature="e#688#689#0" expanded="false" />
-            <element signature="e#722#723#0" expanded="false" />
-            <element signature="e#781#782#0" expanded="false" />
-            <element signature="e#827#828#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/mk95/www/tag/Dynamic.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="78" column="65" lean-forward="true" selection-start-line="78" selection-start-column="65" selection-end-line="78" selection-end-column="65" />
+        <state relative-caret-position="650">
+          <caret line="94" column="15" lean-forward="true" selection-start-line="94" selection-start-column="15" selection-end-line="94" selection-end-column="15" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#938#939#0" expanded="true" />
-            <element signature="e#970#971#0" expanded="true" />
-            <element signature="e#1083#1084#0" expanded="true" />
-            <element signature="e#1113#1114#0" expanded="true" />
-            <element signature="e#1150#1151#0" expanded="true" />
-            <element signature="e#1182#1183#0" expanded="true" />
           </folding>
         </state>
       </provider>
