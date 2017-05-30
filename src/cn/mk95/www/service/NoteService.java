@@ -37,7 +37,7 @@ public class NoteService {
      * @param note_title
      * @return 返回note的绝对路径
      */
-    public String initNote(NoteEntity noteEntity, int user_id, String note_title, NoteDao noteDao) {
+    public synchronized String initNote(NoteEntity noteEntity, int user_id, String note_title, NoteDao noteDao) {
         Calendar calendar = Calendar.getInstance();
         long l = calendar.getTime().getTime();
         noteEntity.setNotetime(new Timestamp(l));
@@ -50,7 +50,7 @@ public class NoteService {
         int note_id = noteDao.countUserNote(user_id);
         noteEntity.setNoteid(note_id);
         noteEntity.setUserid(user_id);
-        noteEntity.setId(noteDao.countNote() + 1);
+        noteEntity.setId(noteDao.findMaxId() + 1);
         noteEntity.setNoteurl(url);
         return path;
     }

@@ -39,6 +39,8 @@ public class LoadIndexDynamic extends ActionSupport{
         ArrayList<HomeDynamic> homeNewDynamics_page1=noteService.newNoteListToDynamicList(1,4,noteDao);
         HttpServletRequest request= ServletActionContext.getRequest();
         request.setAttribute("homeNewDynamics_page1",homeNewDynamics_page1);
+        int flag=1;
+        request.setAttribute("flag",flag);
         return ActionSupport.SUCCESS;
     }
 }

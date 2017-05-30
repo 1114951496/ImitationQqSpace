@@ -62,4 +62,10 @@ public interface NoteDao extends BaseDao<NoteEntity> {
      * @return
      */
     public ArrayList<NoteEntity> findNewNote(int page,int num);
+
+    /**
+     * 得到最大id
+     * @return
+     */
+    public int findMaxId();
 }
