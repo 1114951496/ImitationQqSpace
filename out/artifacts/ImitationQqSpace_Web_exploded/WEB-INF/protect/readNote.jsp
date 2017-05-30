@@ -25,6 +25,16 @@
             </div>
 
         </div>
+
+        <!--高速版-->
+        <div id="SOHUCS" sid="${session.sid}"></div>
+        <script charset="utf-8" type="text/javascript" src="http://changyan.sohu.com/upload/changyan.js" ></script>
+        <script type="text/javascript">
+            window.changyan.api.config({
+                appid: 'cyt1cpgdM',
+                conf: 'prod_53e7a72ffc50d07d1010adaf416443fc'
+            });
+        </script>
     </div>
     <div class="col-md-2">
     </div>

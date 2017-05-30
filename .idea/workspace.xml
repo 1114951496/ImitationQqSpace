@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a40b628-c651-49c2-99a0-43e0d673c7f6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/mk95/www/action/LoadIndexDynamic.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/action/LoginAndRegister.class" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/action/LoginAndRegister.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/action/ReadNote.class" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/action/ReadNote.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/action/WriteNote.class" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/action/WriteNote.class" />
@@ -21,28 +19,12 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/tag/Dynamic.class" afterPath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/tag/Dynamic.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/test/Y_test.class" afterPath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/test/Y_test.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ImitationQqSpace.iml" afterPath="$PROJECT_DIR$/ImitationQqSpace.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/applicationContext.xml" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/applicationContext.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/y_struts.xml" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/y_struts.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/protect/readNote.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/protect/readNote.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/protect/writeNote.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/protect/writeNote.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/index.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/index.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ImitationQqSpace/y_struts.xml" afterPath="$PROJECT_DIR$/out/production/ImitationQqSpace/y_struts.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/mk95/www/action/LoginAndRegister.java" afterPath="$PROJECT_DIR$/src/cn/mk95/www/action/LoginAndRegister.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/mk95/www/action/ReadNote.java" afterPath="$PROJECT_DIR$/src/cn/mk95/www/action/ReadNote.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/mk95/www/action/WriteNote.java" afterPath="$PROJECT_DIR$/src/cn/mk95/www/action/WriteNote.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/mk95/www/dao/NoteDaoImpl.java" afterPath="$PROJECT_DIR$/src/cn/mk95/www/dao/NoteDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/mk95/www/interfaces/NoteDao.java" afterPath="$PROJECT_DIR$/src/cn/mk95/www/interfaces/NoteDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/mk95/www/service/NoteService.java" afterPath="$PROJECT_DIR$/src/cn/mk95/www/service/NoteService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/mk95/www/tag/Dynamic.java" afterPath="$PROJECT_DIR$/src/cn/mk95/www/tag/Dynamic.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/mk95/www/test/Y_test.java" afterPath="$PROJECT_DIR$/src/cn/mk95/www/test/Y_test.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/y_springConfig.xml" afterPath="$PROJECT_DIR$/src/y_springConfig.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/y_struts.xml" afterPath="$PROJECT_DIR$/src/y_struts.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/applicationContext.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/applicationContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/protect/readNote.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/protect/readNote.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/protect/writeNote.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/protect/writeNote.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="$PROJECT_DIR$/web/index.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -109,8 +91,8 @@
       <file leaf-file-name="Dynamic.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/cn/mk95/www/tag/Dynamic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="452">
-              <caret line="85" column="42" lean-forward="true" selection-start-line="85" selection-start-column="42" selection-end-line="85" selection-end-column="42" />
+            <state relative-caret-position="298">
+              <caret line="78" column="65" lean-forward="true" selection-start-line="78" selection-start-column="65" selection-end-line="78" selection-end-column="65" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#938#939#0" expanded="true" />
@@ -1258,8 +1240,16 @@
       <workItem from="1496106114442" duration="7256000" />
       <workItem from="1496128691646" duration="530000" />
       <workItem from="1496133930915" duration="3830000" />
-      <workItem from="1496144364259" duration="6912000" />
+      <workItem from="1496144364259" duration="7352000" />
     </task>
+    <task id="LOCAL-00001" summary="更新">
+      <created>1496151414356</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1496151414356</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1295,10 +1285,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="273339000" />
+    <option name="totallyTimeSpent" value="273779000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1343,6 +1333,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="更新" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1765,8 +1759,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/mk95/www/tag/Dynamic.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="85" column="42" lean-forward="true" selection-start-line="85" selection-start-column="42" selection-end-line="85" selection-end-column="42" />
+        <state relative-caret-position="298">
+          <caret line="78" column="65" lean-forward="true" selection-start-line="78" selection-start-column="65" selection-end-line="78" selection-end-column="65" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#938#939#0" expanded="true" />
