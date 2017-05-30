@@ -1,6 +1,7 @@
 package cn.mk95.www.action;
 
 import cn.mk95.www.bean.NoteEntity;
+import cn.mk95.www.bean.UserEntity;
 import cn.mk95.www.interfaces.NoteDao;
 import cn.mk95.www.service.NoteService;
 import com.opensymphony.xwork2.ActionSupport;
@@ -34,13 +35,17 @@ public class ReadNote extends ActionSupport{
     public String execute() throws Exception {
         noteDao.init();
         HttpServletRequest request=ServletActionContext.getRequest();
-        id=Integer.parseInt(request.getParameter("id"));
+        if(request.getParameter("id")==null){
+            id=(int) request.getAttribute("id");
+        }else{
+            id=Integer.parseInt(request.getParameter("id"));
+        }
         NoteEntity note=noteDao.findNoteById(id);
         String noteTitle=noteService.getNoteTitle(note.getNoteurl());
         request.getSession().setAttribute("requestNoteTitle",noteTitle);
         request.getSession().setAttribute("requestNoteContent",
                 NoteService.getNoteFileContent(NoteService.getWebInfPath()+note.getNoteurl()));
-
+        request.getSession().setAttribute("sid",noteTitle+id);
         return ActionSupport.SUCCESS;
     }
 }

@@ -3,6 +3,7 @@ package cn.mk95.www.dao;
 import cn.mk95.www.bean.NoteEntity;
 import cn.mk95.www.interfaces.NoteDao;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -23,14 +24,14 @@ public class NoteDaoImpl extends BaseDaoHibernate<NoteEntity> implements NoteDao
 
     @Override
     public int findAuthorById(int id) {
-        List<NoteEntity> list=find("select en from NoteEntity en where en.id=?",id);
+        List<NoteEntity> list = find("select en from NoteEntity en where en.id=?", id);
         return list.get(0).getUserid();
     }
 
     @Override
     public NoteEntity findNoteById(int id) {
-        List<NoteEntity> noteEntities=find("select en from NoteEntity en where en.id=?",id);
-        if(noteEntities.size()==0)
+        List<NoteEntity> noteEntities = find("select en from NoteEntity en where en.id=?", id);
+        if (noteEntities.size() == 0)
             return null;
         return noteEntities.get(0);
     }
@@ -57,14 +58,21 @@ public class NoteDaoImpl extends BaseDaoHibernate<NoteEntity> implements NoteDao
 
     /**
      * 统计某一用户的note总数
+     *
      * @param user_id
      * @return
      */
-    public int countUserNote(int user_id){
+    public int countUserNote(int user_id) {
         return findNoteByUserid(user_id).size();
     }
 
-    public int countNote(){
+    public int countNote() {
         return findAllNote().size();
+    }
+
+    @Override
+    public ArrayList<NoteEntity> findNewNote(int page, int num) {
+        ArrayList<NoteEntity> newNotes = (ArrayList<NoteEntity>) findByPage("from NoteEntity en order by en.notetime desc", page, num);
+        return newNotes;
     }
 }

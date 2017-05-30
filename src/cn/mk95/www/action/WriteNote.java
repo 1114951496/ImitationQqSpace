@@ -66,6 +66,7 @@ public class WriteNote extends ActionSupport {
         boolean b=noteService.saveNoteFile(noteEntity.getNoteurl(),dir,note);
         if(b){
             noteDao.save(noteEntity);
+            ServletActionContext.getRequest().setAttribute("id",noteEntity.getId());
             return ActionSupport.SUCCESS;
         }else {
             return ActionSupport.ERROR;

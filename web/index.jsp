@@ -76,13 +76,12 @@
                                  src="res/img/index1.jpg"/>
                             <div class="carousel-caption">
                                 <!--style="position: absolute;top: 200px"-->
-                                <h4>
-                                    First Thumbnail label
+                                <h4 style="color: #F22929">
+                                    欢迎光临easyspace
                                 </h4>
-                                <p>
-                                    Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi
-                                    porta
-                                    gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+                                <p style="color: #B15B22">
+                                    床前明月光，疑是地上霜。
+                                    举头望明月，低头思故乡。
                                 </p>
                             </div>
                         </div>
@@ -90,13 +89,11 @@
                             <img alt="Carousel Bootstrap Second" class="index-top-img"
                                  src="res/img/index2.jpg"/>
                             <div class="carousel-caption">
-                                <h4>
-                                    Second Thumbnail label
+                                <h4 style="color: #F22929">
+                                    一步一步走出明天的模样
                                 </h4>
-                                <p>
-                                    Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi
-                                    porta
-                                    gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+                                <p style="color: #B15B22">
+                                    真是个不错的选择。
                                 </p>
                             </div>
                         </div>
@@ -104,13 +101,11 @@
                             <img alt="Carousel Bootstrap Third" class="index-top-img"
                                  src="res/img/index3.jpg"/>
                             <div class="carousel-caption">
-                                <h4>
-                                    Third Thumbnail label
+                                <h4 style="color: #F22929">
+                                    提莫队长正在报道
                                 </h4>
-                                <p>
-                                    Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi
-                                    porta
-                                    gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+                                <p style="color: #B15B22">
+                                    QWERTYUIOPASDFGHJKLZXCVBNM
                                 </p>
                             </div>
                         </div>

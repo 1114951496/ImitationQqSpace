@@ -1,6 +1,8 @@
 package cn.mk95.www.interfaces;
 
 import cn.mk95.www.bean.NoteEntity;
+
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -52,4 +54,12 @@ public interface NoteDao extends BaseDao<NoteEntity> {
     public int countUserNote(int user_id);
 
     public int countNote();
+
+    /**
+     * 查询最新note
+     * @param page
+     * @param num
+     * @return
+     */
+    public ArrayList<NoteEntity> findNewNote(int page,int num);
 }

@@ -4,6 +4,7 @@ import cn.mk95.www.dao.NoteDaoImpl;
 import cn.mk95.www.interfaces.CommentDao;
 import cn.mk95.www.interfaces.NoteDao;
 import cn.mk95.www.interfaces.UserDao;
+import cn.mk95.www.service.NoteService;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.junit.Test;
@@ -24,6 +25,10 @@ public class Y_test {
 
     @Test
     public void test2(){
+        ApplicationContext ac=new FileSystemXmlApplicationContext("D:\\GitHub\\ImitationQqSpace\\web\\WEB-INF\\applicationContext.xml");
+        NoteDao noteDao= (NoteDao) ac.getBean("noteDao");
+        NoteService noteService=new NoteService();
+        //noteService.newNoteListToDynamicList(1,5,noteDao);
 
     }
 }

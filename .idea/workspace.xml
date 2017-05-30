@@ -2,47 +2,47 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a40b628-c651-49c2-99a0-43e0d673c7f6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/res/img/readNoteBg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/protect/readNote.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/test/readNoteTest.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/bean/CommentEntityPK.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/bean/CommentEntityPK.class" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/mk95/www/action/LoadIndexDynamic.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/action/LoginAndRegister.class" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/action/LoginAndRegister.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/action/ReadNote.class" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/action/ReadNote.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/bean/CommentEntity.class" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/bean/CommentEntity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/dao/BaseDaoHibernate.class" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/dao/BaseDaoHibernate.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/action/WriteNote.class" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/action/WriteNote.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/dao/NoteDaoImpl.class" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/dao/NoteDaoImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/interfaces/NoteDao.class" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/interfaces/NoteDao.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/service/NoteService.class" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/service/NoteService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/tag/Dynamic.class" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/tag/Dynamic.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/res/img/defPhoto.jpg" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/res/img/defPhoto.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/test/Y_test.class" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/test/Y_test.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/action/LoginAndRegister.class" afterPath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/action/LoginAndRegister.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/action/ReadNote.class" afterPath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/action/ReadNote.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/bean/CommentEntity.class" afterPath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/bean/CommentEntity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/dao/BaseDaoHibernate.class" afterPath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/dao/BaseDaoHibernate.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/action/WriteNote.class" afterPath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/action/WriteNote.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/dao/NoteDaoImpl.class" afterPath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/dao/NoteDaoImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/interfaces/NoteDao.class" afterPath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/interfaces/NoteDao.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/service/NoteService.class" afterPath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/service/NoteService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/tag/Dynamic.class" afterPath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/tag/Dynamic.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/f0f7ac56-3505-43c0-9ac2-f4d90ed14217.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/f0f7ac56-3505-43c0-9ac2-f4d90ed14217.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/test/Y_test.class" afterPath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/test/Y_test.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/bean/CommentEntity.hbm.xml" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/bean/CommentEntity.hbm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/bean/NoteEntity.hbm.xml" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/bean/NoteEntity.hbm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/y_springConfig.xml" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/y_springConfig.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ImitationQqSpace.iml" afterPath="$PROJECT_DIR$/ImitationQqSpace.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/applicationContext.xml" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/applicationContext.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/y_struts.xml" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/y_struts.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/userData/Friend/test1.txt" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/userData/Friend/test1.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/test/commentTest.html" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/test/commentTest.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/bean/CommentEntity.hbm.xml" afterPath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/bean/CommentEntity.hbm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/bean/NoteEntity.hbm.xml" afterPath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/bean/NoteEntity.hbm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ImitationQqSpace/y_springConfig.xml" afterPath="$PROJECT_DIR$/out/production/ImitationQqSpace/y_springConfig.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/protect/readNote.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/protect/readNote.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/protect/writeNote.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/protect/writeNote.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/index.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/index.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ImitationQqSpace/y_struts.xml" afterPath="$PROJECT_DIR$/out/production/ImitationQqSpace/y_struts.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/mk95/www/action/LoginAndRegister.java" afterPath="$PROJECT_DIR$/src/cn/mk95/www/action/LoginAndRegister.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/mk95/www/action/ReadNote.java" afterPath="$PROJECT_DIR$/src/cn/mk95/www/action/ReadNote.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/mk95/www/bean/CommentEntity.hbm.xml" afterPath="$PROJECT_DIR$/src/cn/mk95/www/bean/CommentEntity.hbm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/mk95/www/bean/CommentEntity.java" afterPath="$PROJECT_DIR$/src/cn/mk95/www/bean/CommentEntity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/mk95/www/action/WriteNote.java" afterPath="$PROJECT_DIR$/src/cn/mk95/www/action/WriteNote.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/mk95/www/dao/NoteDaoImpl.java" afterPath="$PROJECT_DIR$/src/cn/mk95/www/dao/NoteDaoImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/mk95/www/interfaces/NoteDao.java" afterPath="$PROJECT_DIR$/src/cn/mk95/www/interfaces/NoteDao.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/mk95/www/service/NoteService.java" afterPath="$PROJECT_DIR$/src/cn/mk95/www/service/NoteService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/mk95/www/tag/Dynamic.java" afterPath="$PROJECT_DIR$/src/cn/mk95/www/tag/Dynamic.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/mk95/www/test/Y_test.java" afterPath="$PROJECT_DIR$/src/cn/mk95/www/test/Y_test.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/y_springConfig.xml" afterPath="$PROJECT_DIR$/src/y_springConfig.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/y_struts.xml" afterPath="$PROJECT_DIR$/src/y_struts.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/applicationContext.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/applicationContext.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/protect/readNote.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/protect/readNote.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/protect/writeNote.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/protect/writeNote.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="$PROJECT_DIR$/web/index.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -84,10 +84,137 @@
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
     </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="@115.159.197.215" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="easyspace" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="note" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Dynamic.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/cn/mk95/www/tag/Dynamic.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="452">
+              <caret line="85" column="42" lean-forward="true" selection-start-line="85" selection-start-column="42" selection-end-line="85" selection-end-column="42" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#938#939#0" expanded="true" />
+                <element signature="e#970#971#0" expanded="true" />
+                <element signature="e#1083#1084#0" expanded="true" />
+                <element signature="e#1113#1114#0" expanded="true" />
+                <element signature="e#1150#1151#0" expanded="true" />
+                <element signature="e#1182#1183#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReadNote.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cn/mk95/www/action/ReadNote.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="726">
+              <caret line="33" column="13" lean-forward="false" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+              <folding>
+                <marker date="1496151191398" expanded="true" signature="1604:1610" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="y_struts.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/y_struts.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="370">
+              <caret line="22" column="17" lean-forward="false" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="6" column="49" lean-forward="false" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="49" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="y_springConfig.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/y_springConfig.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="638">
+              <caret line="33" column="48" lean-forward="false" selection-start-line="33" selection-start-column="48" selection-end-line="33" selection-end-column="48" />
+              <folding>
+                <marker date="1496151128649" expanded="true" signature="1442:1454" ph="..." />
+                <marker date="1496151128649" expanded="true" signature="1527:1645" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Y_test.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cn/mk95/www/test/Y_test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="462">
+              <caret line="30" column="10" lean-forward="false" selection-start-line="30" selection-start-column="10" selection-end-line="30" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NoteDaoImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cn/mk95/www/dao/NoteDaoImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="642">
+              <caret line="74" column="69" lean-forward="false" selection-start-line="74" selection-start-column="69" selection-end-line="74" selection-end-column="69" />
+              <folding>
+                <marker date="1496151167256" expanded="true" signature="1116:1123" ph="{...}" />
+                <marker date="1496151167256" expanded="true" signature="1185:1326" ph="{...}" />
+                <marker date="1496151167256" expanded="true" signature="1394:1619" ph="{...}" />
+                <marker date="1496151167256" expanded="false" signature="1676:1687" ph=" { " />
+                <marker date="1496151167256" expanded="false" signature="1718:1724" ph=" }" />
+                <marker date="1496151167256" expanded="true" signature="1730:1806" ph="/**...*/" />
+                <marker date="1496151167256" expanded="false" signature="1848:1859" ph=" { " />
+                <marker date="1496151167256" expanded="false" signature="1899:1905" ph=" }" />
+                <marker date="1496151167256" expanded="false" signature="1933:1944" ph=" { " />
+                <marker date="1496151167256" expanded="false" signature="1972:1978" ph=" }" />
+                <marker date="1496151167256" expanded="true" signature="2058:2226" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NoteService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cn/mk95/www/service/NoteService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="331">
+              <caret line="128" column="72" lean-forward="false" selection-start-line="128" selection-start-column="72" selection-end-line="128" selection-end-column="72" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -95,16 +222,24 @@
         <option value="spring-beans.schema" />
         <option value="struts_2_3" />
         <option value="Interface" />
+        <option value="Jsp File" />
+        <option value="HTML File" />
         <option value="CSS File" />
         <option value="JavaScript File" />
-        <option value="Jsp File" />
         <option value="Class" />
-        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="PUSH_TAGS">
+      <GitPushTagMode />
+    </option>
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -114,7 +249,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/cn/mk95/www/interfaces/RegisterYzDao.java" />
         <option value="$PROJECT_DIR$/src/cn/mk95/www/action/sendYzm.java" />
         <option value="$PROJECT_DIR$/src/cn/mk95/www/interfaces/EmailYzDao.java" />
         <option value="$PROJECT_DIR$/src/cn/mk95/www/util/EmailUtil.java" />
@@ -123,21 +257,16 @@
         <option value="$PROJECT_DIR$/src/cn/mk95/www/bean/HomeDynamic.java" />
         <option value="$PROJECT_DIR$/web/writeNote.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/y_tag.tld" />
-        <option value="$PROJECT_DIR$/src/cn/mk95/www/tag/Dynamic.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/protect/index.html" />
         <option value="$PROJECT_DIR$/web/res/other/markitupDemo.html" />
         <option value="$PROJECT_DIR$/web/res/other/write.jsp" />
         <option value="$PROJECT_DIR$/web/writeNoteTest.html" />
         <option value="$PROJECT_DIR$/web/res/other/summernote/summernote.js" />
         <option value="$PROJECT_DIR$/web/WEB-INF/default_ft.jsp" />
-        <option value="$PROJECT_DIR$/web/test/writeNoteTest.html" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/protect/writeNote.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/default_nav.jsp" />
         <option value="$PROJECT_DIR$/src/cn/mk95/www/bean/NoteEntityPK.java" />
         <option value="$PROJECT_DIR$/src/cn/mk95/www/dao/AlbumDaoImpl.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/applicationContext.xml" />
         <option value="$PROJECT_DIR$/src/hibernate.cfg.xml" />
-        <option value="$PROJECT_DIR$/src/cn/mk95/www/test/Y_test.java" />
         <option value="$PROJECT_DIR$/src/cn/mk95/www/dao/RegisterYzDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/cn/mk95/www/util/systemEmail.properties" />
         <option value="$PROJECT_DIR$/src/cn/mk95/www/interfaces/UserDao.java" />
@@ -146,25 +275,31 @@
         <option value="$PROJECT_DIR$/src/cn/mk95/www/action/SendYzm.java" />
         <option value="$PROJECT_DIR$/web/res/js/login.js" />
         <option value="$PROJECT_DIR$/web/login.jsp" />
-        <option value="$PROJECT_DIR$/src/cn/mk95/www/action/LoginAndRegister.java" />
         <option value="$PROJECT_DIR$/src/cn/mk95/www/tag/IsLogin.java" />
         <option value="$PROJECT_DIR$/src/cn/mk95/www/dao/BaseDaoHibernate.java" />
         <option value="$PROJECT_DIR$/src/cn/mk95/www/util/Utf8StringUtil.java" />
         <option value="$PROJECT_DIR$/src/cn/mk95/www/util/StringUtil.java" />
-        <option value="$PROJECT_DIR$/src/cn/mk95/www/action/WriteNote.java" />
-        <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/web/res/css/comment.css" />
         <option value="$PROJECT_DIR$/web/res/css/semantic.css" />
         <option value="$PROJECT_DIR$/web/res/js/comment.js" />
         <option value="$PROJECT_DIR$/web/test/commentTest.html" />
-        <option value="$PROJECT_DIR$/src/y_springConfig.xml" />
-        <option value="$PROJECT_DIR$/src/y_struts.xml" />
-        <option value="$PROJECT_DIR$/src/cn/mk95/www/service/NoteService.java" />
+        <option value="$PROJECT_DIR$/web/test/writeNoteTest.html" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/protect/writeNote.jsp" />
+        <option value="$PROJECT_DIR$/src/cn/mk95/www/action/WriteNote.java" />
+        <option value="$PROJECT_DIR$/src/cn/mk95/www/action/LoginAndRegister.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/protect/readNote.jsp" />
-        <option value="$PROJECT_DIR$/web/test/readNoteTest.html" />
         <option value="$PROJECT_DIR$/src/cn/mk95/www/action/ReadNote.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/applicationContext.xml" />
+        <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/src/cn/mk95/www/interfaces/NoteDao.java" />
         <option value="$PROJECT_DIR$/src/cn/mk95/www/dao/NoteDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/cn/mk95/www/test/Y_test.java" />
+        <option value="$PROJECT_DIR$/src/y_springConfig.xml" />
+        <option value="$PROJECT_DIR$/src/cn/mk95/www/service/NoteService.java" />
+        <option value="$PROJECT_DIR$/src/y_struts.xml" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/cn/mk95/www/action/LoadIndexDynamic.java" />
+        <option value="$PROJECT_DIR$/src/cn/mk95/www/tag/Dynamic.java" />
       </list>
     </option>
   </component>
@@ -205,6 +340,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -263,28 +401,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ImitationQqSpace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ImitationQqSpace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -304,28 +420,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ImitationQqSpace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ImitationQqSpace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -361,11 +455,52 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ImitationQqSpace" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ImitationQqSpace" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ImitationQqSpace" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ImitationQqSpace" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="action" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -427,32 +562,6 @@
       <option name="PACKAGE_NAME" value="cn.mk95.www.test" />
       <option name="MAIN_CLASS_NAME" value="cn.mk95.www.test.Y_test" />
       <option name="METHOD_NAME" value="test2" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="Y_test.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="cn.mk95.www.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="ImitationQqSpace" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="cn.mk95.www.test" />
-      <option name="MAIN_CLASS_NAME" value="cn.mk95.www.test.Y_test" />
-      <option name="METHOD_NAME" value="test3" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -577,6 +686,32 @@
       <option name="MAIN_CLASS_NAME" value="cn.mk95.www.util.StringUtil" />
       <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="Y_test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="cn.mk95.www.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="ImitationQqSpace" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="cn.mk95.www.test" />
+      <option name="MAIN_CLASS_NAME" value="cn.mk95.www.test.Y_test" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -1052,18 +1187,18 @@
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Tomcat Server." />
       <item index="1" class="java.lang.String" itemvalue="JUnit.Y_test.test2" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.Y_test.test3" />
-      <item index="3" class="java.lang.String" itemvalue="Tomcat Server.index.jsp" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.EmailUtil.sendSystemEmailTest" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.StringUtil.test1" />
+      <item index="2" class="java.lang.String" itemvalue="Tomcat Server.index.jsp" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.EmailUtil.sendSystemEmailTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.StringUtil.test1" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.Y_test" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Tomcat Server.index.jsp" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.StringUtil.test1" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.EmailUtil.sendSystemEmailTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.Y_test.test2" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.Y_test.test3" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.Y_test.test2" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.Y_test" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.StringUtil.test1" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.EmailUtil.sendSystemEmailTest" />
       </list>
     </recent_temporary>
   </component>
@@ -1118,38 +1253,39 @@
       <workItem from="1492564059848" duration="9273000" />
       <workItem from="1492585391904" duration="5506000" />
       <workItem from="1492592389150" duration="81000" />
-      <workItem from="1492648853308" duration="11906000" />
-      <workItem from="1492667602941" duration="9963000" />
-      <workItem from="1493342155895" duration="258000" />
-      <workItem from="1494392377415" duration="1421000" />
-      <workItem from="1494472241974" duration="688000" />
+      <workItem from="1495108093212" duration="6927000" />
+      <workItem from="1496069530306" duration="1294000" />
+      <workItem from="1496106114442" duration="7256000" />
+      <workItem from="1496128691646" duration="530000" />
+      <workItem from="1496133930915" duration="3830000" />
+      <workItem from="1496144364259" duration="6912000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="StringUtil_test1 - 2017.04.18 at 18h 51m 19s.xml">
-      <configuration name="StringUtil.test1" configurationId="JUnit" />
+    <history-entry file="Y_test - 2017.05.30 at 20h 17m 49s.xml">
+      <configuration name="Y_test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StringUtil_test1 - 2017.04.18 at 18h 51m 34s.xml">
-      <configuration name="StringUtil.test1" configurationId="JUnit" />
+    <history-entry file="Y_test_test2 - 2017.05.30 at 19h 56m 32s.xml">
+      <configuration name="Y_test.test2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Utf8StringUtil_test1 - 2017.04.18 at 18h 42m 55s.xml">
-      <configuration name="Utf8StringUtil.test1" configurationId="JUnit" />
+    <history-entry file="Y_test_test2 - 2017.05.30 at 20h 00m 32s.xml">
+      <configuration name="Y_test.test2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Utf8StringUtil_test1 - 2017.04.18 at 18h 43m 32s.xml">
-      <configuration name="Utf8StringUtil.test1" configurationId="JUnit" />
+    <history-entry file="Y_test_test2 - 2017.05.30 at 20h 02m 48s.xml">
+      <configuration name="Y_test.test2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Utf8StringUtil_test1 - 2017.04.18 at 18h 44m 55s.xml">
-      <configuration name="Utf8StringUtil.test1" configurationId="JUnit" />
+    <history-entry file="Y_test_test2 - 2017.05.30 at 20h 04m 35s.xml">
+      <configuration name="Y_test.test2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Utf8StringUtil_test1 - 2017.04.18 at 18h 45m 17s.xml">
-      <configuration name="Utf8StringUtil.test1" configurationId="JUnit" />
+    <history-entry file="Y_test_test2 - 2017.05.30 at 20h 17m 03s.xml">
+      <configuration name="Y_test.test2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Utf8StringUtil_test1 - 2017.04.18 at 18h 45m 33s.xml">
-      <configuration name="Utf8StringUtil.test1" configurationId="JUnit" />
+    <history-entry file="Y_test_test2 - 2017.05.30 at 20h 19m 13s.xml">
+      <configuration name="Y_test.test2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Y_test_test3 - 2017.04.16 at 21h 47m 10s.xml">
-      <configuration name="Y_test.test3" configurationId="JUnit" />
+    <history-entry file="Y_test_test2 - 2017.05.30 at 20h 19m 54s.xml">
+      <configuration name="Y_test.test2" configurationId="JUnit" />
     </history-entry>
     <history-entry file="Y_test_test3 - 2017.04.16 at 21h 51m 47s.xml">
       <configuration name="Y_test.test3" configurationId="JUnit" />
@@ -1159,10 +1295,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="270826000" />
+    <option name="totallyTimeSpent" value="273339000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1173,12 +1310,13 @@
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17697228" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17697228" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3991323" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1187,8 +1325,8 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33188722" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="22" y="523" width="1876" height="367" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20842217" sideWeight="0.30260304" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20842217" sideWeight="0.69739693" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19989339" sideWeight="0.2815934" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21055438" sideWeight="0.7184066" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17643923" sideWeight="0.3814935" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1196,7 +1334,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1209,7 +1346,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="6" />
+      <option name="time" value="14" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1218,355 +1355,427 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$PROJECT_DIR$/lib/spring-aop-4.3.7.RELEASE.jar!/org/springframework/aop/framework/JdkDynamicAopProxy.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="106" column="0" lean-forward="false" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/mk95/www/util/systemEmail.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="26" lean-forward="true" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/res/css/login.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1006">
-          <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/mk95/www/dao/RegisterYzDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="16" column="58" lean-forward="true" selection-start-line="16" selection-start-column="58" selection-end-line="16" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/mk95/www/interfaces/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="12" column="43" lean-forward="false" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/mk95/www/util/EmailUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="26" column="27" lean-forward="false" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/res/js/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="34" column="32" lean-forward="false" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/mk95/www/action/SendYzm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="56" column="43" lean-forward="false" selection-start-line="56" selection-start-column="43" selection-end-line="56" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/mk95/www/dao/UserDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/mk95/www/action/LoginAndRegister.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="94" column="33" lean-forward="true" selection-start-line="94" selection-start-column="33" selection-end-line="94" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/mk95/www/interfaces/BaseDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-18">
-          <caret line="15" column="28" lean-forward="false" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/mk95/www/tag/IsLogin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="23" column="74" lean-forward="false" selection-start-line="23" selection-start-column="74" selection-end-line="23" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/mk95/www/util/StringUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="15" column="57" lean-forward="false" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="6" lean-forward="true" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/default_ft.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="24" column="9" lean-forward="false" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/res/css/comment.css" />
     <entry file="file://$PROJECT_DIR$/web/res/css/semantic.css" />
     <entry file="file://$PROJECT_DIR$/web/res/js/comment.js" />
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" column="22" lean-forward="true" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/res/img/defPhoto.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/mk95/www/tag/Dynamic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-396">
-          <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/h_struts.xml">
-      <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
           <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/mk95/www/action/ttt.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="7" column="32" lean-forward="true" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="15" column="60" lean-forward="true" selection-start-line="15" selection-start-column="60" selection-end-line="15" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/y_springConfig.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/y_struts.xml">
       <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider">
         <state />
       </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/lang/Override.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="50" column="18" lean-forward="false" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/io/Reader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="134" column="36" lean-forward="true" selection-start-line="134" selection-start-column="36" selection-end-line="134" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/io/BufferedReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3127">
-          <caret line="386" column="7" lean-forward="true" selection-start-line="386" selection-start-column="7" selection-end-line="386" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/mk95/www/action/WriteNote.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="18" column="28" lean-forward="false" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/default_nav.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="17" column="32" lean-forward="true" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/protect/writeNote.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/test/writeNoteTest.html">
+    <entry file="file://$PROJECT_DIR$/web/res/js/bootstrap.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/mk95/www/action/ReadNote.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/mk95/www/service/NoteService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/mk95/www/interfaces/NoteDao.java">
+    <entry file="file://$PROJECT_DIR$/web/test/writeNoteTest.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
-          <caret line="14" column="15" lean-forward="false" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/mk95/www/dao/BaseDaoHibernate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1474">
-          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/mk95/www/dao/NoteDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/test/commentTest.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="2" column="26" lean-forward="false" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/protect/readNote.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="24" column="5" lean-forward="false" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/test/readNoteTest.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="27" column="10" lean-forward="false" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/mk95/www/bean/CommentEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/mk95/www/bean/FriendEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/mk95/www/bean/HomeDynamic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="27" lean-forward="false" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/mk95/www/bean/MessageEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="17" column="7" lean-forward="false" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/mk95/www/bean/NoteEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="23" column="7" lean-forward="false" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/mk95/www/bean/RegisterYzEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="37" column="10" lean-forward="true" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/mk95/www/bean/ShareEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/mk95/www/bean/UserEntity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+        <state relative-caret-position="239">
+          <caret line="13" column="28" lean-forward="false" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/protect/writeNote.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="28" lean-forward="false" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/test/commentTest.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-858">
+          <caret line="15" column="26" lean-forward="true" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/protect/readNote.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="17" column="10" lean-forward="false" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/mk95/www/service/Check_Friends.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="14" column="2" lean-forward="false" selection-start-line="14" selection-start-column="2" selection-end-line="18" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/mk95/www/dao/FriendDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" column="26" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hibernate.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="52" lean-forward="true" selection-start-line="13" selection-start-column="52" selection-end-line="13" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/struts.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="27" lean-forward="false" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/mk95/www/bean/AlbumEntity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        <state relative-caret-position="176">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="9" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/mk95/www/interfaces/BaseDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="16" column="26" lean-forward="true" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/mk95/www/interfaces/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="42" lean-forward="false" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/mk95/www/dao/AlbumDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/mk95/www/dao/CommentDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="14" column="19" lean-forward="false" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/mk95/www/action/LoginAndRegister.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="112" column="9" lean-forward="true" selection-start-line="112" selection-start-column="9" selection-end-line="112" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/mk95/www/action/ttt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="18" column="4" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/mk95/www/bean/HomeDynamic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="36" lean-forward="true" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/mk95/www/bean/NoteEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="15" column="31" lean-forward="true" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/mk95/www/interfaces/NoteDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="717">
+          <caret line="63" column="33" lean-forward="false" selection-start-line="63" selection-start-column="33" selection-end-line="63" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="166" column="0" lean-forward="true" selection-start-line="166" selection-start-column="0" selection-end-line="166" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/mk95/www/dao/BaseDaoHibernate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="146" column="68" lean-forward="true" selection-start-line="146" selection-start-column="68" selection-end-line="146" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/mk95/www/test/Y_test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="30" column="10" lean-forward="false" selection-start-line="30" selection-start-column="10" selection-end-line="30" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/mk95/www/dao/NoteDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="642">
+          <caret line="74" column="69" lean-forward="false" selection-start-line="74" selection-start-column="69" selection-end-line="74" selection-end-column="69" />
+          <folding>
+            <marker date="1496151167256" expanded="true" signature="1116:1123" ph="{...}" />
+            <marker date="1496151167256" expanded="true" signature="1185:1326" ph="{...}" />
+            <marker date="1496151167256" expanded="true" signature="1394:1619" ph="{...}" />
+            <marker date="1496151167256" expanded="false" signature="1676:1687" ph=" { " />
+            <marker date="1496151167256" expanded="false" signature="1718:1724" ph=" }" />
+            <marker date="1496151167256" expanded="true" signature="1730:1806" ph="/**...*/" />
+            <marker date="1496151167256" expanded="false" signature="1848:1859" ph=" { " />
+            <marker date="1496151167256" expanded="false" signature="1899:1905" ph=" }" />
+            <marker date="1496151167256" expanded="false" signature="1933:1944" ph=" { " />
+            <marker date="1496151167256" expanded="false" signature="1972:1978" ph=" }" />
+            <marker date="1496151167256" expanded="true" signature="2058:2226" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="60" column="18" lean-forward="true" selection-start-line="60" selection-start-column="18" selection-end-line="60" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/spring-context-4.3.7.RELEASE.jar!/org/springframework/context/support/FileSystemXmlApplicationContext.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/spring-context-4.3.7.RELEASE.jar!/org/springframework/context/support/AbstractXmlApplicationContext.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <element signature="e#841#842#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/spring-context-4.3.7.RELEASE.jar!/org/springframework/context/support/AbstractRefreshableConfigApplicationContext.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding>
+            <element signature="e#822#823#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/spring-context-4.3.7.RELEASE.jar!/org/springframework/context/support/AbstractRefreshableApplicationContext.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding>
+            <element signature="e#978#979#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/spring-context-4.3.7.RELEASE.jar!/org/springframework/context/support/AbstractApplicationContext.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/lang/System.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="333" column="0" lean-forward="false" selection-start-line="333" selection-start-column="0" selection-end-line="333" selection-end-column="0" />
+          <folding>
+            <element signature="e#11597#11598#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="1442" column="0" lean-forward="false" selection-start-line="1442" selection-start-column="0" selection-end-line="1442" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/commons-logging-1.2.jar!/org/apache/commons/logging/LogFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="327" column="0" lean-forward="false" selection-start-line="327" selection-start-column="0" selection-end-line="327" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/lang/ref/Reference.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="303" column="0" lean-forward="false" selection-start-line="303" selection-start-column="0" selection-end-line="303" selection-end-column="0" />
+          <folding>
+            <element signature="e#10903#10904#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/lang/ref/WeakReference.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+          <folding>
+            <element signature="e#1456#1457#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/commons-logging-1.2.jar!/org/apache/commons/logging/impl/WeakHashtable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="58" column="0" lean-forward="true" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/mk95/www/action/WriteNote.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="726">
+          <caret line="50" column="41" lean-forward="true" selection-start-line="50" selection-start-column="41" selection-end-line="50" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/mk95/www/action/ReadNote.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="726">
+          <caret line="33" column="13" lean-forward="false" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+          <folding>
+            <marker date="1496151191398" expanded="true" signature="1604:1610" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/y_springConfig.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="33" column="48" lean-forward="false" selection-start-line="33" selection-start-column="48" selection-end-line="33" selection-end-column="48" />
+          <folding>
+            <marker date="1496151128649" expanded="true" signature="1442:1454" ph="..." />
+            <marker date="1496151128649" expanded="true" signature="1527:1645" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/mk95/www/service/NoteService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="128" column="72" lean-forward="false" selection-start-line="128" selection-start-column="72" selection-end-line="128" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/y_struts.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="22" column="17" lean-forward="false" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="49" lean-forward="false" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/mk95/www/action/LoadIndexDynamic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#530#531#0" expanded="false" />
+            <element signature="e#560#561#0" expanded="false" />
+            <element signature="e#607#608#0" expanded="false" />
+            <element signature="e#645#646#0" expanded="false" />
+            <element signature="e#688#689#0" expanded="false" />
+            <element signature="e#722#723#0" expanded="false" />
+            <element signature="e#781#782#0" expanded="false" />
+            <element signature="e#827#828#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/mk95/www/tag/Dynamic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="452">
+          <caret line="85" column="42" lean-forward="true" selection-start-line="85" selection-start-column="42" selection-end-line="85" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#938#939#0" expanded="true" />
+            <element signature="e#970#971#0" expanded="true" />
+            <element signature="e#1083#1084#0" expanded="true" />
+            <element signature="e#1113#1114#0" expanded="true" />
+            <element signature="e#1150#1151#0" expanded="true" />
+            <element signature="e#1182#1183#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
