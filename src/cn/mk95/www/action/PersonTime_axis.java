@@ -1,5 +1,6 @@
 package cn.mk95.www.action;
 
+import cn.mk95.www.bean.H_note;
 import cn.mk95.www.bean.NoteEntity;
 import cn.mk95.www.bean.UserEntity;
 import cn.mk95.www.interfaces.NoteDao;
@@ -10,9 +11,11 @@ import org.apache.struts2.ServletActionContext;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
+import java.security.Timestamp;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.HashMap;
 
 /**
  * Created by 睡意朦胧 on 2017/4/13.
@@ -24,7 +27,6 @@ public class PersonTime_axis extends ActionSupport{
     private NoteDao noteDao;
     private int pageNo;
     private NoteService noteService;
-    ArrayList<String> noteTitles=new ArrayList<>();
     public NoteService getNoteService() {
         return noteService;
     }
@@ -77,14 +79,18 @@ public class PersonTime_axis extends ActionSupport{
             pageNo=(int)session.getAttribute("NotePageNo");
             session.setAttribute("NotePageNo",pageNo);
         }
+        ArrayList<H_note> my_notes=new ArrayList<>();
         ArrayList<NoteEntity> notes=(ArrayList<NoteEntity>)noteDao.findNoteByIdOrderByDate(user.getUserid(),pageNo,10);
         for(int i=0;i<notes.size();i++){
-            String noteTitle=noteService.getNoteTitle(notes.get(i).getNoteurl());
-            noteTitles.add(noteTitle);
+            H_note my_note=new H_note();
+            my_note.setId(notes.get(i).getId());
+            my_note.setNoteTitle(noteService.getNoteTitle(notes.get(i).getNoteurl()));
+            my_note.setTime(notes.get(i).getNotetime());
+            my_notes.add(my_note);
         }
         int maxPages=(int)noteDao.countUserNote(user.getUserid())/10;
         session.setAttribute("MaxPages",maxPages);
-        session.setAttribute("MnoteTitles",noteTitles);
+        session.setAttribute("Mnotes",my_notes);
         return SUCCESS;
     }
 }
