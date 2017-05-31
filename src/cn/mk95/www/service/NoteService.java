@@ -143,7 +143,7 @@ public class NoteService {
     public void noteListToDynamicList(ArrayList<NoteEntity> notes,ArrayList<HomeDynamic> homeDynamics, UserDao userDao){
         for (NoteEntity noteEntity : notes) {
             HomeDynamic homeDynamic = new HomeDynamic();
-            UserEntity userEntity=new UserEntity();
+            UserEntity userEntity;
             userEntity=userDao.findUserById(noteEntity.getUserid());
             homeDynamic.setContentUrl("/readNote?id=" + noteEntity.getId());
             String content = getNoteFileContent(NoteService.getWebInfPath()
