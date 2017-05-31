@@ -14,7 +14,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>个人主页</title>
-
     <meta name="description" content="Source code generated using layoutit.com">
     <meta name="author" content="LayoutIt!">
 
@@ -62,7 +61,7 @@
 
                 <a href="home" class="col-lg-2" >主页</a>
                 <a href="MyFriend" class="col-lg-2" >好友</a>
-                <a href="#" class="col-lg-3" >朋友圈</a>
+                <a href="friendnews" class="col-lg-3" >朋友圈</a>
                 <a href="#" class="col-lg-2" >相册</a>
                 <a href="CheckMessage" class="col-lg-3" >留言板</a>
         </div>
