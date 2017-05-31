@@ -60,17 +60,22 @@ public class MessageManagger extends ActionSupport{
     public String CheckMessage(){
         messageDao.init();
         userDao.init();
-        if (ServletActionContext.getRequest().getSession().getAttribute("Messages")==null) {
-            if ((UserEntity)ServletActionContext.getRequest().getSession().getAttribute("friend")!=null){
-                user=(UserEntity)ServletActionContext.getRequest().getSession().getAttribute("friend");
-                messages = (ArrayList<MessageEntity>) messageDao.findMessageByUserId(user.getUserid());
-                ServletActionContext.getRequest().getSession().setAttribute("Messages", messages);
-            }else {
-                user = (UserEntity) ServletActionContext.getRequest().getSession().getAttribute("user");
-                messages = (ArrayList<MessageEntity>) messageDao.findMessageByUserId(user.getUserid());
-                ServletActionContext.getRequest().getSession().setAttribute("Messages", messages);
-            }
-        }
+        HttpServletRequest request= ServletActionContext.getRequest();
+        HttpSession session=request.getSession();
+//        if (ServletActionContext.getRequest().getSession().getAttribute("Messages")==null) {
+//            if (((UserEntity)session.getAttribute("Muser")).getUserid()!=((UserEntity)session.getAttribute("user")).getUserid()){
+//                user=(UserEntity)ServletActionContext.getRequest().getSession().getAttribute("Muser");
+//                messages = (ArrayList<MessageEntity>) messageDao.findMessageByUserId(user.getUserid());
+//                ServletActionContext.getRequest().getSession().setAttribute("Messages", messages);
+//            }else {
+//                user = (UserEntity) ServletActionContext.getRequest().getSession().getAttribute("user");
+//                messages = (ArrayList<MessageEntity>) messageDao.findMessageByUserId(user.getUserid());
+//                ServletActionContext.getRequest().getSession().setAttribute("Messages", messages);
+//            }
+//        }
+        user=(UserEntity)ServletActionContext.getRequest().getSession().getAttribute("Muser");
+        messages = (ArrayList<MessageEntity>) messageDao.findMessageByUserId(user.getUserid());
+        ServletActionContext.getRequest().getSession().setAttribute("Messages", messages);
         return SUCCESS;
     }
     /**
@@ -86,12 +91,17 @@ public class MessageManagger extends ActionSupport{
         message.setSendtime(new Timestamp(calendar.getTime().getTime()));
         message.setSenduserid(user.getUserid());
         message.setText(text);
-        if (session.getAttribute("friend")!=null){
-            message.setUserid(((UserEntity)session.getAttribute("friend")).getUserid());
-        }else
-            message.setUserid(user.getUserid());
+        message.setUserid(((UserEntity)session.getAttribute("Muser")).getUserid());
+        System.out.println("text:"+message.getUserid());
+        System.out.println("text:"+message.getText());
+        System.out.println("text:"+message.getSendtime());
+        System.out.println("text:"+message.getSenduserid());
         messages=(ArrayList<MessageEntity>)session.getAttribute("Messages");
-        messages.add(message);
+        if (messages==null){
+            messages=new ArrayList<MessageEntity>();
+            messages.add(message);
+        }else
+            messages.add(message);
         session.setAttribute("Messages",messages);
         messageDao.save(message);
         return SUCCESS;

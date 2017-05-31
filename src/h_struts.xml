@@ -11,7 +11,7 @@
             <result name="error">error.jsp</result>
         </action>
         <action name="home" class="PersonTime_axis" method="MyHome">
-            <result name="success">/WEB-INF/h_person/MyPage.jsp</result>
+            <result name="success">/WEB-INF/h_person/PersonTime_axis.jsp</result>
             <result name="error">error.jsp</result>
         </action>
         <action name="MyFriend" class="Friend" method="MyFriend">
@@ -22,7 +22,7 @@
             <result name="success">WEB-INF/h_person/PersonFriend.jsp</result>
         </action>
         <action name="infriend" class="Friend" method="InFriend">
-            <result name="success">WEB-INF/h_person/FriendPage.jsp</result>
+            <result name="success">WEB-INF/h_person/MyPage.jsp</result>
             <result name="error">error.jsp</result>
         </action>
         <action name="selectfriend" class="Friend" method="SelectFriend">
@@ -41,12 +41,15 @@
             <result name="success">WEB-INF/h_person/MessagePage.jsp</result>
             <result name="error">error.jsp</result>
         </action>
-        <action name="CheckFMessage" class="message" method="CheckMessage">
-            <result name="success">WEB-INF/h_person/FriendMessagePage.jsp</result>
+        <action name="Album" class="album" method="CheckAlbum">
+            <result name="success">WEB-INF/h_person/AlbumPage.jsp</result>
             <result name="error">error.jsp</result>
         </action>
-        <action name="FMessageInput" class="message" method="WriteMessage">
-            <result name="success">WEB-INF/h_person/FriendMessagePage.jsp</result>
+        <action name="addphoto" class="album" method="AddPhoto">
+            <!--<interceptor-ref name="fileUpload">
+                <param name="allowedTypes">file/png/,file/jpg,file/gif,file/jpeg</param>
+            </interceptor-ref>-->
+            <result name="success">WEB-INF/h_person/AlbumPage.jsp</result>
             <result name="error">error.jsp</result>
         </action>
     </package>

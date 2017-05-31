@@ -99,7 +99,7 @@ public class PersonFriend extends ActionSupport{
         friends= (ArrayList<UserEntity>) session.getAttribute("users");
         session.removeAttribute("selectfriend");
         if(friends==null) {
-            friends=check_friends.CheckFriendsById(((UserEntity)session.getAttribute("user")).getUserid());
+            friends=check_friends.CheckFriendsById(((UserEntity)session.getAttribute("Muser")).getUserid());
             session.setAttribute("users", friends);
         }
         return SUCCESS;
@@ -139,7 +139,7 @@ public class PersonFriend extends ActionSupport{
         HttpSession session=request.getSession();
         String FId=request.getParameter("friendid");
         user=(UserEntity)userDao.findUserById(Integer.parseInt(FId));
-        session.setAttribute("friend",user);
+        session.setAttribute("Muser",user);
         return SUCCESS;
     }
 

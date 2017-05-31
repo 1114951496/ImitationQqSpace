@@ -75,4 +75,16 @@ public class NoteDaoImpl extends BaseDaoHibernate<NoteEntity> implements NoteDao
         ArrayList<NoteEntity> newNotes = (ArrayList<NoteEntity>) findByPage("from NoteEntity en order by en.notetime desc", page, num);
         return newNotes;
     }
+    /**
+     * 通过userid查询数据，以时间增加
+     * @param userid
+     * @param pageNo
+     * @param pageSize
+     * @return
+     */
+    @Override
+    public List findNoteByIdOrderByDate(int userid, int pageNo, int pageSize) {
+        List<NoteEntity> noteEntities=findByPage("select en from NoteEntity en where en.userid=? order by notetime",pageNo,pageSize,userid);
+        return noteEntities;
+    }
 }
