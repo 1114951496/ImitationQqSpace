@@ -27,8 +27,12 @@
             <result name="error">index.jsp</result>
         </action>
         <action name="upNote" class="upNote" method="upNote">
-            <result name="success">success.jsp</result>
+            <result name="success" type="chain">readNote</result>
             <result name="error">error.jsp</result>
+        </action>
+
+        <action name="readNote" class="readNote">
+            <result name="success">WEB-INF/protect/readNote.jsp</result>
         </action>
     </package>
 </struts>

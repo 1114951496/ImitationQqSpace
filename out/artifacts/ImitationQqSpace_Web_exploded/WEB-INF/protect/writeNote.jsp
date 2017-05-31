@@ -10,9 +10,6 @@
 <html>
 <head>
     <title>WriteNote</title>
-    <link href="/res/css/bootstrap.min.css" rel="stylesheet">
-    <script src="/res/js/jquery.min.js"></script>
-    <script src="/res/js/bootstrap.min.js"></script>
 
     <!-- include libraries(jQuery, bootstrap) -->
     <link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">

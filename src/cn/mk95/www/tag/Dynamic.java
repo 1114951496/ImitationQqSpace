@@ -1,7 +1,9 @@
 package cn.mk95.www.tag;
 
 import cn.mk95.www.bean.HomeDynamic;
+import org.apache.struts2.ServletActionContext;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.jsp.JspException;
 import javax.servlet.jsp.JspWriter;
 import javax.servlet.jsp.tagext.SimpleTagSupport;
@@ -41,6 +43,8 @@ public class Dynamic extends SimpleTagSupport {
 
     @Override
     public void doTag() throws JspException, IOException {
+        System.out.println("--------读取首页数据");
+        getDynamic();
         int num = 12 / row;
         String itemClassName = "col-md-" + num;
         JspWriter jspWriter = getJspContext().getOut();
@@ -83,6 +87,14 @@ public class Dynamic extends SimpleTagSupport {
     }
 
     public void getDynamic() {
+        HttpServletRequest request= ServletActionContext.getRequest();
+        if(type==1){
+            homeDynamics= (ArrayList<HomeDynamic>) request.getAttribute("homeNewDynamics_page"+page);
+        }else if(type==2){
+
+        }else {
+            return;
+        }
 
     }
 }

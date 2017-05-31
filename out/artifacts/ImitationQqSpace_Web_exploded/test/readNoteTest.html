@@ -1,0 +1,50 @@
+<!--
+Created by IntelliJ IDEA.
+User: YangYongHao
+Date: 2017/4/20
+Time: 9:06
+-->
+<html>
+<head>
+    <title>readNote</title>
+    <meta charset="utf-8">
+    <link href="../res/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: #c4e3f3;
+        }
+        #noteContent{
+            padding: 3px;
+        }
+        #noteTitle{
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="row">
+    <div class="col-md-2">
+    </div>
+    <div class="col-md-8">
+        <div>
+            <label style="font-size: 25px;" id="noteTitle">${session.requestNoteTitle}</label>
+
+            <div style="background: url('../res/img/readNoteBg.jpg');" id="noteContent">
+                <div style="font-size: 18px;">
+                    ${session.requestNoteContent}<br>
+                    哈哈，测试界面文字展示
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="col-md-2">
+    </div>
+</div>
+
+<script src="../res/js/jquery.min.js"></script>
+<script src="../res/js/bootstrap.min.js"></script>
+</body>
+</html>
