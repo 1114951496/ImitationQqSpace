@@ -34,7 +34,7 @@ public class LoveNote{
         if(loveMap==null){
             loveMap=new HashMap<>();
         }
-        if(loveMap.get(id)==null||loveMap.get(id)!=1){
+        if(loveMap.get(id)!=null&&loveMap.get(id)==1){
             writer.print("2");
             writer.flush();
             writer.close();

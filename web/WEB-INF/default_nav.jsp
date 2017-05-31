@@ -41,7 +41,7 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
                         <li class="active">
-                            <a href="#">主页</a>
+                            <a href="/index.jsp">主页</a>
                         </li>
                         <li>
                             <a href="#">声明</a>
