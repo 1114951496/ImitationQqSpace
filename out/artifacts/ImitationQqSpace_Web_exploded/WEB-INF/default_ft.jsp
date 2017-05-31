@@ -1,11 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>ft</title>
-</head>
-<body style="padding: 0;margin: 0;">
-<div id="foot" style="text-align: center;padding: 0;margin: 0;background: black;width: 100%;">
+<div id="foot" style="text-align: center;padding: 0;margin: 0;background: black;width: 100%;position: relative;bottom: 0">
     <div style="padding-bottom: 15px"></div>
     <div style="text-align: center">
 
@@ -27,5 +21,16 @@
     </div>
     <div style="padding-bottom: 15px"></div>
 </div>
-</body>
-</html>
+<script>
+    var h = $(document.body).height() - $("#foot").height();
+    var foot_prevAll_h = 0;
+//
+//    var foot = $("#foot");
+//    var foot_prevAll = foot.prevAll();
+//    for (var i = 0; i < foot_prevAll.length; i++) {
+//        foot_prevAll_h += $(foot_prevAll[i]).height();
+//    }
+//    h=h-foot_prevAll_h;
+//    alert(h);
+    foot.css({"position": "relative", "top": h});
+</script>

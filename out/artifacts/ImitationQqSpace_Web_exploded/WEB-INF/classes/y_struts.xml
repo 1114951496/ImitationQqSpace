@@ -34,5 +34,13 @@
         <action name="readNote" class="readNote">
             <result name="success">WEB-INF/protect/readNote.jsp</result>
         </action>
+
+        <action name="indexAction" class="indexLoad">
+            <result name="success">index.jsp</result>
+        </action>
+
+        <action name="loveNote" class="loveNote" method="love">
+            <result name="success">success.jsp</result>
+        </action>
     </package>
 </struts>

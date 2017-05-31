@@ -43,12 +43,15 @@ public class Dynamic extends SimpleTagSupport {
 
     @Override
     public void doTag() throws JspException, IOException {
-        System.out.println("--------读取首页数据");
         getDynamic();
+        System.out.println("--------读取数据");
         int num = 12 / row;
         String itemClassName = "col-md-" + num;
         JspWriter jspWriter = getJspContext().getOut();
         jspWriter.println("<div class=\"container-fluid\"><div class=\row\">");
+        if(homeDynamics==null){
+            homeDynamics=new ArrayList<>();
+        }
         for (int i = 0; i < row; i++) {
             if (homeDynamics.size()>i&&homeDynamics.get(i) != null) {
                 jspWriter.println(
@@ -91,7 +94,7 @@ public class Dynamic extends SimpleTagSupport {
         if(type==1){
             homeDynamics= (ArrayList<HomeDynamic>) request.getAttribute("homeNewDynamics_page"+page);
         }else if(type==2){
-
+            homeDynamics= (ArrayList<HomeDynamic>) request.getAttribute("homeNewDynamics_page"+page);
         }else {
             return;
         }

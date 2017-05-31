@@ -5,6 +5,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="y" uri="/WEB-INF/y_tag.tld" %>
+<%@ taglib prefix="s" uri="/struts-tags" %>
 <html>
 <head>
     <meta charset="utf-8">
@@ -52,6 +53,10 @@
 <body>
 
 <%@include file="WEB-INF/default_nav.jsp" %>
+
+<s:if test="#request.flag==null">
+    <% response.sendRedirect("/indexAction"); %>
+</s:if>
 
 <!--轮播图，中心8区域-->
 <div class="container-fluid">
@@ -147,8 +152,7 @@
                     </div>
                     <div id="collapse2" class="panel-collapse collapse in">
                         <div class="panel-body">
-
-
+                            <y:dynamic row="4" page="1" type="2"/>
                         </div>
                     </div>
                 </div>
@@ -159,8 +163,8 @@
     </div>
 </div>
 
-<%@include file="/WEB-INF/default_ft.jsp" %>
 <script src="res/js/jquery.min.js"></script>
+<%@include file="/WEB-INF/default_ft.jsp" %>
 <script src="res/js/bootstrap.min.js"></script>
 </body>
 </html>
