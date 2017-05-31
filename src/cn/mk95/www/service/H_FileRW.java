@@ -73,10 +73,9 @@ public  class H_FileRW {
     /**
      * 读取相册
      */
-    public static ArrayList<String> getAlbumurls(String url,int userid) throws IOException {
+    public static ArrayList<String> getAlbumurls(String url) throws IOException {
         ArrayList<String> names=new ArrayList<String>();
-        String albumurl=url+"/"+userid;
-        File file=new File(albumurl);
+        File file=new File(url);
         if(!file.isDirectory()){
             file.mkdir();
         }

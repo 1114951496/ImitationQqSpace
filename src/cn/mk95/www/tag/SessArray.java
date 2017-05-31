@@ -40,7 +40,13 @@ public class SessArray extends SimpleTagSupport{
             jspWriter.println("<form action=\"selectfriend\" method=\"get\">");
             jspWriter.println("搜索: <input type=\"text\" name=\"fname\" />");
             jspWriter.println("<input type=\"submit\" value=\"Submit\" />");
-            jspWriter.println("<table style=''>");
+            jspWriter.println("<table class=\"altrowstable\" id=\"alternatecolor\">");
+            jspWriter.println("<tr>");
+            jspWriter.println("<th>" + "好友ID" + "</th>");
+            jspWriter.println("<th>" + "好友名字" + "</th>");
+            jspWriter.println("<th>" + "是否删除好友" + "</th>");
+            jspWriter.println("<th>" + "是否进入" + "</th>");
+            jspWriter.println("</tr>");
             for (int i = 0; i < Arr.size(); i++) {
                 user = (UserEntity) Arr.get(i);
                 jspWriter.println("<tr>");
@@ -52,7 +58,13 @@ public class SessArray extends SimpleTagSupport{
             }
             jspWriter.println("</table>");
         }else{
-            jspWriter.println("<table style=''>");
+            jspWriter.println("<table class=\"altrowstable\" id=\"alternatecolor\">");
+            jspWriter.println("<tr>");
+            jspWriter.println("<th>" + "好友ID" + "</th>");
+            jspWriter.println("<th>" + "好友名字" + "</th>");
+            jspWriter.println("<th>" + "是否删除好友" + "</th>");
+            jspWriter.println("<th>" + "是否进入" + "</th>");
+            jspWriter.println("</tr>");
             jspWriter.println("<tr>");
             jspWriter.println("<td>" + user.getUserid() + "</td>");
             jspWriter.println("<td>" + user.getUsername() + "</td>");
