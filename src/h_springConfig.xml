@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
     <bean name="PersonPage" class="cn.mk95.www.action.PersonPage">
+        <property name="noteDao" ref="noteDao"/>
+        <property name="personTime_axis" ref="PersonTime_axis"/>
         <property name="userDao" ref="userDao"/>
         <property name="check_friends" ref="Check_Friends"/>
     </bean>
     <bean name="PersonTime_axis" class="cn.mk95.www.action.PersonTime_axis">
         <property name="userDao" ref="userDao"/>
         <property name="noteDao" ref="noteDao"/>
+        <property name="noteService" ref="noteService"/>
     </bean>
     <bean name="Friend" class="cn.mk95.www.action.PersonFriend">
         <property name="friendDao" ref="friendDao"/>
@@ -22,5 +25,11 @@
         <property name="messageDao" ref="messageDao"/>
         <property name="userDao" ref="userDao"/>
         <property name="message" ref="messageEntity"/>
+        </bean>
+    <bean name="album" class="cn.mk95.www.action.AlbumManager">
+        <property name="userDao" ref="userDao"/>
+        <property name="album" ref="albumEntity"/>
+        <property name="albumDao" ref="albumDao"/>
     </bean>
+    <aop:aspectj-autoproxy proxy-target-class="true"/>
 </beans>

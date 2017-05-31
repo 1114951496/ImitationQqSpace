@@ -12,7 +12,7 @@ import java.util.List;
  */
 public interface NoteDao extends BaseDao<NoteEntity> {
     public List findNoteByTime(int uerid, Date notetime);
-
+    public List findNoteByIdOrderByDate(int userid,int pageNo,int pageSize);
     /**
      * 通过id找到作者
      * @param id

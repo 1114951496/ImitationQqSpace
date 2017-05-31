@@ -2,7 +2,71 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a40b628-c651-49c2-99a0-43e0d673c7f6" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javax.ejb.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javax.jms.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javax.resource.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javax.servlet.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javax.servlet.jsp.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javax.servlet.jsp.jstl.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/action/AlbumManager.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/userData/Album/1/1.0.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/userData/Album/1/1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/userData/Album/1/3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/userData/Album/1/bizi2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/userData/Album/1/cat.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/userData/Album/1/cat2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/userData/Album/1/cat3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/userData/Album/1/your——name.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/action/AlbumManager.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/userData/Album/1/bizi2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/userData/Album/1/cat.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/userData/Album/1/cat2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/userData/Album/1/cat3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/userData/Album/1/your——name.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Java_EE_6_Java_EE_6.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/h_person/AlbumPage.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/mk95/www/action/AlbumManager.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/mk95/www/bean/H_note.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/h_person/AlbumPage.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/h_person/PersonTime_axis.jsp" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/h_person/FriendMessagePage.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/h_person/FriendPage.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/WEB-INF/h_person/FriendMessagePage.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/WEB-INF/h_person/FriendPage.jsp" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/action/MessageManagger.class" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/action/MessageManagger.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/action/PersonFriend.class" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/action/PersonFriend.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/action/PersonPage.class" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/action/PersonPage.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/action/ttt.class" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/action/ttt.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/dao/AlbumDaoImpl.class" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/dao/AlbumDaoImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/service/H_FileRW.class" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/service/H_FileRW.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/action/MessageManagger.class" afterPath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/action/MessageManagger.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/action/PersonFriend.class" afterPath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/action/PersonFriend.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/action/PersonPage.class" afterPath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/action/PersonPage.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/action/ttt.class" afterPath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/action/ttt.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/dao/AlbumDaoImpl.class" afterPath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/dao/AlbumDaoImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/service/H_FileRW.class" afterPath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/service/H_FileRW.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ImitationQqSpace.iml" afterPath="$PROJECT_DIR$/ImitationQqSpace.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/h_springConfig.xml" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/h_springConfig.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/h_struts.xml" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/h_struts.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/h_person/MyPage.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/h_person/MyPage.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ImitationQqSpace/h_springConfig.xml" afterPath="$PROJECT_DIR$/out/production/ImitationQqSpace/h_springConfig.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ImitationQqSpace/h_struts.xml" afterPath="$PROJECT_DIR$/out/production/ImitationQqSpace/h_struts.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/mk95/www/action/MessageManagger.java" afterPath="$PROJECT_DIR$/src/cn/mk95/www/action/MessageManagger.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/mk95/www/action/PersonFriend.java" afterPath="$PROJECT_DIR$/src/cn/mk95/www/action/PersonFriend.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/mk95/www/action/PersonPage.java" afterPath="$PROJECT_DIR$/src/cn/mk95/www/action/PersonPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/mk95/www/action/PersonTime_axis.java" afterPath="$PROJECT_DIR$/src/cn/mk95/www/action/PersonTime_axis.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/mk95/www/action/ttt.java" afterPath="$PROJECT_DIR$/src/cn/mk95/www/action/ttt.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/mk95/www/dao/AlbumDaoImpl.java" afterPath="$PROJECT_DIR$/src/cn/mk95/www/dao/AlbumDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/mk95/www/dao/NoteDaoImpl.java" afterPath="$PROJECT_DIR$/src/cn/mk95/www/dao/NoteDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/mk95/www/interfaces/NoteDao.java" afterPath="$PROJECT_DIR$/src/cn/mk95/www/interfaces/NoteDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/mk95/www/service/H_FileRW.java" afterPath="$PROJECT_DIR$/src/cn/mk95/www/service/H_FileRW.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/mk95/www/tag/SessArray.java" afterPath="$PROJECT_DIR$/src/cn/mk95/www/tag/SessArray.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/h_springConfig.xml" afterPath="$PROJECT_DIR$/src/h_springConfig.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/h_struts.xml" afterPath="$PROJECT_DIR$/src/h_struts.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/h_person/MessagePage.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/h_person/MessagePage.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/h_person/MyPage.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/h_person/MyPage.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/h_person/PersonFriend.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/h_person/PersonFriend.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -1164,7 +1228,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="312235000" />
+    <option name="totallyTimeSpent" value="312379000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1194,7 +1258,7 @@
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19989339" sideWeight="0.2815934" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2249467" sideWeight="0.7184066" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2249467" sideWeight="0.7184066" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17643923" sideWeight="0.3814935" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
