@@ -94,7 +94,7 @@ public class Dynamic extends SimpleTagSupport {
         if(type==1){
             homeDynamics= (ArrayList<HomeDynamic>) request.getAttribute("homeNewDynamics_page"+page);
         }else if(type==2){
-
+            homeDynamics= (ArrayList<HomeDynamic>) request.getAttribute("homeNewDynamics_page"+page);
         }else {
             return;
         }

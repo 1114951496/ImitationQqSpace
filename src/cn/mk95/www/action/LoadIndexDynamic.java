@@ -2,6 +2,7 @@ package cn.mk95.www.action;
 
 import cn.mk95.www.bean.HomeDynamic;
 import cn.mk95.www.interfaces.NoteDao;
+import cn.mk95.www.interfaces.UserDao;
 import cn.mk95.www.service.NoteService;
 import com.opensymphony.xwork2.ActionSupport;
 import org.apache.struts2.ServletActionContext;
@@ -16,6 +17,15 @@ import java.util.ArrayList;
 public class LoadIndexDynamic extends ActionSupport{
     private NoteDao noteDao;
     private NoteService noteService;
+    private UserDao userDao;
+
+    public UserDao getUserDao() {
+        return userDao;
+    }
+
+    public void setUserDao(UserDao userDao) {
+        this.userDao = userDao;
+    }
 
     public NoteDao getNoteDao() {
         return noteDao;
@@ -36,9 +46,12 @@ public class LoadIndexDynamic extends ActionSupport{
     @Override
     public String execute() throws Exception {
         noteDao.init();
-        ArrayList<HomeDynamic> homeNewDynamics_page1=noteService.newNoteListToDynamicList(1,4,noteDao);
+        userDao.init();
+        ArrayList<HomeDynamic> homeNewDynamics_page1=noteService.newNoteListToDynamicList(1,4,noteDao,userDao);
+        ArrayList<HomeDynamic> homeHotDynamics_page1=noteService.hotNoteListToDynamicList(1,4,noteDao,userDao);
         HttpServletRequest request= ServletActionContext.getRequest();
         request.setAttribute("homeNewDynamics_page1",homeNewDynamics_page1);
+        request.setAttribute("homeHotDynamics_page1",homeHotDynamics_page1);
         int flag=1;
         request.setAttribute("flag",flag);
         return ActionSupport.SUCCESS;

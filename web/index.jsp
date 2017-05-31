@@ -152,8 +152,7 @@
                     </div>
                     <div id="collapse2" class="panel-collapse collapse in">
                         <div class="panel-body">
-
-
+                            <y:dynamic row="4" page="1" type="2"/>
                         </div>
                     </div>
                 </div>
@@ -164,8 +163,8 @@
     </div>
 </div>
 
-<%@include file="/WEB-INF/default_ft.jsp" %>
 <script src="res/js/jquery.min.js"></script>
+<%@include file="/WEB-INF/default_ft.jsp" %>
 <script src="res/js/bootstrap.min.js"></script>
 </body>
 </html>

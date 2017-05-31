@@ -68,4 +68,12 @@ public interface NoteDao extends BaseDao<NoteEntity> {
      * @return
      */
     public int findMaxId();
+
+    /**
+     * 获取最热门note
+     * @param page
+     * @param num
+     * @return
+     */
+    public ArrayList<NoteEntity> findHotNote(int page,int num);
 }

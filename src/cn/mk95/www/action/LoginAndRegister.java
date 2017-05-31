@@ -81,6 +81,7 @@ public class LoginAndRegister extends ActionSupport {
         if (registerYzEntity != null && registerYzEntity.getYzm() == Integer.parseInt(yzm)&&registerYzEntity.getFlag()!=1) {
             user.setUsersex("bm");
             user.setRegistertime(new Timestamp(Calendar.getInstance().getTime().getTime()));
+            user.setIcon("/res/img/defPhoto.jpg");
             registerYzEntity.setFlag(1);
             registerYzDao.save(registerYzEntity);
             session = userDao.init();

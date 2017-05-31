@@ -33,5 +33,10 @@
     <bean name="indexLoad" class="cn.mk95.www.action.LoadIndexDynamic">
         <property name="noteDao" ref="noteDao"/>
         <property name="noteService" ref="noteService"/>
+        <property name="userDao" ref="userDao"/>
+    </bean>
+
+    <bean name="loveNote" class="cn.mk95.www.action.LoveNote">
+        <property name="noteDao" ref="noteDao"/>
     </bean>
 </beans>

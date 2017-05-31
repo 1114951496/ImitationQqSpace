@@ -78,7 +78,13 @@ public class NoteDaoImpl extends BaseDaoHibernate<NoteEntity> implements NoteDao
 
     @Override
     public int findMaxId() {
-        int max=find("from NoteEntity where id=(select max(en.id) from NoteEntity en)").get(0).getId();
+        int max = find("from NoteEntity where id=(select max(en.id) from NoteEntity en)").get(0).getId();
         return max;
+    }
+
+    @Override
+    public ArrayList<NoteEntity> findHotNote(int page, int num) {
+        ArrayList<NoteEntity> newNotes = (ArrayList<NoteEntity>) findByPage("from NoteEntity en order by en.love desc", page, num);
+        return newNotes;
     }
 }
