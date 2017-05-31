@@ -57,8 +57,12 @@ public class PersonPage extends ActionSupport{
         userDao.init();
         friends= (ArrayList<UserEntity>) session.getAttribute("users");
         user=(UserEntity) userDao.findUserById(((UserEntity)session.getAttribute("user")).getUserid());
-        session.removeAttribute("friend");
+        session.setAttribute("Muser",user);
         session.removeAttribute("Messages");
+        session.removeAttribute("albums");
+        session.removeAttribute("MaxPages");
+        session.removeAttribute("MnoteTitles");
+        session.removeAttribute("NotePageNo");
         System.out.println(user);
         if (friends==null){
             friends=check_friends.CheckFriendsById(((UserEntity)session.getAttribute("user")).getUserid());

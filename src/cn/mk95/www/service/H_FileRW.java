@@ -4,6 +4,7 @@ import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 
 import java.io.*;
+import java.util.ArrayList;
 
 import static java.lang.System.*;
 
@@ -68,5 +69,31 @@ public  class H_FileRW {
         fos.write(a);
         fos.close();
         return "ok";
+    }
+    /**
+     * 读取相册
+     */
+    public static ArrayList<String> getAlbumurls(String url,int userid) throws IOException {
+        ArrayList<String> names=new ArrayList<String>();
+        String albumurl=url+"/"+userid;
+        File file=new File(albumurl);
+        if(!file.isDirectory()){
+            file.mkdir();
+        }
+        else if (file.isDirectory()){
+            File[] fList = file.listFiles();
+            for (int j = 0; j < fList.length; j++) {
+                File afile = fList[j];
+
+                if (afile.isFile())
+                {
+                    //String path=afile.getCanonicalPath();
+                    names.add(afile.getName());
+                    //names.add(path);
+                }
+            }
+            return names;
+        }
+        return null;
     }
 }

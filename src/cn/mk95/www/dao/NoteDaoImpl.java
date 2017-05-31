@@ -29,6 +29,19 @@ public class NoteDaoImpl extends BaseDaoHibernate<NoteEntity> implements NoteDao
         return noteEntities;
     }
 
+    /**
+     * 通过userid查询数据，以时间增加
+     * @param userid
+     * @param pageNo
+     * @param pageSize
+     * @return
+     */
+    @Override
+    public List findNoteByIdOrderByDate(int userid, int pageNo, int pageSize) {
+        List<NoteEntity> noteEntities=findByPage("select en from NoteEntity en where en.userid=? order by notetime",pageNo,pageSize,userid);
+        return noteEntities;
+    }
+
     @Override
     public List findNoteByUserid(int user_id) {
         List<NoteEntity> noteEntities = find("select en from NoteEntity en where en.userid=?", user_id);
@@ -61,4 +74,5 @@ public class NoteDaoImpl extends BaseDaoHibernate<NoteEntity> implements NoteDao
     public int countNote(){
         return findAllNote().size();
     }
+
 }
