@@ -7,11 +7,11 @@
 <struts>
     <package name="h_struts" extends="struts-default">
         <action name="mypage" class="PersonPage" method="MyPage">
-            <result name="success">/WEB-INF/h_person/MyPage.jsp</result>
+            <result name="success">/WEB-INF/h_person/PersonTime_axis.jsp</result>
             <result name="error">error.jsp</result>
         </action>
         <action name="home" class="PersonTime_axis" method="MyHome">
-            <result name="success">/WEB-INF/h_person/MyPage.jsp</result>
+            <result name="success">/WEB-INF/h_person/PersonTime_axis.jsp</result>
             <result name="error">error.jsp</result>
         </action>
         <action name="MyFriend" class="Friend" method="MyFriend">
