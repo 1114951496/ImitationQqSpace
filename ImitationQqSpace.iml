@@ -17,6 +17,7 @@
             <file>file://$MODULE_DIR$/src/struts.xml</file>
             <file>file://$MODULE_DIR$/src/y_struts.xml</file>
             <file>file://$MODULE_DIR$/src/h_struts.xml</file>
+            <file>file://$MODULE_DIR$/src/l_struts.xml</file>
           </fileset>
           <propertiesKeys disabled="false" />
         </configuration>

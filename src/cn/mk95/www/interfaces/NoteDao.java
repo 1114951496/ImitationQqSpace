@@ -1,6 +1,7 @@
 package cn.mk95.www.interfaces;
 
 import cn.mk95.www.bean.NoteEntity;
+import cn.mk95.www.bean.UserEntity;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -76,4 +77,12 @@ public interface NoteDao extends BaseDao<NoteEntity> {
      * @return
      */
     public ArrayList<NoteEntity> findHotNote(int page,int num);
+
+    /**
+     * 查询好友最新的note
+     * @param friends
+     * @param pageNo
+     * @return
+     */
+    public List<NoteEntity> findFriendsNewsByTime(ArrayList<UserEntity> friends, Integer pageNo);
 }

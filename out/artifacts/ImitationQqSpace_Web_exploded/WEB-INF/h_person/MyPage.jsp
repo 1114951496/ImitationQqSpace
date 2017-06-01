@@ -63,7 +63,7 @@
 
                 <a href="home" class="col-lg-2" >主页</a>
                 <a href="MyFriend" class="col-lg-2" >好友</a>
-                <a href="#" class="col-lg-3" >朋友圈</a>
+                <a href="friendnews" class="col-lg-3" >朋友圈</a>
                 <a href="Album" class="col-lg-2" >相册</a>
                 <a href="CheckMessage" class="col-lg-3" >留言板</a>
         </div>

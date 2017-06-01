@@ -1,6 +1,7 @@
 package cn.mk95.www.dao;
 
 import cn.mk95.www.bean.NoteEntity;
+import cn.mk95.www.bean.UserEntity;
 import cn.mk95.www.interfaces.NoteDao;
 
 import java.util.ArrayList;
@@ -98,5 +99,23 @@ public class NoteDaoImpl extends BaseDaoHibernate<NoteEntity> implements NoteDao
     public List findNoteByIdOrderByDate(int userid, int pageNo, int pageSize) {
         List<NoteEntity> noteEntities=findByPage("select en from NoteEntity en where en.userid=? order by notetime",pageNo,pageSize,userid);
         return noteEntities;
+    }
+
+    @Override
+    public List<NoteEntity> findFriendsNewsByTime(ArrayList<UserEntity> friends,Integer pageNo) {
+        String hsql="select en from NoteEntity en where";
+        System.out.print(friends.size()+"!");
+        for(int i=0;i<friends.size();i++){
+            hsql=hsql+" en.userid="+ friends.get(i).getUserid();
+            if(i<friends.size()-1) {
+                System.out.print(i);
+                hsql = hsql + " or";
+            }
+        }
+        hsql=hsql+" order by en.notetime desc";
+        System.out.print(hsql);
+        List<NoteEntity> list=findByPage(hsql,pageNo,10);
+        System.out.print(list);
+        return list;
     }
 }

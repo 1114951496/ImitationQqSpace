@@ -7,4 +7,5 @@
 <struts>
     <include file="y_struts.xml"/>
     <include file="h_struts.xml"/>
+    <include file="l_struts.xml"/>
 </struts>
