@@ -10,17 +10,17 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="y" uri="/WEB-INF/y_tag.tld" %>
-<html>
-<head>
-    <title>default_nav</title>
-    <style>
-        body {
-            background: #c4e3f3;
-        }
-    </style>
-</head>
 
-<body>
+<style>
+    body {
+        background: #c4e3f3;
+    }
+    html,body{
+        width: 100%;
+        height: 100%;
+    }
+</style>
+
 
 <!--网站主页顶部黑色导航条-->
 <div class="container-fluid" style="margin: 0;padding: 0;">
@@ -41,7 +41,7 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
                         <li class="active">
-                            <a href="#">主页</a>
+                            <a href="/index.jsp">主页</a>
                         </li>
                         <li>
                             <a href="#">声明</a>
@@ -101,5 +101,4 @@
         </div>
     </div>
 </div>
-</body>
-</html>
+

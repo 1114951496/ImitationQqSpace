@@ -11,6 +11,7 @@ import com.opensymphony.xwork2.ActionSupport;
 import org.apache.commons.io.FileUtils;
 import org.apache.struts2.ServletActionContext;
 
+import javax.servlet.ServletContext;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.io.File;
@@ -85,13 +86,15 @@ public class AlbumManager extends ActionSupport{
         HttpSession session=request.getSession();
         user=(UserEntity)session.getAttribute("Muser");
         album=(AlbumEntity)albumDao.findAlbumByUserId(user.getUserid());
-        String url=request.getContextPath()+"/WEB-INF/"+album.getPhotourl()+"/"+user.getUserid();
-        String Albumurl= NoteService.getWebInfPath()+album.getPhotourl();
-        ArrayList<String> PhotoNames= H_FileRW.getAlbumurls(Albumurl,user.getUserid());
+        ActionContext ac = ActionContext.getContext();
+        ServletContext sc = (ServletContext) ac.get(ServletActionContext.SERVLET_CONTEXT);
+        String path = sc.getRealPath("/");
+        String url=path+"res"+album.getPhotourl()+"/"+user.getUserid();
+        ArrayList<String> PhotoNames= H_FileRW.getAlbumurls(url);
         ArrayList<String> PhotoUrls=new ArrayList<>();
         System.out.println(PhotoNames);
         for (int i=0;i<PhotoNames.size();i++){
-            String PhotoUrl=url+"/"+ PhotoNames.get(i);
+            String PhotoUrl="res"+album.getPhotourl()+"/"+user.getUserid()+"/"+ PhotoNames.get(i);
             PhotoUrls.add(PhotoUrl);
         }
         session.setAttribute("albums",PhotoUrls);
@@ -106,8 +109,10 @@ public class AlbumManager extends ActionSupport{
         HttpSession session=request.getSession();
         user=(UserEntity)session.getAttribute("Muser");
         album=(AlbumEntity)albumDao.findAlbumByUserId(user.getUserid());
-
-        String Albumurl= NoteService.getWebInfPath()+album.getPhotourl()+"/"+user.getUserid();
+        ActionContext ac = ActionContext.getContext();
+        ServletContext sc = (ServletContext) ac.get(ServletActionContext.SERVLET_CONTEXT);
+        String path = sc.getRealPath("/");
+        String Albumurl= path+"/res"+album.getPhotourl()+"/"+user.getUserid();
         FileOutputStream fos=new FileOutputStream(Albumurl+"/"+getFileFileName());
         FileInputStream fis=new FileInputStream(getFile());
         byte[] buffer=new byte[1024];
@@ -115,7 +120,13 @@ public class AlbumManager extends ActionSupport{
         while((len=fis.read(buffer))>0){
             fos.write(buffer,0,len);
         }
-        ArrayList<String> PhotoUrls= H_FileRW.getAlbumurls(Albumurl,user.getUserid());
+        String url=path+"res"+album.getPhotourl()+"/"+user.getUserid();
+        ArrayList<String> PhotoNames= H_FileRW.getAlbumurls(url);
+        ArrayList<String> PhotoUrls=new ArrayList<>();
+        for (int i=0;i<PhotoNames.size();i++){
+            String PhotoUrl="res"+album.getPhotourl()+"/"+user.getUserid()+"/"+ PhotoNames.get(i);
+            PhotoUrls.add(PhotoUrl);
+        }
         //ArrayList<String> urls=(ArrayList<String>)session.getAttribute("albums");
         //urls.add(Albumurl+"/"+getFileFileName()+getFileContentType());
         session.setAttribute("albums",PhotoUrls);

@@ -17,12 +17,18 @@
 
     <link href="../../res/css/bootstrap.min.css" rel="stylesheet">
     <link href="../../res/css/navigation.css" rel="stylesheet">
+
 </head>
 <body>
     <%@include file="MyPage.jsp"%>
     <div class="container-fluid">
         <div class="col-md-2"></div>
         <div class="col-md-8">
+                <s:iterator value="#session.albums" id="album">
+                    <a href="<s:property value='#album'/>" target="_blank">
+                        <img src="<s:property value='#album'/>" width="200dp" height="150dp" style="margin: 8px 2px"/>
+                    </a>
+                </s:iterator>
             <s:if test="#session.Muser.userid==#session.user.userid">
                 <s:form action="addphoto" enctype="multipart/form-data" method="POST">
                     <s:file name="file" lable="选择文件"/>
@@ -30,14 +36,6 @@
                     <s:submit value="图片上传"/>
                 </s:form>
             </s:if>
-            <table style="text-align: center">
-                <s:iterator value="#session.albums" id="album">
-                    <tr>
-                        <td><s:property value="#album"/></td>
-                        <td><img src="<s:property value='#album'/>"> </td>
-                    </tr>
-                </s:iterator>
-            </table>
         </div>
         <div class="col-md-2"></div>
     </div>

@@ -2,8 +2,10 @@ package cn.mk95.www.service;
 
 import cn.mk95.www.bean.HomeDynamic;
 import cn.mk95.www.bean.NoteEntity;
+import cn.mk95.www.bean.UserEntity;
 import cn.mk95.www.dao.NoteDaoImpl;
 import cn.mk95.www.interfaces.NoteDao;
+import cn.mk95.www.interfaces.UserDao;
 import cn.mk95.www.util.StringUtil;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.FileSystemXmlApplicationContext;
@@ -37,7 +39,7 @@ public class NoteService {
      * @param note_title
      * @return 返回note的绝对路径
      */
-    public String initNote(NoteEntity noteEntity, int user_id, String note_title, NoteDao noteDao) {
+    public synchronized String initNote(NoteEntity noteEntity, int user_id, String note_title, NoteDao noteDao) {
         Calendar calendar = Calendar.getInstance();
         long l = calendar.getTime().getTime();
         noteEntity.setNotetime(new Timestamp(l));
@@ -50,7 +52,7 @@ public class NoteService {
         int note_id = noteDao.countUserNote(user_id);
         noteEntity.setNoteid(note_id);
         noteEntity.setUserid(user_id);
-        noteEntity.setId(noteDao.countNote() + 1);
+        noteEntity.setId(noteDao.findMaxId() + 1);
         noteEntity.setNoteurl(url);
         return path;
     }
@@ -124,23 +126,35 @@ public class NoteService {
         return null;
     }
 
-    public ArrayList<HomeDynamic> newNoteListToDynamicList(int page, int num,NoteDao noteDao) {
+    public ArrayList<HomeDynamic> newNoteListToDynamicList(int page, int num, NoteDao noteDao, UserDao userDao) {
         ArrayList<HomeDynamic> homeDynamics = new ArrayList<>();  //主页动态
         ArrayList<NoteEntity> newNotes = noteDao.findNewNote(page, num);
-        System.out.println("------动态获取测试:");
-        for (NoteEntity noteEntity : newNotes) {
+        noteListToDynamicList(newNotes,homeDynamics,userDao);
+        return homeDynamics;
+    }
+
+    public ArrayList<HomeDynamic> hotNoteListToDynamicList(int page, int num,NoteDao noteDao, UserDao userDao) {
+        ArrayList<HomeDynamic> homeDynamics = new ArrayList<>();  //主页动态
+        ArrayList<NoteEntity> hotNotes = noteDao.findHotNote(page, num);
+        noteListToDynamicList(hotNotes,homeDynamics,userDao);
+        return homeDynamics;
+    }
+
+    public void noteListToDynamicList(ArrayList<NoteEntity> notes,ArrayList<HomeDynamic> homeDynamics, UserDao userDao){
+        for (NoteEntity noteEntity : notes) {
             HomeDynamic homeDynamic = new HomeDynamic();
+            UserEntity userEntity;
+            userEntity=userDao.findUserById(noteEntity.getUserid());
             homeDynamic.setContentUrl("/readNote?id=" + noteEntity.getId());
             String content = getNoteFileContent(NoteService.getWebInfPath()
                     + noteEntity.getNoteurl());
-            homeDynamic.setId(noteEntity.getId().toString());
+            homeDynamic.setId(userEntity.getUserid()+"");
             homeDynamic.setDynamicContent(content.length() > 20 ? content.substring(0, 20) : content);
-            homeDynamic.setImgUrl("");
-            homeDynamic.setName("");
-            homeDynamic.setUserUrl("");
+            homeDynamic.setImgUrl(userEntity.getIcon());
+            homeDynamic.setName(userEntity.getUsername());
+            homeDynamic.setUserUrl("/infriend?friendid="+userEntity.getUserid());
             System.out.println("  content:"+homeDynamic.getDynamicContent()+"  url:"+homeDynamic.getContentUrl()+"  id:"+homeDynamic.getId());
             homeDynamics.add(homeDynamic);
         }
-        return homeDynamics;
     }
 }

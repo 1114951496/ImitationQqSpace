@@ -2,137 +2,60 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a40b628-c651-49c2-99a0-43e0d673c7f6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javax.ejb.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javax.jms.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javax.resource.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javax.servlet.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javax.servlet.jsp.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javax.servlet.jsp.jstl.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/action/AlbumManager.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/userData/Album/1/1.0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/userData/Album/1/1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/userData/Album/1/3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/userData/Album/1/bizi2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/userData/Album/1/cat.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/userData/Album/1/cat2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/userData/Album/1/cat3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/userData/Album/1/your——name.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/res/img/readNoteBg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/action/AlbumManager.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/action/LoadIndexDynamic.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/userData/Album/1/bizi2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/userData/Album/1/cat.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/userData/Album/1/cat2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/userData/Album/1/cat3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/userData/Album/1/your——name.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/res/img/readNoteBg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Java_EE_6_Java_EE_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/h_person/AlbumPage.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/protect/readNote.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/userData/1/B0FCBAACCDBCC6ACB5C4B2E2CAD4CEC4BCFE/1492514415879.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/userData/1/D6BBB0FCBAACD6D0CEC4B5C4B2E2CAD4CEC4BCFE/1492514201848.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/userData/5/B2E2CAD4/1492656689322.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/userData/6/B2E2CAD4B1EACCE23234323432/1495110367486.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/test/readNoteTest.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/mk95/www/action/AlbumManager.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/mk95/www/action/LoadIndexDynamic.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/mk95/www/bean/DynamicFNews.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/h_person/AlbumPage.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/h_person/PersonTime_axis.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/protect/readNote.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/test/readNoteTest.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/h_person/FriendMessagePage.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/h_person/FriendPage.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/WEB-INF/h_person/FriendMessagePage.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/WEB-INF/h_person/FriendPage.jsp" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/action/FriendNewsPage.class" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/action/FriendNewsPage.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/userData/1/B0FCBAACCDBCC6ACB5C4B2E2CAD4CEC4BCFE/1492514415879.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/userData/1/D6BBB0FCBAACD6D0CEC4B5C4B2E2CAD4CEC4BCFE/1492514201848.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/userData/5/B2E2CAD4/1492656689322.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/userData/6/B2E2CAD4B1EACCE23234323432/1495110367486.txt" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/action/LoadIndexDynamic.class" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/action/LoadIndexDynamic.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/action/LoginAndRegister.class" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/action/LoginAndRegister.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/action/MessageManagger.class" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/action/MessageManagger.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/action/PersonFriend.class" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/action/PersonFriend.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/action/PersonPage.class" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/action/PersonPage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/action/PersonTime_axis.class" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/action/PersonTime_axis.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/action/ReadNote.class" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/action/ReadNote.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/action/WriteNote.class" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/action/WriteNote.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/action/ttt.class" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/action/ttt.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/bean/CommentEntity.class" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/bean/CommentEntity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/dao/AlbumDaoImpl.class" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/dao/AlbumDaoImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/dao/BaseDaoHibernate.class" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/dao/BaseDaoHibernate.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/dao/NoteDaoImpl.class" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/dao/NoteDaoImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/interfaces/NoteDao.class" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/interfaces/NoteDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/service/FriendsNewsService.class" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/service/FriendsNewsService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/service/H_FileRW.class" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/service/H_FileRW.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/service/NoteService.class" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/service/NoteService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/tag/Dynamic.class" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/tag/Dynamic.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/test/Y_test.class" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/test/Y_test.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/action/FriendNewsPage.class" afterPath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/action/FriendNewsPage.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/action/LoadIndexDynamic.class" afterPath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/action/LoadIndexDynamic.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/action/LoginAndRegister.class" afterPath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/action/LoginAndRegister.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/action/MessageManagger.class" afterPath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/action/MessageManagger.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/action/PersonFriend.class" afterPath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/action/PersonFriend.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/action/PersonPage.class" afterPath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/action/PersonPage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/action/PersonTime_axis.class" afterPath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/action/PersonTime_axis.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/action/ReadNote.class" afterPath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/action/ReadNote.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/action/WriteNote.class" afterPath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/action/WriteNote.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/action/ttt.class" afterPath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/action/ttt.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/bean/CommentEntity.class" afterPath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/bean/CommentEntity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/dao/AlbumDaoImpl.class" afterPath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/dao/AlbumDaoImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/dao/BaseDaoHibernate.class" afterPath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/dao/BaseDaoHibernate.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/dao/NoteDaoImpl.class" afterPath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/dao/NoteDaoImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/interfaces/NoteDao.class" afterPath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/interfaces/NoteDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/service/FriendsNewsService.class" afterPath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/service/FriendsNewsService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/service/H_FileRW.class" afterPath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/service/H_FileRW.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/service/NoteService.class" afterPath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/service/NoteService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/tag/Dynamic.class" afterPath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/tag/Dynamic.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/test/Y_test.class" afterPath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/test/Y_test.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/f0f7ac56-3505-43c0-9ac2-f4d90ed14217.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/f0f7ac56-3505-43c0-9ac2-f4d90ed14217.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ImitationQqSpace.iml" afterPath="$PROJECT_DIR$/ImitationQqSpace.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/applicationContext.xml" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/applicationContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/bean/CommentEntity.hbm.xml" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/cn/mk95/www/bean/CommentEntity.hbm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/h_springConfig.xml" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/h_springConfig.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/h_struts.xml" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/h_struts.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/l_springConfig.xml" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/l_springConfig.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/y_springConfig.xml" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/y_springConfig.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/y_struts.xml" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/classes/y_struts.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/friends_news.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/friends_news.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/h_person/MyPage.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/h_person/MyPage.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/protect/writeNote.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/protect/writeNote.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/default_ft.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/default_ft.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/default_nav.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/default_nav.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/protect/readNote.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/protect/readNote.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/userData/6/B7A2B4F3CDBCB2E2CAD4/1496156661311.txt" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/userData/6/B7A2B4F3CDBCB2E2CAD4/1496156661311.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/index.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ImitationQqSpace_Web_exploded/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/bean/CommentEntity.hbm.xml" afterPath="$PROJECT_DIR$/out/production/ImitationQqSpace/cn/mk95/www/bean/CommentEntity.hbm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ImitationQqSpace/h_springConfig.xml" afterPath="$PROJECT_DIR$/out/production/ImitationQqSpace/h_springConfig.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ImitationQqSpace/h_struts.xml" afterPath="$PROJECT_DIR$/out/production/ImitationQqSpace/h_struts.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ImitationQqSpace/l_springConfig.xml" afterPath="$PROJECT_DIR$/out/production/ImitationQqSpace/l_springConfig.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ImitationQqSpace/y_springConfig.xml" afterPath="$PROJECT_DIR$/out/production/ImitationQqSpace/y_springConfig.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ImitationQqSpace/y_struts.xml" afterPath="$PROJECT_DIR$/out/production/ImitationQqSpace/y_struts.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/mk95/www/action/FriendNewsPage.java" afterPath="$PROJECT_DIR$/src/cn/mk95/www/action/FriendNewsPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/mk95/www/action/AlbumManager.java" afterPath="$PROJECT_DIR$/src/cn/mk95/www/action/AlbumManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/mk95/www/action/LoadIndexDynamic.java" afterPath="$PROJECT_DIR$/src/cn/mk95/www/action/LoadIndexDynamic.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/mk95/www/action/LoginAndRegister.java" afterPath="$PROJECT_DIR$/src/cn/mk95/www/action/LoginAndRegister.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/mk95/www/action/MessageManagger.java" afterPath="$PROJECT_DIR$/src/cn/mk95/www/action/MessageManagger.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/mk95/www/action/PersonFriend.java" afterPath="$PROJECT_DIR$/src/cn/mk95/www/action/PersonFriend.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/mk95/www/action/PersonPage.java" afterPath="$PROJECT_DIR$/src/cn/mk95/www/action/PersonPage.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/mk95/www/action/PersonTime_axis.java" afterPath="$PROJECT_DIR$/src/cn/mk95/www/action/PersonTime_axis.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/mk95/www/action/ReadNote.java" afterPath="$PROJECT_DIR$/src/cn/mk95/www/action/ReadNote.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/mk95/www/action/WriteNote.java" afterPath="$PROJECT_DIR$/src/cn/mk95/www/action/WriteNote.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/mk95/www/action/ttt.java" afterPath="$PROJECT_DIR$/src/cn/mk95/www/action/ttt.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/mk95/www/bean/CommentEntity.hbm.xml" afterPath="$PROJECT_DIR$/src/cn/mk95/www/bean/CommentEntity.hbm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/mk95/www/bean/CommentEntity.java" afterPath="$PROJECT_DIR$/src/cn/mk95/www/bean/CommentEntity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/mk95/www/dao/AlbumDaoImpl.java" afterPath="$PROJECT_DIR$/src/cn/mk95/www/dao/AlbumDaoImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/mk95/www/dao/NoteDaoImpl.java" afterPath="$PROJECT_DIR$/src/cn/mk95/www/dao/NoteDaoImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/mk95/www/interfaces/NoteDao.java" afterPath="$PROJECT_DIR$/src/cn/mk95/www/interfaces/NoteDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/mk95/www/service/FriendsNewsService.java" afterPath="$PROJECT_DIR$/src/cn/mk95/www/service/FriendsNewsService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/mk95/www/service/H_FileRW.java" afterPath="$PROJECT_DIR$/src/cn/mk95/www/service/H_FileRW.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/mk95/www/service/NoteService.java" afterPath="$PROJECT_DIR$/src/cn/mk95/www/service/NoteService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/mk95/www/tag/Dynamic.java" afterPath="$PROJECT_DIR$/src/cn/mk95/www/tag/Dynamic.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/mk95/www/test/Y_test.java" afterPath="$PROJECT_DIR$/src/cn/mk95/www/test/Y_test.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/mk95/www/tag/IsLogin.java" afterPath="$PROJECT_DIR$/src/cn/mk95/www/tag/IsLogin.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/mk95/www/tag/SessArray.java" afterPath="$PROJECT_DIR$/src/cn/mk95/www/tag/SessArray.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/h_springConfig.xml" afterPath="$PROJECT_DIR$/src/h_springConfig.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/h_struts.xml" afterPath="$PROJECT_DIR$/src/h_struts.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/l_springConfig.xml" afterPath="$PROJECT_DIR$/src/l_springConfig.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/y_springConfig.xml" afterPath="$PROJECT_DIR$/src/y_springConfig.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/y_struts.xml" afterPath="$PROJECT_DIR$/src/y_struts.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/applicationContext.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/applicationContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/friends_news.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/friends_news.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/default_ft.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/default_ft.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/default_nav.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/default_nav.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/h_person/AlbumPage.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/h_person/AlbumPage.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/h_person/MessagePage.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/h_person/MessagePage.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/h_person/MyPage.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/h_person/MyPage.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/protect/writeNote.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/protect/writeNote.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/h_person/PersonFriend.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/h_person/PersonFriend.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/h_person/PersonTime_axis.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/h_person/PersonTime_axis.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/protect/readNote.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/protect/readNote.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="$PROJECT_DIR$/web/index.jsp" />
     </list>
@@ -205,6 +128,7 @@
             <state relative-caret-position="805">
               <caret line="55" column="8" lean-forward="false" selection-start-line="55" selection-start-column="8" selection-end-line="55" selection-end-column="48" />
               <folding>
+                <element signature="imports" expanded="false" />
                 <element signature="e#766#767#0" expanded="false" />
                 <element signature="e#812#813#0" expanded="false" />
                 <element signature="e#855#856#0" expanded="false" />
@@ -320,7 +244,40 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="322">
               <caret line="14" column="29" lean-forward="false" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="29" />
-              <folding />
+              <folding>
+                <element signature="e#451#452#0" expanded="false" />
+                <element signature="e#481#482#0" expanded="false" />
+                <element signature="e#527#528#0" expanded="false" />
+                <element signature="e#565#566#0" expanded="false" />
+                <element signature="e#598#599#0" expanded="false" />
+                <element signature="e#627#628#0" expanded="false" />
+                <element signature="e#671#672#0" expanded="false" />
+                <element signature="e#707#708#0" expanded="false" />
+                <element signature="e#733#734#0" expanded="false" />
+                <element signature="e#758#759#0" expanded="false" />
+                <element signature="e#791#792#0" expanded="false" />
+                <element signature="e#819#820#0" expanded="false" />
+                <element signature="e#854#855#0" expanded="false" />
+                <element signature="e#885#886#0" expanded="false" />
+                <element signature="e#933#934#0" expanded="false" />
+                <element signature="e#973#974#0" expanded="false" />
+                <element signature="e#1011#1012#0" expanded="false" />
+                <element signature="e#1042#1043#0" expanded="false" />
+                <element signature="e#1093#1094#0" expanded="false" />
+                <element signature="e#1133#1134#0" expanded="false" />
+                <element signature="e#1169#1170#0" expanded="false" />
+                <element signature="e#1201#1202#0" expanded="false" />
+                <element signature="e#1251#1252#0" expanded="false" />
+                <element signature="e#1293#1294#0" expanded="false" />
+                <element signature="e#1330#1331#0" expanded="false" />
+                <element signature="e#1363#1364#0" expanded="false" />
+                <element signature="e#1415#1416#0" expanded="false" />
+                <element signature="e#1459#1460#0" expanded="false" />
+                <element signature="e#1500#1501#0" expanded="false" />
+                <element signature="e#1537#1538#0" expanded="false" />
+                <element signature="e#1597#1598#0" expanded="false" />
+                <element signature="e#1649#1650#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -343,28 +300,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="friends_news.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="friends_news.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/friends_news.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="102" column="26" lean-forward="false" selection-start-line="102" selection-start-column="26" selection-end-line="102" selection-end-column="26" />
+            <state relative-caret-position="1042">
+              <caret line="108" column="22" lean-forward="true" selection-start-line="108" selection-start-column="22" selection-end-line="108" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FriendsNewsService.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="FriendsNewsService.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/cn/mk95/www/service/FriendsNewsService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="966">
-              <caret line="62" column="35" lean-forward="false" selection-start-line="62" selection-start-column="28" selection-end-line="62" selection-end-column="35" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#842#843#0" expanded="false" />
-                <element signature="e#880#881#0" expanded="false" />
-                <element signature="e#915#916#0" expanded="false" />
-                <element signature="e#945#946#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="280">
+              <caret line="47" column="23" lean-forward="true" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="23" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -487,9 +438,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -718,6 +666,9 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1441,6 +1392,7 @@
       <workItem from="1496219286991" duration="3763000" />
       <workItem from="1496225901993" duration="18901000" />
       <workItem from="1496275496865" duration="9000" />
+      <workItem from="1496275997323" duration="72000" />
     </task>
     <servers />
   </component>
@@ -1477,7 +1429,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="325707000" />
+    <option name="totallyTimeSpent" value="325779000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1490,7 +1442,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="61" y="-8" width="1867" height="1096" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1516,7 +1468,7 @@
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952183" sideWeight="0.4980631" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952183" sideWeight="0.49584946" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15882678" sideWeight="0.31392932" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1765357" sideWeight="0.6860707" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17819591" sideWeight="0.6860707" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15716657" sideWeight="0.30852714" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15716657" sideWeight="0.30852714" order="8" side_tool="true" content_ui="tabs" />
@@ -1642,7 +1594,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
           <caret line="19" column="35" lean-forward="false" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1935,6 +1886,7 @@
         <state relative-caret-position="805">
           <caret line="55" column="8" lean-forward="false" selection-start-line="55" selection-start-column="8" selection-end-line="55" selection-end-column="48" />
           <folding>
+            <element signature="imports" expanded="false" />
             <element signature="e#766#767#0" expanded="false" />
             <element signature="e#812#813#0" expanded="false" />
             <element signature="e#855#856#0" expanded="false" />
@@ -2038,28 +1990,55 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
           <caret line="14" column="29" lean-forward="false" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/mk95/www/service/FriendsNewsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="966">
-          <caret line="62" column="35" lean-forward="false" selection-start-line="62" selection-start-column="28" selection-end-line="62" selection-end-column="35" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#842#843#0" expanded="false" />
-            <element signature="e#880#881#0" expanded="false" />
-            <element signature="e#915#916#0" expanded="false" />
-            <element signature="e#945#946#0" expanded="false" />
+            <element signature="e#451#452#0" expanded="false" />
+            <element signature="e#481#482#0" expanded="false" />
+            <element signature="e#527#528#0" expanded="false" />
+            <element signature="e#565#566#0" expanded="false" />
+            <element signature="e#598#599#0" expanded="false" />
+            <element signature="e#627#628#0" expanded="false" />
+            <element signature="e#671#672#0" expanded="false" />
+            <element signature="e#707#708#0" expanded="false" />
+            <element signature="e#733#734#0" expanded="false" />
+            <element signature="e#758#759#0" expanded="false" />
+            <element signature="e#791#792#0" expanded="false" />
+            <element signature="e#819#820#0" expanded="false" />
+            <element signature="e#854#855#0" expanded="false" />
+            <element signature="e#885#886#0" expanded="false" />
+            <element signature="e#933#934#0" expanded="false" />
+            <element signature="e#973#974#0" expanded="false" />
+            <element signature="e#1011#1012#0" expanded="false" />
+            <element signature="e#1042#1043#0" expanded="false" />
+            <element signature="e#1093#1094#0" expanded="false" />
+            <element signature="e#1133#1134#0" expanded="false" />
+            <element signature="e#1169#1170#0" expanded="false" />
+            <element signature="e#1201#1202#0" expanded="false" />
+            <element signature="e#1251#1252#0" expanded="false" />
+            <element signature="e#1293#1294#0" expanded="false" />
+            <element signature="e#1330#1331#0" expanded="false" />
+            <element signature="e#1363#1364#0" expanded="false" />
+            <element signature="e#1415#1416#0" expanded="false" />
+            <element signature="e#1459#1460#0" expanded="false" />
+            <element signature="e#1500#1501#0" expanded="false" />
+            <element signature="e#1537#1538#0" expanded="false" />
+            <element signature="e#1597#1598#0" expanded="false" />
+            <element signature="e#1649#1650#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/friends_news.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="102" column="26" lean-forward="false" selection-start-line="102" selection-start-column="26" selection-end-line="102" selection-end-column="26" />
+        <state relative-caret-position="1042">
+          <caret line="108" column="22" lean-forward="true" selection-start-line="108" selection-start-column="22" selection-end-line="108" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/mk95/www/service/FriendsNewsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="47" column="23" lean-forward="true" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="23" />
           <folding />
         </state>
       </provider>

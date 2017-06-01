@@ -46,6 +46,7 @@ public class ReadNote extends ActionSupport{
         request.getSession().setAttribute("requestNoteContent",
                 NoteService.getNoteFileContent(NoteService.getWebInfPath()+note.getNoteurl()));
         request.getSession().setAttribute("sid",noteTitle+id);
+        request.setAttribute("id",id);
         return ActionSupport.SUCCESS;
     }
 }

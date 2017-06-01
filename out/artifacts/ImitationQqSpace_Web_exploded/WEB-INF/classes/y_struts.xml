@@ -38,5 +38,9 @@
         <action name="indexAction" class="indexLoad">
             <result name="success">index.jsp</result>
         </action>
+
+        <action name="loveNote" class="loveNote" method="love">
+            <result name="success">success.jsp</result>
+        </action>
     </package>
 </struts>

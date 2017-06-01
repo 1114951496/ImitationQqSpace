@@ -59,7 +59,7 @@
     <div class="row">
         <div class="col-md-2">
         </div>
-        <div id="nav" class="col-md-8" style="padding:0;margin-top: 13px;background-color:#cccccc;font-size: 20px">
+        <div id="nav" class="col-md-8" style="padding:0;margin-top: 13px;margin-bottom: 15px;background-color:#cccccc;font-size: 20px">
 
                 <a href="home" class="col-lg-2" >主页</a>
                 <a href="MyFriend" class="col-lg-2" >好友</a>
