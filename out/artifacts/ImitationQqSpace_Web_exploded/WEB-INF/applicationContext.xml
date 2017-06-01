@@ -75,9 +75,9 @@
     </tx:advice>
     <!-- 配置事务切点，并把切点和事务属性关联起来 -->
     <aop:config>
-        <aop:pointcut expression="execution(* cn.mk95.www.dao.*.*(..))" id="txPointcut"/>
-        <aop:advisor advice-ref="txAdvice" pointcut-ref="txPointcut"/>
-    </aop:config>
+    <aop:pointcut expression="execution(* cn.mk95.www.dao.*.*(..))" id="txPointcut"/>
+    <aop:advisor advice-ref="txAdvice" pointcut-ref="txPointcut"/>
+</aop:config>
 
 
     <import resource="classpath:y_springConfig.xml"/>

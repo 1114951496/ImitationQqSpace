@@ -22,7 +22,7 @@
 
     <script type="text/javascript">
         $(document).ready(function(){
-            var range = 50;             //距下边界长度/单位px
+            var range = 10;             //距下边界长度/单位px
             var elemt = 500;           //插入元素高度/单位px
             var maxnum = 10;            //设置加载最多次数
             var num = 1;
@@ -55,7 +55,7 @@
                     }
                 }
                 //alert("准备发送请求");
-                xmlhttp.open("post", "../../FriendNewsPage.action?pageNo=" + num, true);
+                xmlhttp.open("post", "../../FriendNewsPage?pageNo=" + num, true);
                 xmlhttp.send(null);
                 //alert("已发送请求！");
                 xmlhttp.onreadystatechange = function () {
@@ -78,9 +78,37 @@
 </head>
 <body>
 <%@include file="./h_person/MyPage.jsp"%>
-<div class="container-fluid">
+<div class="container-fluid" >
     <div class="col-md-2"></div>
     <div class="col-md-8">
+        <s:iterator value="#session.fnews" var="news">
+            <div class="panel panel-default" style="border-radius: 10px;width: auto;height:200px;background-color: #1b6d85" onMouseOver="this.style.backgroundColor='#498485'" onMouseOut="this.style.backgroundColor='#1b6d85'" >
+                <div class="row">
+                <div class="col-md-2">
+                    <a href="infriend?friendid=<s:property value='#news.id'/>" class="thumbnail" style="height: 150px;border-radius: 10px">
+                    <img src="<s:property value='#news.imgUrl'/>"
+                         style="height: 140px;border-radius: 10px;margin:0;width: 170px;"
+                         >
+                    </a>
+                    <div style="text-align: center;font-size:15px;">
+                        <s:property value="#news.userName"/>
+                    </div>
+                </div>
+                    <a href="<s:property value='#news.contentUrl'/>"><div class="col-md-10" style="height: 200px;color: #0f0f0f">
+                    <div class="panel-heading" style="height: 60px;font-weight:bold;font-size:35px;">
+                        <s:property value="#news.noteTitle"/>
+                    </div>
+                    <div class="panel-body" style="padding-left: 30px;">
+                        <s:property value="#news.dynamicContent"/>
+                    </div>
+                    <div style="text-align: right;bottom: 5px;right:20px;font-size:5px;position: absolute;font-style:italic;">
+                    <s:property value="#news.notetime"/>
+                    </div>
+                    </div>
+                    </a>
+                </div>
+            </div>
+        </s:iterator>
 
     </div>
     <div class="col-md-2"></div>

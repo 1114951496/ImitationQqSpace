@@ -3,10 +3,13 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
     <bean name="FriendNewsPage" class="cn.mk95.www.action.FriendNewsPage">
-        <property name="FriendsNewsService" ref="FriendsNewsService"/>
+        <property name="friendsNewsService" ref="friendsNewsService"/>
+        <property name="noteService" ref="noteService"/>
     </bean>
-    <bean name="FriendsNewsService" class="cn.mk95.www.service.FriendsNewsService">
+    <bean name="friendsNewsService" class="cn.mk95.www.service.FriendsNewsService">
         <property name="noteDao" ref="noteDao"/>
+        <property name="noteService" ref="noteService"/>
+        <property name="userDao" ref="userDao"/>
     </bean>
 
 </beans>

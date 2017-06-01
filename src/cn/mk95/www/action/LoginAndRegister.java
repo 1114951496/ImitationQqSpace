@@ -73,7 +73,7 @@ public class LoginAndRegister extends ActionSupport {
     }
 
     public String register() {
-        Session session=userDao.init();
+        Session session;
         registerYzDao.init();
         System.out.println("-------------register-------------");
         System.out.println(user.getEmail() + " " + user.getUsername() + " " + user.getPassword());
@@ -83,12 +83,14 @@ public class LoginAndRegister extends ActionSupport {
             user.setRegistertime(new Timestamp(Calendar.getInstance().getTime().getTime()));
             registerYzEntity.setFlag(1);
             registerYzDao.save(registerYzEntity);
+            session = userDao.init();
             userDao.save(user);
             ServletActionContext.getRequest().getSession().setAttribute("user", user);
         } else
             return ActionSupport.ERROR;
         //发送用户id到用户邮箱
         session.flush();
+        ServletActionContext.getRequest().getSession().setAttribute("user", user);
         System.out.println(user.getUserid());
         try {
             emailUtil.sendSystemEmail(user.getEmail(),"注册id","你好，你的注册id是"+user.getUserid());

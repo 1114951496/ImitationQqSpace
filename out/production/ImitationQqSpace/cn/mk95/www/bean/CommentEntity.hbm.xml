@@ -8,9 +8,6 @@
         <id name="commentid">
             <column name="commentid" sql-type="int(11)"/>
         </id>
-        <property name="noteid">
-            <column name="noteid" sql-type="int(11)"/>
-        </property>
         <property name="commenttime">
             <column name="commenttime" sql-type="datetime"/>
         </property>
@@ -19,6 +16,9 @@
         </property>
         <property name="commenturl">
             <column name="commenturl" sql-type="varchar(255)"/>
+        </property>
+        <property name="nid">
+            <column name="nid" sql-type="int(11)"/>
         </property>
     </class>
 </hibernate-mapping>

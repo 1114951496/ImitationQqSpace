@@ -14,7 +14,19 @@ import static java.lang.System.out;
 public class ttt  {
    @Test
     public  void one() throws IOException {
-       Timestamp d = new Timestamp(System.currentTimeMillis());
-       System.out.print(d);
+       String albumurl="WEB-INF/userData/Album"+"/1";
+       File file=new File(albumurl);
+       if(!file.isDirectory()){
+           file.mkdir();
+       }
+       else if (file.isDirectory()) {
+           File[] fList = file.listFiles();
+           for (int j = 0; j < fList.length; j++) {
+               File afile = fList[j];
+               if (file.isFile()) {
+                   System.out.println(albumurl + "/" + afile.getName());
+               }
+           }
+       }
    }
 }

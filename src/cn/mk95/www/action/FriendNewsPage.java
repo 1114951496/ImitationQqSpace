@@ -1,9 +1,11 @@
 package cn.mk95.www.action;
 
+import cn.mk95.www.bean.DynamicFNews;
 import cn.mk95.www.bean.NoteEntity;
 import cn.mk95.www.bean.UserEntity;
 import cn.mk95.www.interfaces.NoteDao;
 import cn.mk95.www.service.FriendsNewsService;
+import cn.mk95.www.service.NoteService;
 import com.opensymphony.xwork2.ActionSupport;
 import org.apache.struts2.ServletActionContext;
 
@@ -18,6 +20,15 @@ import java.util.ArrayList;
 public class FriendNewsPage extends ActionSupport {
     private FriendsNewsService friendsNewsService;
     private Integer pageNo;
+    private NoteService noteService;
+
+    public void setNoteService(NoteService noteService) {
+        this.noteService = noteService;
+    }
+
+    public NoteService getNoteService() {
+        return noteService;
+    }
 
     public void setFriendsNewsService(FriendsNewsService friendsNewsService) {
         this.friendsNewsService = friendsNewsService;
@@ -32,7 +43,8 @@ public class FriendNewsPage extends ActionSupport {
     }
 
     ArrayList<UserEntity> friends=new ArrayList<>();
-    ArrayList<NoteEntity> arrayList=new ArrayList<>();
+    ArrayList<DynamicFNews> arrayList=new ArrayList<>();
+    ArrayList<String> notesTitle=new ArrayList<>();
     public String fnews() throws IOException {
         HttpServletRequest request= ServletActionContext.getRequest();
         HttpSession session=request.getSession();
